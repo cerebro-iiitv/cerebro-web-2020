@@ -1,0 +1,15 @@
+@import "../../../scss/imports";
+
+.container{
+    margin: 0 2rem;
+    width:45rem;
+    height:28rem;
+    text-align: center;
+}
+
+.container .frame{
+    width:42rem;
+    height:25rem;
+    border-right: 0.2rem solid $color-style;
+    border-left: 0.2rem solid $color-style;
+}
