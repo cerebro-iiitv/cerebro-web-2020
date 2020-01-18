@@ -1,0 +1,11 @@
+@import "./imports";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Arial';
+  background-color: $color-background;
+}
