@@ -13,3 +13,28 @@
     border-right: 0.2rem solid $color-style;
     border-left: 0.2rem solid $color-style;
 }
+
+.container .frame::before{
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: $color-background;
+    border-radius: 50%;
+    border:0.2rem solid $color-style;
+    transform: translate(-20.7rem,20rem);
+  }
+.container .frame::after{
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: $color-background;
+    border-radius: 50%;
+    border:0.2rem solid $color-style;
+    transform: translate(20.7rem,5rem);
+  }
