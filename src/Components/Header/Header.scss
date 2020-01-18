@@ -1,0 +1,36 @@
+@import '../../scss/imports';
+
+// .nav-bar{
+//     cursor: pointer;
+//     color: #202020;
+
+// }
+// .nav-bar{
+//     display: flex;
+//     list-style: none;
+//     font-size: 0.7em;
+//     margin: 0;
+// }
+a{
+    display: block;
+    padding: 20px 25px;
+    color: white;
+}
+li{
+    display: inline;
+    padding: 20px 25px;
+}
+.main-nav {
+    display: flex;
+    list-style: none;
+    // margin: 0;
+    //  padding:0px;
+    margin:0px 250px; 
+    cursor:pointer;
+    font-size:1.5em;
+    transition: all 0.3s linear;
+}
+
+a:hover{
+    color:$color-style;
+}
