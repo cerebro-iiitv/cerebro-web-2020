@@ -16,10 +16,10 @@ function Header() {
                         <li ><a className="dropdown" href="">BROCHURE</a></li>
                         <li><button class="btn-round"><img class="g_img" src="media/google.png" alt=""/></button></li>
                     </ul>
-                    
+
                 </nav>
             </div>
-                
+
         </div>
     )
 }
