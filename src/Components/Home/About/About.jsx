@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../scss/pages/_about.scss";
+import "./About.scss";
 var Photo = "media/Asset 12@4x.png";
 var Recpurple = "media/Asset 16@4x.png";
 var Recpink = "media/Asset 14@4x.png";
@@ -7,7 +7,7 @@ var Circpin = "Asset 13@4x.png";
 var Circpurple = "Asset 15@4x.png";
 function About() {
   return (
-    <div className="container">
+    <div className="contain">
       <div className="leftimage">
         <img src={Photo} />
       </div>
