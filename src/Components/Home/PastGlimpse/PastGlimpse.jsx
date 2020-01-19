@@ -6,7 +6,6 @@ function PastGlimpse() {
     <div className="container">
       <div className="inner-container">
         <h1>PAST YEAR GLIMPSES</h1>
-        <span className="dot"></span>
         <div className="frame">
             <img src="media/pastGlimpse/img1.jpeg" className="image" />
         </div>
