@@ -1,6 +1,9 @@
 @import "../../../scss/imports";
 
 .container{
+  display: flex;
+}
+.inner-container{
     margin: 0 2rem;
     width:45rem;
     height:28rem;
@@ -24,7 +27,7 @@
     background: $color-background;
     border-radius: 50%;
     border:0.2rem solid $color-style;
-    transform: translate(-20.7rem,20rem);
+    transform: translate(-1.7rem,-4rem);
   }
 .container .frame::after{
     content: '';
@@ -36,5 +39,31 @@
     background: $color-background;
     border-radius: 50%;
     border:0.2rem solid $color-style;
-    transform: translate(20.7rem,5rem);
+    transform: translate(1.7rem,-20rem);
+  }
+
+.group{
+    width: 26.47rem;
+    transform: translate(15rem,0px);
+  }
+.circle1{
+    width: 2rem;
+    transform: translate(-1.4rem,-5rem);
+  }
+.circle2{
+    width: 1rem;
+    transform: translate(-1rem,-4rem);
+  }
+.rec1{
+    width: 2rem;
+    transform: translate(3rem,-7rem);
+  }
+.rec2{
+    width: 1rem;
+    transform: translate(2.5rem,-4rem);
+  }
+
+  .image{
+    width:38rem;
+    height: 25rem;
   }
