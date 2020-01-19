@@ -70,7 +70,7 @@ a:hover{
 //                 transition: all 0.3s ease;
 
 // }
-img{
+.shift-left{
     width: 180px;
     border-radius: 5px;
     margin-right: 0px;
@@ -78,3 +78,22 @@ img{
 // .dropdown{
 //     padding-bottom: 10px;
 // }
+.btn-round {
+    background-color: $color-background;
+    border-radius: 999em;
+    border-color: $color-style;
+    width: 56px;
+    height: 56px;
+     margin-top: .2em;
+    margin-left: 1.5em;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    line-height: 1;
+    font-size: 36px;
+    position: relative;
+    cursor: pointer;
+}
+.g_img{
+    height: 1em;
+    width: 1em; 
+    transform: translate(0,0.1rem);
+}
