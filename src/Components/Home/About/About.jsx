@@ -1,15 +1,16 @@
 import React from "react";
 import "../../../scss/pages/_about.scss";
-var Photo = "media/Asset 12@4x.png";
-var Recpurple = "media/Asset 16@4x.png";
-var Recpink = "media/Asset 14@4x.png";
-var Circpin = "media/Asset 13@4x.png";
-var Circpurple = "media/Asset 15@4x.png";
+
 function About() {
+  var Photo = "media/Asset 12@4x.png";
+  var Recpurple = "media/Asset 16@4x.png";
+  var Recpink = "media/Asset 14@4x.png";
+  var Circpin = "media/Asset 13@4x.png";
+  var Circpurple = "media/Asset 15@4x.png";
   return (
     <div className="aboutcontainer">
       <div className="leftimage">
-        <img src={Photo} className="spaceship"/>
+        <img src={Photo} className="spaceship" />
         <img src={Recpurple} className="Recpurple" />
         <img src={Recpink} className="Recpink" />
         <img src={Circpin} className="Circpin" />

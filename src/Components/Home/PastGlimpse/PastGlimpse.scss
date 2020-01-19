@@ -27,7 +27,7 @@
     background: $color-background;
     border-radius: 50%;
     border:0.2rem solid $color-style;
-    transform: translate(-1.7rem,-4rem);
+    transform: translate(-1.7rem,-2rem);
   }
 .container .frame::after{
     content: '';
@@ -39,7 +39,7 @@
     background: $color-background;
     border-radius: 50%;
     border:0.2rem solid $color-style;
-    transform: translate(1.7rem,-20rem);
+    transform: translate(1.7rem,-22rem);
   }
 
 .group{
