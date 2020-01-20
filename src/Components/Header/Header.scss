@@ -1,91 +1,46 @@
 @import '../../scss/imports';
-
-// .nav-bar{
-//     cursor: pointer;
-//     color: #202020;
-
-// }
-// .nav-bar{
-//     display: flex;
-//     list-style: none;
-//     font-size: 0.7em;
-//     margin: 0;
-// }
-body{
-    margin: 0px;
-}
 .header{
     display: flex;
-    // float: left;
 }
-.header_1{
-    width: 20%;
-    float: left;
-}
-.header{
-    width: 80%;
-}
-li a{
+.list-element .headerDropdown{
     display: block;
     padding: 20px 25px;
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
 }
-li{
+.list-element{
     display: inline;
     padding: 20px 25px;
 }
 .main-nav {
     display: flex;
     list-style: none;
-    // margin: 0;
-    //  padding:0px;
     margin:0px 20px; 
-    // cursor:pointer;
     font-size:1.5em;
     transition: all 0.3s linear;
 }
 
-a:hover{
+.headerDropdown:hover{
     color:$color-style;
-    font-weight: bold;
-    // padding-bottom: 100px;
-    // line-height: 48px; 
+    font-weight: bold; 
     border-bottom: 1px solid;
-    // text-decoration: underline;
     border-width: 5px;
     
 }
-// li a::after{
-//     content: '';
-//                 position: absolute;
-//                 background: #ffffff;
-//                 height: 3px;
-//                 width: 0;
-//                 bottom: 0;
-//                 left: 50%;
-//                 transform: translateX(-50%);
-//                 border-radius: 0;
-//                 transition: all 0.3s ease;
-
-// }
 .shift-left{
     width: 180px;
     border-radius: 5px;
     margin-right: 0px;
 }
-// .dropdown{
-//     padding-bottom: 10px;
-// }
 .btn-round {
     background-color: $color-background;
     border-radius: 999em;
     border-color: $color-style;
     width: 56px;
     height: 56px;
-     margin-top: .2em;
-    margin-left: 1.5em;
+     margin-top: .2rem;
+    margin-left: 1.5rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     line-height: 1;
     font-size: 36px;
