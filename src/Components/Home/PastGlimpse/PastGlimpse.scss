@@ -1,6 +1,9 @@
 @import "../../../scss/imports";
 
 .container{
+  display: flex;
+}
+.inner-container{
     margin: 0 2rem;
     width:45rem;
     height:28rem;
@@ -13,3 +16,54 @@
     border-right: 0.2rem solid $color-style;
     border-left: 0.2rem solid $color-style;
 }
+
+.container .frame::before{
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: $color-background;
+    border-radius: 50%;
+    border:0.2rem solid $color-style;
+    transform: translate(-1.7rem,-2rem);
+  }
+.container .frame::after{
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: $color-background;
+    border-radius: 50%;
+    border:0.2rem solid $color-style;
+    transform: translate(1.7rem,-22rem);
+  }
+
+.group{
+    width: 26.47rem;
+    transform: translate(15rem,0px);
+  }
+.circle1{
+    width: 2rem;
+    transform: translate(-1.4rem,-5rem);
+  }
+.circle2{
+    width: 1rem;
+    transform: translate(-1rem,-4rem);
+  }
+.rec1{
+    width: 2rem;
+    transform: translate(3rem,-7rem);
+  }
+.rec2{
+    width: 1rem;
+    transform: translate(2.5rem,-4rem);
+  }
+
+  .image{
+    width:38rem;
+    height: 25rem;
+  }

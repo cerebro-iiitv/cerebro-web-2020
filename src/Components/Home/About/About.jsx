@@ -1,15 +1,20 @@
 import React from "react";
-import "./About.scss";
-var Photo = "media/Asset 12@4x.png";
-var Recpurple = "media/Asset 16@4x.png";
-var Recpink = "media/Asset 14@4x.png";
-var Circpin = "Asset 13@4x.png";
-var Circpurple = "Asset 15@4x.png";
+import "../../../scss/pages/_about.scss";
+
 function About() {
+  var Photo = "media/Asset 12@4x.png";
+  var Recpurple = "media/Asset 16@4x.png";
+  var Recpink = "media/Asset 14@4x.png";
+  var Circpin = "media/Asset 13@4x.png";
+  var Circpurple = "media/Asset 15@4x.png";
   return (
-    <div className="contain">
+    <div className="aboutcontainer">
       <div className="leftimage">
-        <img src={Photo} />
+        <img src={Photo} className="spaceship" />
+        <img src={Recpurple} className="Recpurple" />
+        <img src={Recpink} className="Recpink" />
+        <img src={Circpin} className="Circpin" />
+        <img src={Circpurple} className="Circpurple" />
       </div>
       <div className="aboutcard">
         <div className="aboutheader">
