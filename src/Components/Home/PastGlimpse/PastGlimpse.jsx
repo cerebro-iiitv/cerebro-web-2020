@@ -3,7 +3,7 @@ import "./PastGlimpse.scss";
 
 function PastGlimpse() {
     return (
-        <div className="container">
+        <div className="pastglimpse">
             <div className="inner-container">
                 <h1>PAST YEAR GLIMPSES</h1>
                 <br />

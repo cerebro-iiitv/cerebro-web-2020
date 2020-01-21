@@ -1,6 +1,6 @@
 @import "../../../scss/imports";
 
-.container{
+.pastglimpse{
   display: flex;
 }
 .inner-container{
@@ -10,14 +10,14 @@
     text-align: center;
 }
 
-.container .frame{
+.pastglimpse .frame{
     width:42rem;
     height:25rem;
     border-right: 0.2rem solid $color-style;
     border-left: 0.2rem solid $color-style;
 }
 
-.container .frame::before{
+.pastglimpse .frame::before{
     content: '';
     display: inline-block;
     width: 0.5rem;
@@ -29,7 +29,7 @@
     border:0.2rem solid $color-style;
     transform: translate(-1.7rem,-2rem);
   }
-.container .frame::after{
+.pastglimpse .frame::after{
     content: '';
     display: inline-block;
     width: 0.5rem;
