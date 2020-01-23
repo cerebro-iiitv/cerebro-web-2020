@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
+
 import Header from '../Header/Header'
-import Cover from './Cover/Cover'
 import About from './About/About'
 import PastGlimpse from './PastGlimpse/PastGlimpse'
 import Sponsors from './Sponsors/Sponsors'
@@ -11,7 +11,6 @@ class Home extends Component {
     return (
       <div className="home">
       <Header />
-      <Cover />
       <About />
       <PastGlimpse />
       <Sponsors />

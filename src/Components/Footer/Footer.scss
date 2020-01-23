@@ -1,0 +1,103 @@
+.Container {
+    
+    padding: 2.8rem 5rem  1rem 1rem;
+    background-color: #202020;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.2rem;
+    grid-auto-rows: minmax(auto, auto)
+}
+.hrContainer{
+    width: 75rem;
+    padding: 0rem 4rem;
+    align-content: center;
+}
+.Logo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding-left: 3rem;
+    //grid-auto-rows:minmax(auto, auto);
+    grid-auto-columns: min-content;
+}
+
+.institute-logo {
+    width: 6rem;
+    height: 8rem;
+
+}
+
+.links_div {
+    padding: 0.5rem 0rem;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 100%;
+
+}
+
+.span {
+    padding-top: 2.5rem;
+    align-content: flex-end;
+    width: 20rem;
+    height: 14rem;
+    // font-family: Gilroy;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.containerTitle {
+    display: flex;
+}
+
+.Links {
+
+    width: 15rem;
+    height: 14rem;
+    //font-family: Gilroy;
+    font-size: 1rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding-left: 10rem;
+    
+}
+
+.Linkname {
+    color: #ffffff
+}
+
+.hr-text {
+    width: 3rem;
+    padding-top: 1rem;
+    padding-left: 0.8rem;
+    height: 0rem;
+    
+
+}
+
+.Contact {
+    width: 28rem;
+    height: 14rem;
+    //font-family: Gilroy;
+    font-size: 1rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding-left:2rem ;
+}
