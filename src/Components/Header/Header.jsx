@@ -2,27 +2,20 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 import './Header.scss'
 
-function Header() {
-    return (
-        <div>
-            <div>
-                <nav className="nav-bar">
-                {/* <img className="shft-left" src="media/h_logo_1.png"></img> */}
-                <ul className="main-nav">
-                    <li className="list-element"><img className="shift-left" src="media/h_logo_1.png"></img></li>
-                        <li className="list-element"><NavLink className="headerDropdown" exact to="/">HOME</NavLink></li>
-                        <li className="list-element"><a className="headerDropdown" href="">EVENTS</a></li>
-                        <li className="list-element"><a className="headerDropdown" href="">TEAM</a></li>
-                        <li className="list-element"><a className="headerDropdown" href="">TIMELINE</a></li>
-                        <li className="list-element"><a className="headerDropdown" href="">BROCHURE</a></li>
-                        <li className="list-element"><button class="btn-round"><img class="g_img" src="media/google.png" alt=""/></button></li>
-                    </ul>
+const Header = () => (
+    <nav className="navbar">
+        <img className="navbar__logo" src="media/logo-without-name.png"></img>
 
-                </nav>
-            </div>
+        <ul className="navbar__links">
+            <li><NavLink className="navbar__links__li" exact to="/">HOME</NavLink></li>
+            <li><NavLink className="navbar__links__li" exact to="/events">Events</NavLink></li>
+            <li><NavLink className="navbar__links__li" exact to="/team">Team</NavLink></li>
+            <li><NavLink className="navbar__links__li" exact to="/timeline">timeline</NavLink></li>
+            <li><NavLink className="navbar__links__li" exact to="/brochure">brochure</NavLink></li>
+        </ul>
 
-        </div>
-    )
-}
+        <button className="navbar__login"><img class="g_img" src="media/google.png" alt=""/></button>
+    </nav>
+)
 
 export default Header
