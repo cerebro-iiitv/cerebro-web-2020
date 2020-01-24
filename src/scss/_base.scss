@@ -10,6 +10,11 @@
   src: url('../fonts/Gilroy-Light.otf');
 }
 
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('../fonts/Gilroy-ExtraBold.otf');
+}
+
 body {
   font-family: 'Gilroy-Light';
   background-color: $color-background;
