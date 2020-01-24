@@ -16,13 +16,33 @@ function PastGlimpse() {
           ></img>
         </div>
       </div>
-			<div className="past-glimpse__images">
-				<img src="media/pastGlimpse/Ellipse 32.png" className="past-glimpse__images__elli1" alt="elli1"></img>
-				<img src="media/pastGlimpse/Ellipse 33.png" className="past-glimpse__images__elli2" alt="elli2"></img>
-				<img src="media/pastGlimpse/Rectangle 29.png" className="past-glimpse__images__rec1" alt="rec2"></img>
-				<img src="media/pastGlimpse/Rectangle 30.png" className="past-glimpse__images__rec2" alt="rec1"></img>
-				<img src="media/pastGlimpse/Group 55.png" className="past-glimpse__images__group" alt="group"></img>
-			</div>
+      <div className="past-glimpse__images">
+        <img
+          src="media/pastGlimpse/Ellipse 32.png"
+          className="past-glimpse__images__elli1"
+          alt="elli1"
+        ></img>
+        <img
+          src="media/pastGlimpse/Ellipse 33.png"
+          className="past-glimpse__images__elli2"
+          alt="elli2"
+        ></img>
+        <img
+          src="media/pastGlimpse/Rectangle 29.png"
+          className="past-glimpse__images__rec1"
+          alt="rec1"
+        ></img>
+        <img
+          src="media/pastGlimpse/Rectangle 30.png"
+          className="past-glimpse__images__rec2"
+          alt="rec2"
+        ></img>
+        <img
+          src="media/pastGlimpse/Group 55.png"
+          className="past-glimpse__images__group"
+          alt="group"
+        ></img>
+      </div>
     </div>
   );
 }
