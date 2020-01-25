@@ -1,0 +1,43 @@
+.aboutcontainer {
+  display: flex;
+}
+.spaceship {
+  max-width: 400px;
+  max-height: 400px;
+}
+.leftimage {
+  float: left;
+  width: 40%;
+}
+.aboutcard {
+  font-size: 25px;
+  width: 70%;
+  margin-right: 5%;
+}
+.aboutheader h3 {
+  margin-left: 40%;
+  margin-top: 10%;
+}
+.aboutcontent {
+  padding: 10%;
+  padding-top: 4%;
+}
+.para2 {
+  margin-top: 4%;
+}
+.Recpurple {
+  width: 10%;
+  transform: translate(-18em, -23em);
+}
+.Circpurple {
+  width: 10%;
+  transform: translate(16.9em, -23.75em);
+}
+.Circpin {
+  width: 7%;
+  transform: translate(-18.5em, -0.25em);
+}
+.Recpink {
+  width: 8%;
+  transform: translate(-7.6em, -2.25em);
+}

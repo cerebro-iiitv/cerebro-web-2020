@@ -1,0 +1,47 @@
+.aboutcontainer {
+  display: flex;
+  //   float: left;
+}
+.spaceship {
+  width: 300px;
+  height: 350px;
+  transform: translate(-1rem);
+
+}
+.leftimage {
+  float: left;
+  width: 40%;
+}
+.aboutcard {
+  font-size: 25px;
+  width: 70%;
+  margin-right: 5%;
+}
+.aboutheader h3 {
+  //   align-items: center;
+  margin-left: 40%;
+  margin-top: 10%;
+}
+.aboutcontent {
+  padding: 10%;
+  padding-top: 4%;
+}
+.para2 {
+  margin-top: 4%;
+}
+.Recpurple {
+  width: 7%;
+  transform: translate(-15.8rem, -20.35rem);
+}
+.Circpurple {
+  width: 7%;
+  transform: translate(-10.2rem, -17.75rem);
+}
+.Circpin {
+  width: 6%;
+  transform: translate(-17em, -0.25em);
+}
+.Recpink {
+  width: 6%;
+  transform: translate(-7.3em, -2.25em);
+}
