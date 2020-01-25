@@ -1,29 +1,151 @@
-.contain {
+@import "../../../scss/imports";
+@import "../../../scss/base";
+.aboutcontainer {
   display: flex;
-  //   float: left;
+  flex-flow: row;
+
+  &__card {
+    width: 620px;
+    height: 550px;
+    margin-left: 200px;
+    padding: 0px 0 0px 100px;
+    display: flex;
+    flex-flow: column;
+    @media screen and (max-width: 1100px) {
+      height: 550px;
+      padding: 0;
+      margin-left: 10px;
+    }
+    @media screen and (max-width: 500px) {
+      height: 350px;
+      padding: 0;
+      margin: 0 0 0 40;
+    }
+    @media screen and (width: 1920px) {
+      margin-left: 600px;
+    }
+    &__header {
+      margin: 0 auto;
+      font-size: 40px;
+      font-weight: 900;
+      font-family: "Gilroy-ExtraBold";
+      line-height: 130px;
+      @media screen and (max-width: 400px) {
+        font-size: 20px;
+      }
+    }
+    &__content {
+      font-size: 25px;
+      font-family: "Gilroy-Light";
+      line-height: 30px;
+      text-align: start;
+      @media screen and (max-width: 1100px) {
+        font-size: 35px;
+      }
+      @media screen and (max-width: 400px) {
+        line-height: 17px;
+        font-size: 13px;
+      }
+
+      &__para2 {
+        margin-top: 20px;
+      }
+    }
+  }
+  &__images {
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+    &__spaceship {
+      width: 350px;
+      height: 420px;
+      transform: translateX(-10px);
+    }
+    &__Recpurplebig {
+      width: 33.9px;
+      height: 33.9px;
+      position: absolute;
+      top: 95px;
+      left: 50px;
+      animation: rotating 2s linear infinite;
+    }
+    &__Recpurplesmall {
+      width: 13.9px;
+      height: 13.9px;
+      position: absolute;
+      top: 120px;
+      left: 100px;
+      animation: rotating 2s linear infinite;
+    }
+    &__Recpink {
+      width: 33.9px;
+      height: 33.9px;
+      position: absolute;
+      top: 450px;
+      left: 265px;
+      animation: rotating 2s linear infinite;
+    }
+    &__Circpin {
+      width: 33.9px;
+      height: 33.9px;
+      position: absolute;
+      top: 475px;
+      left: 120px;
+      animation: rotating 2s linear infinite;
+    }
+    &__Circpurple {
+      width: 33.9px;
+      height: 33.9px;
+      position: absolute;
+      top: 155px;
+      left: 285px;
+    }
+  }
 }
-img {
-  max-width: 400px;
-  max-height: 400px;
+@keyframes rotating {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
-.leftimage {
-  float: left;
-  width: 40%;
-}
-.aboutcard {
-  font-size: 25px;
-  width: 100%;
-  margin-right: 5%;
-}
-.aboutheader h3 {
-  //   align-items: center;
-  margin-left: 40%;
-  margin-top: 10%;
-}
-.aboutcontent {
-  padding: 10%;
-  padding-top: 4%;
-}
-.para2 {
-  margin-top: 4%;
-}
+
+// @keyframes move {
+//   from {
+//     top: 20px;
+//     left: 100px;
+//   }
+//   to {
+//     top: 20px;
+//     left: 100px;
+//   }
+// }
+
+// img {
+//   max-width: 400px;
+//   max-height: 400px;
+// }
+// .leftimage {
+//   float: left;
+//   width: 40%;
+// }
+// .aboutcard {
+//   font-size: 25px;
+//   width: 100%;
+//   margin-right: 5%;
+// }
+// .aboutheader h3 {
+//   margin-left: 40%;
+//   margin-top: 10%;
+// }
+// .aboutcontent {
+//   padding: 10%;
+//   padding-top: 4%;
+// }
+// .para2 {
+//   margin-top: 4%;
+// }

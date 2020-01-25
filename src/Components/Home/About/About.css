@@ -1,0 +1,20 @@
+.aboutcontainer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.aboutcontainer__card {
+  max-width: 620px;
+  height: 550px;
+  padding: 0px 150px 0px 100px;
+  display: flex;
+  flex-flow: column;
+}
+.aboutcontainer__card__header {
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: 900;
+}
+.aboutcontainer__card__content {
+  font-size: 20px;
+}
