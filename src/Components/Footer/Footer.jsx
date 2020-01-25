@@ -5,32 +5,32 @@ import './Footer.scss';
 function Footer() {
     return (
         <div>
-            <div className="hrContainer"><hr color="grey" /></div>
-            <div className="Container">
+            <div className="hr-footer-container"><hr className="hr-line" color="grey" /></div>
+            <div className="footer-container">
 
-                <div className="Logo">
+                <div className="logo">
                     <div>
                         <img src='/media/institute-logo.1fb6100a.svg' className="institute-logo" alt="IIIT Vadodara Logo" />
                     </div>
                     <div className="span">Indian Institute of Information Technology, Vadodara</div>
                 </div>
                 {/* <div></div> */}
-                <div className="Links">
+                <div className="links">
                     <div>
-                        <div className="containerTitle" ><h2>Links</h2><div className="hr-text"><hr color="#29abe2" /></div><br /><br /></div>
+                        <div className="footer-lc-title" ><h2>Links</h2><div className="hr-text"><hr color="#25cbc0" /></div><br /><br/><br /></div>
                     </div>
-                    <div className="links_div"><a class="Linkname" >Home</a></div>
-                    <div className="links_div"><a class="Linkname" >Institute Site</a></div>
-                    <div className="links_div"><a class="Linkname" >Events</a></div>
-                    <div className="links_div"><a class="Linkname" >Timeline</a></div>
+                    <div className="links-div"><a class="linkname" >Home</a></div>
+                    <div className="links-div"><a class="linkname" >Institute Site</a></div>
+                    <div className="links-div"><a class="linkname" >Events</a></div>
+                    <div className="links-div"><a class="linkname" >Timeline</a></div>
                 </div>
-                <div className="Contact">
+                <div className="contact">
                     <div>
-                        <div className="containerTitle" ><h2>Contact</h2><div className="hr-text"><hr color="#29abe2" /></div><br /><br /></div>
+                        <div className="footer-lc-title" ><h2>Contact</h2><div className="hr-text"><hr color="#25cbc0" /></div><br /><br/><br /></div>
                     </div>
-                    <div className="links_div"><a class="Linkname" >Email: cerebro@iiitv.ac.in</a></div>
-                    <div className="links_div"><a class="Linkname" >Phone: +91-9370645038</a></div>
-                    <div className="links_div"><a class="Linkname" >Address: c/o Block No.9, Government Engineering<div className="links_div"> College, Sector-28, Gandhinagar, Gujarat - 382028</div></a></div>
+                    <div className="links-div"><a class="linkname" >Email: cerebro@iiitv.ac.in</a></div>
+                    <div className="links-div"><a class="linkname" >Phone: +91-9370645038</a></div>
+                    <div className="links-div"><a class="linkname" >Address: c/o Block No.9, Government Engineering<div className="links_map"> College, Sector-28, Gandhinagar, Gujarat - 382028</div></a></div>
                 </div>
             </div>
         </div>

@@ -1,49 +1,44 @@
-.Container {
+.footer-container {
     
-    padding: 2.8rem 5rem  1rem 1rem;
+    padding: 48px 80px  16px 16px;
     background-color: #202020;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.2rem;
+    grid-gap: 3.2px;
     grid-auto-rows: minmax(auto, auto)
 }
-.hrContainer{
-    width: 75rem;
-    padding: 0rem 4rem;
+.hr-footer-container{
+    width: 1760px;
+    padding: 0px 64px;
     align-content: center;
+    height: 16px;
 }
-.Logo {
+.hr-line{
+    border: 1px medium grey
+}
+.logo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    padding-left: 3rem;
+    grid-gap: 16px;
+    padding-left: 48px;
     //grid-auto-rows:minmax(auto, auto);
     grid-auto-columns: min-content;
 }
 
 .institute-logo {
-    width: 6rem;
-    height: 8rem;
-
-}
-
-.links_div {
-    padding: 0.5rem 0rem;
-}
-a:hover{
-    color: white;
-    text-decoration: none;
-    font-size: 100%;
-
+    padding-top: 48px;
+    padding-left: 40px;
+    width: 160px;
 }
 
 .span {
-    padding-top: 2.5rem;
+    padding-top: 88px;
+    padding-right: 32px;
     align-content: flex-end;
-    width: 20rem;
-    height: 14rem;
+    width: 400px;
+    height: 224px;
     // font-family: Gilroy;
-    font-size: 1.5rem;
+    font-size: 28.8px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -53,16 +48,30 @@ a:hover{
     color: #ffffff;
 }
 
-.containerTitle {
+.links-div {
+    padding: 8px 0px;
+}
+.links_map{
+    padding: 16px 0px;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 100%;
+
+}
+
+
+.footer-lc-title {
     display: flex;
 }
 
-.Links {
+.links {
 
-    width: 15rem;
-    height: 14rem;
+    width: 300px;
+    height: 224px;
     //font-family: Gilroy;
-    font-size: 1rem;
+    font-size: 20.8px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -70,28 +79,29 @@ a:hover{
     letter-spacing: normal;
     text-align: left;
     color: #ffffff;
-    padding-left: 10rem;
+    padding-left: 224px;
+    padding-bottom: 63px;
     
 }
 
-.Linkname {
+.linkname {
     color: #ffffff
 }
 
 .hr-text {
-    width: 3rem;
-    padding-top: 1rem;
-    padding-left: 0.8rem;
-    height: 0rem;
+    width: 69.6px;
+    padding-top: 16px;
+    padding-left: 12.8px;
+    height: 0px;
     
 
 }
 
-.Contact {
-    width: 28rem;
-    height: 14rem;
+.contact {
+    width: 576px;
+    height: 224px;
     //font-family: Gilroy;
-    font-size: 1rem;
+    font-size: 20.8px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -99,5 +109,6 @@ a:hover{
     letter-spacing: normal;
     text-align: left;
     color: #ffffff;
-    padding-left:2rem ;
+    padding-left: 64px ;
+    padding-bottom: 63px;;
 }
