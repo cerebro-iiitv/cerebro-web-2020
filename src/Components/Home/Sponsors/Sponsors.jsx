@@ -3,7 +3,7 @@ import "../../../Components/Home/Sponsors/Sponsors.scss";
 
 function Sponsors() {
   return (
-    <div className="sponsorContainer">
+    <div className="sponsor_container">
       <div className="cont">
         <div className="hr-container">
           <div className="hr-txt">
@@ -13,7 +13,7 @@ function Sponsors() {
             <hr color="#29abe2" />
           </div>
         </div>
-        <div className="sponsorsText">SPONSORS</div>
+        <div className="sponsors_text">SPONSORS</div>
         <div className="hr-container">
           <div className="hr-txt3">
             <hr color="#29abe2" />
@@ -23,11 +23,27 @@ function Sponsors() {
           </div>
         </div>
       </div>
-      <div class="sponsorWrapper">
-        <img src="media/stickermule.png" className="sponsorOne sponsorImg" />
-        <img src="media/souledstore.png" className="sponsorTwo sponsorImg" />
-        <img src="media/stickermule.png" className="sponsorThree sponsorImg" />
-        <img src="media/souledstore.png" className="sponsorFour sponsorImg" />
+      <div class="sponsor_wrapper">
+        <img
+          src="media/stickermuletransparent.png"
+          className="sponsor_one"
+          alt="sponsor One"
+        />
+        <img
+          src="media/souledstoretransparent.png"
+          className="sponsor_two"
+          alt="sponsor Two"
+        />
+        <img
+          src="media/stickermuletransparent.png"
+          className="sponsor_three "
+          alt="sponsor Three"
+        />
+        <img
+          src="media/souledstoretransparent.png"
+          className="sponsor_four "
+          alt="sponsor Four"
+        />
       </div>
     </div>
   );
