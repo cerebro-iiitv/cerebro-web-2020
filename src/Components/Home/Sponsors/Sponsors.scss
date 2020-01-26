@@ -19,9 +19,9 @@
 }
 
 .sponsor_container {
-  padding: 100px 80px 160px;
+  padding: 100px 80px 120px;
 }
-.cont {
+.sponsor_text_container {
   display: flex;
   width: max-content;
   height: max-content;
@@ -35,16 +35,15 @@
   display: inline-block;
 }
 .hr-txt {
-  margin-left: 128px;
+  padding: 10px 0px 0px;
   width: 80px;
-  padding-top: 10px;
+  &__line1 {
+    padding: 10px 0px 0px;
+    margin-left: 128px;
+  }
 }
 .hr-txt2 {
   width: 208px;
-  padding-top: 10px;
-}
-.hr-txt3 {
-  width: 80px;
   padding-top: 10px;
 }
 .sponsors_text {
@@ -53,10 +52,7 @@
   // font-family: Gilroy;
   font-size: 40px;
   font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.22;
-  letter-spacing: normal;
   text-align: left;
   color: #ffffff;
 }
@@ -65,19 +61,7 @@
   display: flex;
   justify-content: space-evenly;
 }
-.sponsor_one {
-  height: 128px;
-  animation: glow 4s linear infinite;
-}
-.sponsor_two {
-  height: 128px;
-  animation: glow 4s linear infinite;
-}
-.sponsor_three {
-  height: 128px;
-  animation: glow 4s linear infinite;
-}
-.sponsor_four {
+.sponsor_img {
   height: 128px;
   animation: glow 4s linear infinite;
 }
