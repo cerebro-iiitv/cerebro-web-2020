@@ -1,4 +1,6 @@
 @import "../../../scss/imports";
+@import "../../../scss/base";
+
 .aboutcontainer {
   display: flex;
   flex-flow: row;
@@ -112,39 +114,3 @@
     transform: rotate(-360deg);
   }
 }
-
-// @keyframes move {
-//   from {
-//     top: 20px;
-//     left: 100px;
-//   }
-//   to {
-//     top: 20px;
-//     left: 100px;
-//   }
-// }
-
-// img {
-//   max-width: 400px;
-//   max-height: 400px;
-// }
-// .leftimage {
-//   float: left;
-//   width: 40%;
-// }
-// .aboutcard {
-//   font-size: 25px;
-//   width: 100%;
-//   margin-right: 5%;
-// }
-// .aboutheader h3 {
-//   margin-left: 40%;
-//   margin-top: 10%;
-// }
-// .aboutcontent {
-//   padding: 10%;
-//   padding-top: 4%;
-// }
-// .para2 {
-//   margin-top: 4%;
-// }
