@@ -1,114 +1,228 @@
-.footer-container {
-    
-    padding: 48px 80px  16px 16px;
-    background-color: #202020;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3.2px;
-    grid-auto-rows: minmax(auto, auto)
-}
-.hr-footer-container{
-    width: 1760px;
-    padding: 0px 64px;
-    align-content: center;
-    height: 16px;
-}
-.hr-line{
-    border: 1px medium grey
-}
-.logo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 16px;
-    padding-left: 48px;
-    //grid-auto-rows:minmax(auto, auto);
-    grid-auto-columns: min-content;
-}
-
-.institute-logo {
-    padding-top: 48px;
-    padding-left: 40px;
-    width: 160px;
-}
-
-.span {
-    padding-top: 88px;
-    padding-right: 32px;
-    align-content: flex-end;
-    width: 400px;
-    height: 224px;
-    // font-family: Gilroy;
-    font-size: 28.8px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.13;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
-}
-
-.links-div {
-    padding: 8px 0px;
-}
-.links_map{
-    padding: 16px 0px;
-}
-a:hover{
-    color: white;
-    text-decoration: none;
-    font-size: 100%;
-
-}
-
-
-.footer-lc-title {
+.footer {
     display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    border-top: 2px solid grey;
+    width: 1808px;
+    height: 360px;
+    margin: 0 auto;
+    padding-top: 70px;
+
+    &__logo {
+        display: flex;
+        flex-flow: row;
+        justify-content: left;
+    }
+
+    &__links {
+        width: 300px;
+        height: 224px;
+        //font-family: Gilroy;
+        font-size: 20.8px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.15;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        padding-left: 224px;
+        padding-bottom: 63px;
+    }
+
+    &__contact {
+        width: 576px;
+        height: 224px;
+        //font-family: Gilroy;
+        font-size: 20.8px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.15;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        padding-left: 64px;
+        padding-bottom: 63px;
+    }
+
+    &__logo_svg {
+        padding-top: 48px;
+        padding-left: 40px;
+        width: 160px;
+    }
+
+    &__logo_span {
+        padding: 96px 32px 0px 16px;
+        align-content: flex-end;
+        width: 400px;
+        height: 224px;
+        // font-family: Gilroy;
+        font-size: 28.8px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    &__hr {
+        display: flex;
+    }
+
+    &__hr_text {
+        width: 69.6px;
+        padding-top: 16px;
+        padding-left: 12.8px;
+        height: 0px;
+    }
+
+    &__links_content {
+        padding: 8px 0px;
+    }
+
+    &__links_cn {
+        color: #ffffff;
+    }
+    &__gmap{
+        padding: 16px 0px;
+    }
 }
 
-.links {
+// .footer-container {
 
-    width: 300px;
-    height: 224px;
-    //font-family: Gilroy;
-    font-size: 20.8px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.15;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
-    padding-left: 224px;
-    padding-bottom: 63px;
-    
-}
+//     padding: 48px 80px 16px 16px;
+//     background-color: #202020;
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-gap: 3.2px;
+//     grid-auto-rows: minmax(auto, auto)
+// }
 
-.linkname {
-    color: #ffffff
-}
+// .hr-footer-container {
 
-.hr-text {
-    width: 69.6px;
-    padding-top: 16px;
-    padding-left: 12.8px;
-    height: 0px;
-    
 
-}
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-gap: 3.2px;
+//     grid-auto-rows: minmax(auto, auto)
+// }
 
-.contact {
-    width: 576px;
-    height: 224px;
-    //font-family: Gilroy;
-    font-size: 20.8px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.15;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
-    padding-left: 64px ;
-    padding-bottom: 63px;;
-}
+// .hr-footer {
+//     width: 1760px;
+//     padding: 0px 64px;
+//     padding-left: 0px;
+//     ;
+//     align-content: center;
+//     height: 0.3px;
+//     border-width: 0.3px;
+//     border-color: gray;
+//     border-style: solid;
+
+// }
+
+// .hr-line {
+//     border: 1px medium grey
+// }
+
+// .logo {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-gap: 16px;
+//     padding-left: 48px;
+//     //grid-auto-rows:minmax(auto, auto);
+//     grid-auto-columns: min-content;
+// }
+
+// .institute-logo {
+//     padding-top: 48px;
+//     padding-left: 40px;
+//     width: 160px;
+// }
+
+// .span {
+//     padding-top: 88px;
+//     padding-right: 32px;
+//     align-content: flex-end;
+//     width: 400px;
+//     height: 224px;
+//     // font-family: Gilroy;
+//     font-size: 28.8px;
+//     font-weight: 300;
+//     font-stretch: normal;
+//     font-style: normal;
+//     line-height: 1.13;
+//     letter-spacing: normal;
+//     text-align: left;
+//     color: #ffffff;
+// }
+
+// .links-div {
+//     padding: 8px 0px;
+// }
+
+// .links_map {
+//     padding: 16px 0px;
+// }
+
+// a:hover {
+//     color: white;
+//     text-decoration: none;
+//     font-size: 100%;
+
+// }
+
+
+// .footer-lc-title {
+//     display: flex;
+// }
+
+// .links {
+
+//     width: 300px;
+//     height: 224px;
+//     //font-family: Gilroy;
+//     font-size: 20.8px;
+//     font-weight: 300;
+//     font-stretch: normal;
+//     font-style: normal;
+//     line-height: 1.15;
+//     letter-spacing: normal;
+//     text-align: left;
+//     color: #ffffff;
+//     padding-left: 224px;
+//     padding-bottom: 63px;
+
+// }
+
+// .linkname {
+//     color: #ffffff
+// }
+
+// .hr-text {
+//     width: 69.6px;
+//     padding-top: 16px;
+//     padding-left: 12.8px;
+//     height: 0px;
+
+
+// }
+
+// .contact {
+//     width: 576px;
+//     height: 224px;
+//     //font-family: Gilroy;
+//     font-size: 20.8px;
+//     font-weight: 300;
+//     font-stretch: normal;
+//     font-style: normal;
+//     line-height: 1.15;
+//     letter-spacing: normal;
+//     text-align: left;
+//     color: #ffffff;
+//     padding-left: 64px;
+//     padding-bottom: 63px;
+//     ;
+// }
