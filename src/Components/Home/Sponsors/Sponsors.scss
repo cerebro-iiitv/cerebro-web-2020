@@ -1,77 +1,67 @@
 @import "../../../scss/imports";
 
-.sponsorContainer {
-  padding: 5rem 5rem 10rem;
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #fff)
+      drop-shadow(0 0 5px rgba(32, 215, 228, 0.81))
+      drop-shadow(0 0 7px rgba(32, 215, 228, 0.81));
+  }
+  50% {
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #fff)
+      drop-shadow(0 0 10px rgba(32, 215, 228, 0.81))
+      drop-shadow(0 0 15px rgba(32, 215, 228, 0.81));
+  }
+  100% {
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #fff)
+      drop-shadow(0 0 5px rgba(32, 215, 228, 0.81))
+      drop-shadow(0 0 7px rgba(32, 215, 228, 0.81));
+  }
 }
-.cont {
-  padding: 3rem;
+
+.sponsor_container {
+  padding: 100px 80px 120px;
+}
+.sponsor_text_container {
   display: flex;
   width: max-content;
   height: max-content;
   margin: 0 auto;
-  align-items: center;
+  align-items: flex-start;
   vertical-align: auto;
   justify-content: center;
 }
 .hr-container {
-  padding: 2.5rem;
+  padding: 8px 40px;
   display: inline-block;
 }
 .hr-txt {
-  margin-left: 8rem;
-  width: 5rem #29abe2;
-  padding-top: 0.6rem;
+  padding: 10px 0px 0px;
+  width: 80px;
+  &__line1 {
+    padding: 10px 0px 0px;
+    margin-left: 128px;
+  }
 }
 .hr-txt2 {
-  width: 13rem;
-  padding-top: 0.6rem;
+  width: 208px;
+  padding-top: 10px;
 }
-.hr-txt3 {
-  text-decoration-color: #29abe2;
-  width: 5rem;
-  padding-top: 0.6rem;
-}
-.sponsorsText {
+.sponsors_text {
   width: max-content;
   height: 73px;
   // font-family: Gilroy;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.22;
-  letter-spacing: normal;
   text-align: left;
   color: #ffffff;
 }
-.sponsorWrapper {
-  padding-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
-  grid-auto-rows: minmax(auto, auto);
+.sponsor_wrapper {
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-evenly;
 }
-.sponsorOne {
-  grid-column: 1;
-  grid-row: 1;
-  box-shadow: 0 0 15px 0 rgba(32, 215, 228, 0.81);
-}
-.sponsorTwo {
-  grid-column: 2;
-  grid-row: 1;
-  box-shadow: 0 0 15px 0 rgba(32, 215, 228, 0.81);
-}
-.sponsorThree {
-  grid-column: 3;
-  grid-row: 1;
-  box-shadow: 0 0 15px 0 rgba(32, 215, 228, 0.81);
-}
-.sponsorFour {
-  grid-column: 4;
-  grid-row: 1;
-  box-shadow: 0 0 15px 0 rgba(32, 215, 228, 0.81);
-}
-.sponsorImg {
-  width: 16rem;
-  height: 8rem;
+.sponsor_img {
+  height: 128px;
+  animation: glow 4s linear infinite;
 }
