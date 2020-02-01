@@ -60,14 +60,19 @@
 }
 
 .timer {
-  padding: 0rem;
+  padding: 1rem;
   display: flex;
-  width: max-content;
-  height: max-content;
+  width: 800px;
+  height: 60px;
+  font-family: Gilroy;
   margin: 0 auto;
   align-items: center;
   vertical-align: auto;
   justify-content: center;
+}
+
+.date-labels {
+  padding: 38px;
 }
 
 .t {

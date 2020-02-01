@@ -1,10 +1,10 @@
 .box {
-  border-radius: 20px;
+  border-radius: 18px;
   border: solid 2px #56ceca;
 }
 
 .Countdown {
-  margin: 10px auto;
+  margin: 8px auto;
 }
 
 .Countdown-col {
@@ -20,4 +20,10 @@
   strong {
     font-size: 50px;
   }
+}
+
+.vl {
+  border-left: 2px solid #56ceca;
+  left: 50%;
+  height: 100%;
 }

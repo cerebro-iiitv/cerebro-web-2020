@@ -17,6 +17,12 @@ function Cover() {
                         </div>
                     </div>
                 </div>
+                <br />
+                <span className="date-labels">D</span>
+                <span className="date-labels">H</span>
+                <span className="date-labels">M</span>
+                <span className="date-labels">S</span>
+                
                 <div className="timer">
                     <p className="t">T - </p>
                     <Countdown date={`${year}-03-06T00:00:00`} />
