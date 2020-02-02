@@ -1,23 +1,48 @@
-.footer {
+.footer_u {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     border-top: 2px solid grey;
-    width: 90vw;
+    width: 94vw;
     height: 180px;
     margin: 0 auto;
     padding-top: 56px;
+
+    @media (min-width: 380px) and (max-width: 720px) {
+        flex-flow: row;
+        padding-top: 21px;
+    }
+
+    @media (max-width: 380px) {
+        flex-flow: column;
+        padding-top: 21px;
+    }
+
 
     &__logo {
         display: flex;
         flex-flow: row;
         justify-content: left;
+
+        @media (max-width: 720px) {
+            justify-content: center;
+        }
     }
 
     &__logo_svg {
         padding-top: 36px;
         padding-left: 30px;
         width: 120px;
+
+        @media (min-width: 380px) and (max-width: 720px) {
+            width: 60px;
+
+        }
+
+        @media (max-width: 380px) {
+            width: 60px;
+            padding-top: 24px;
+        }
     }
 
     &__logo_span {
@@ -33,10 +58,38 @@
         letter-spacing: normal;
         text-align: left;
         color: #ffffff;
+
+        @media (min-width: 380px) and (max-width: 720px) {
+            padding: 54px 24px 0px 10px;
+            align-content: flex-start;
+            width: 170px;
+            height: 126px;
+            font-size: 12px;
+        }
+
+        @media (max-width: 380px) {
+            padding: 42px 24px 0px 10px;
+            align-content: flex-start;
+            width: 300px;
+            height: 96px;
+            font-size: 12px;
+        }
+    }
+}
+
+.footer_l {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+
+    @media (max-width: 720px) {
+        justify-content: flex-start;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
     }
 
     &__links {
-        width: 240px;
+        width: 160px;
         height: 168px;
         font-size: 15.6px;
         font-weight: 300;
@@ -46,12 +99,20 @@
         letter-spacing: normal;
         text-align: left;
         color: #ffffff;
-        padding-left: 144px;
+        padding-left: 90px;
         padding-bottom: 47.25px;
+
+        @media (max-width: 720px) {
+            width: 90px;
+            height: 122px;
+            font-size: 10px;
+            padding-left: 0px;
+        }
+
     }
 
     &__contact {
-        width: 540px;
+        width: 560px;
         height: 168px;
         font-size: 15.6px;
         font-weight: 300;
@@ -61,8 +122,15 @@
         letter-spacing: normal;
         text-align: left;
         color: #ffffff;
-        padding-left: 48px;
+        padding-left: 24px;
         padding-bottom: 47.25px;
+
+        @media (max-width: 720px) {
+            height: 122px;
+            font-size: 10px;
+            padding-left: 0px;
+        }
+
     }
 
     &__hr {
@@ -74,10 +142,22 @@
         padding-top: 12px;
         padding-left: 9.6px;
         height: 0px;
+
+        @media (max-width: 720px) {
+            width: 28px;
+            padding-top: 8px;
+        }
+
     }
 
     &__links_content {
-        padding: 8px 0px;
+        padding: 8px 2px;
+        width: 400px;
+
+        @media (max-width: 720px) {
+            width: 280px;
+        }
+
     }
 
     &__links_cn {
