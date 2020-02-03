@@ -1,0 +1,130 @@
+@import "../../../scss/imports";
+
+.cover {
+  display: flex;
+  padding-top: 6rem;
+}
+
+.inner-container {
+  margin: 0 2rem;
+  width: 45rem;
+  height: 28rem;
+  text-align: center;
+}
+
+.cerebro-title {
+  width: 700px;
+  height: 60px;
+  font-family: Gilroy;
+  font-size: 80px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.cont {
+  padding: 3rem;
+  display: flex;
+  width: max-content;
+  height: max-content;
+  margin: 0 auto;
+  align-items: center;
+  vertical-align: auto;
+  justify-content: center;
+}
+
+.second-title {
+  width: max-content;
+  font-size: 30px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.hr-container-x {
+  padding: 1rem;
+  display: inline-block;
+}
+
+.hr-second-title {
+  text-decoration-color: #29abe2;
+  width: 3rem;
+  padding-top: 0.1rem;
+}
+
+.timer {
+  padding: 1rem;
+  display: flex;
+  width: 800px;
+  height: 60px;
+  font-family: Gilroy;
+  margin: 0 auto;
+  align-items: center;
+  vertical-align: auto;
+  justify-content: center;
+}
+
+.date-labels {
+  padding: 38px;
+}
+
+.t {
+  padding: 1rem;
+  margin: 0;
+  font-family: Gilroy;
+  font-size: 25px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.16;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.group {
+  width: 26.47rem;
+  transform: translate(15rem, 0px);
+}
+.circ1 {
+  width: 2rem;
+  transform: translate(-15rem, -14rem);
+}
+.circ2 {
+  width: 0.7rem;
+  transform: translate(-15.5rem, -12.5rem);
+}
+.circ2 {
+  width: 0.7rem;
+  transform: translate(-15.5rem, -12.5rem);
+}
+.circ3 {
+  width: 0.5rem;
+  transform: translate(0.8rem, -24.5rem);
+}
+
+.circ4 {
+  width: 2rem;
+  transform: translate(4.5rem, -18.5rem);
+}
+
+.circ5 {
+  width: 1rem;
+  transform: translate(4rem, -10rem);
+}
+
+.rect1 {
+  width: 3rem;
+  transform: translate(2.8rem, -22rem);
+}
+.rect2 {
+  width: 1.5rem;
+  transform: translate(-14rem, -6rem);
+}

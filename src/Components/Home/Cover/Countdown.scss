@@ -1,0 +1,27 @@
+.box {
+  border-radius: 18px;
+  border: solid 2px #56ceca;
+}
+
+.Countdown {
+  margin: 8px auto;
+}
+
+.Countdown-col {
+  display: inline-block;
+}
+
+.Countdown-col-element {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  strong {
+    font-size: 50px;
+  }
+}
+
+.vl {
+  border-left: 2px solid #56ceca;
+  font-size: 2.5rem;
+}
