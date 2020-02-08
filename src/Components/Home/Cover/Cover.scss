@@ -2,20 +2,21 @@
 
 .cover {
   display: flex;
-  padding-top: 6rem;
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .inner-container {
-  margin: 0 2rem;
-  width: 45rem;
   height: 28rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cerebro-title {
-  width: 700px;
-  height: 60px;
-  font-family: Gilroy;
   font-size: 80px;
   font-weight: 800;
   font-stretch: normal;
@@ -26,11 +27,10 @@
 }
 
 .cont {
-  padding: 3rem;
   display: flex;
+  padding: 20px 0 70px;
   width: max-content;
   height: max-content;
-  margin: 0 auto;
   align-items: center;
   vertical-align: auto;
   justify-content: center;
@@ -60,15 +60,10 @@
 }
 
 .timer {
-  padding: 1rem;
   display: flex;
-  width: 800px;
   height: 60px;
-  font-family: Gilroy;
-  margin: 0 auto;
   align-items: center;
   vertical-align: auto;
-  justify-content: center;
 }
 
 .date-labels {
@@ -76,9 +71,7 @@
 }
 
 .t {
-  padding: 1rem;
   margin: 0;
-  font-family: Gilroy;
   font-size: 25px;
   font-weight: 100;
   font-stretch: normal;
@@ -89,42 +82,62 @@
   color: #ffffff;
 }
 
-.group {
-  width: 26.47rem;
-  transform: translate(15rem, 0px);
-}
-.circ1 {
-  width: 2rem;
-  transform: translate(-15rem, -14rem);
-}
-.circ2 {
-  width: 0.7rem;
-  transform: translate(-15.5rem, -12.5rem);
-}
-.circ2 {
-  width: 0.7rem;
-  transform: translate(-15.5rem, -12.5rem);
-}
-.circ3 {
-  width: 0.5rem;
-  transform: translate(0.8rem, -24.5rem);
-}
+.cover-image {
+  width: fit-content;
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
 
-.circ4 {
-  width: 2rem;
-  transform: translate(4.5rem, -18.5rem);
-}
+  .group {
+    width: 25rem;
+    align-self: center;
+  }
 
-.circ5 {
-  width: 1rem;
-  transform: translate(4rem, -10rem);
-}
+  .cover-particle {
+    position: absolute;
+  }
 
-.rect1 {
-  width: 3rem;
-  transform: translate(2.8rem, -22rem);
-}
-.rect2 {
-  width: 1.5rem;
-  transform: translate(-14rem, -6rem);
+  .circ1 {
+    width: 2rem;
+    top: 35%;
+    left: -50px;
+  }
+
+  .circ2 {
+    width: 0.7rem;
+    top: 48%;
+    left: -22px;
+  }
+
+  .circ3 {
+    width: 0.5rem;
+    top: -26px;
+    right: 85px;
+  }
+
+  .circ4 {
+    width: 1.5rem;
+    top: 18%;
+    right: -34px;
+  }
+
+  .circ5 {
+    width: 1rem;
+    top: 50%;
+    right: -40px;
+  }
+
+  .rect1 {
+    width: 3rem;
+    top: -35px;
+    right: 30%;
+  }
+
+  .rect2 {
+    width: 1.5rem;
+    top: 70%;
+    left: 10px;
+  }
 }

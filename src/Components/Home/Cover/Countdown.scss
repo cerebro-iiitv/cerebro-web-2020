@@ -1,6 +1,8 @@
 .box {
   border-radius: 18px;
   border: solid 2px #56ceca;
+  min-width: 320px;
+  margin: 0 10px;
 }
 
 .Countdown {
@@ -9,12 +11,9 @@
 
 .Countdown-col {
   display: inline-block;
-}
-
-.Countdown-col-element {
-  margin: 0 20px;
-  display: flex;
-  flex-direction: column;
+  width: 80px;
+  text-align: center;
+  position: relative;
 
   strong {
     font-size: 50px;
@@ -24,4 +23,10 @@
 .vl {
   border-left: 2px solid #56ceca;
   font-size: 2.5rem;
+}
+
+.countdown-col-label {
+  position: absolute;
+  top: -35px;
+  left: 36px;
 }

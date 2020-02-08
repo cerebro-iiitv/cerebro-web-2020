@@ -1,0 +1,27 @@
+@keyframes particles-rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.animation-particles-rotate {
+  animation: particles-rotate 10s linear infinite;
+  opacity: .9;
+  mix-blend-mode: screen;
+}
+
+@keyframes space-float {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.animation-space-float {
+  animation: space-float 3s ease-in-out infinite alternate;
+}
