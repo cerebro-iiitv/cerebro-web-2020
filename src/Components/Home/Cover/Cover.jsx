@@ -18,29 +18,21 @@ function Cover() {
                     </div>
                 </div>
                 <br />
-                <span className="date-labels">D</span>
-                <span className="date-labels">H</span>
-                <span className="date-labels">M</span>
-                <span className="date-labels">S</span>
-                
                 <div className="timer">
                     <p className="t">T - </p>
                     <Countdown date={`${year}-03-06T00:00:00`} />
                     <p className="t">For the launch</p>
                 </div>
-                <br />
-                <br />
             </div>
-            <div>
-                <img src="media/cover/Asset 1@4x.png" className="group" alt="haha"></img>
-                <img src="media/cover/Asset 7@4x.png" className="rect1"></img>
-                <img src="media/cover/Asset 9@4x.png" className="circ1"></img>
-                <img src="media/cover/Asset 8@4x.png" className="circ3"></img>
-                <img src="media/cover/Asset 10@4x.png" className="circ2"></img>
-                <img src="media/cover/Asset 11@4x.png" className="rect2"></img>
-                <img src="media/cover/Asset 6@4x.png" className="circ4"></img>
-                <img src="media/cover/Asset 4@4x.png" className="circ5"></img>
-
+            <div className="cover-image">
+                <img src="media/cover/Asset 1@4x.png" className="group animation-space-float" alt="haha"></img>
+                <img src="media/cover/Asset 7@4x.png" className="cover-particle rect1 animation-particles-rotate"></img>
+                <img src="media/cover/Asset 9@4x.png" className="cover-particle circ1 animation-particles-rotate"></img>
+                <img src="media/cover/Asset 8@4x.png" className="cover-particle circ3 animation-particles-rotate"></img>
+                <img src="media/cover/Asset 10@4x.png" className="cover-particle circ2 animation-particles-rotate"></img>
+                <img src="media/cover/Asset 11@4x.png" className="cover-particle rect2 animation-particles-rotate"></img>
+                <img src="media/cover/Asset 6@4x.png" className="cover-particle circ4 animation-particles-rotate"></img>
+                <img src="media/cover/Asset 4@4x.png" className="cover-particle circ5 animation-particles-rotate"></img>
             </div>
         </div>
     );

@@ -9,7 +9,7 @@
     margin: 15px auto 0;
 
     &__logo {
-        height: 90px;
+        height: 70px;
     }
 
     &__links {
@@ -21,14 +21,17 @@
             display: block;
             padding: 10px 5px;
             transition: all 0.15s ease;
-            // border-bottom: 5px solid transparent;
             letter-spacing: 1px;
             text-transform: uppercase;
             color: white;
             text-decoration: none;
             font-size: 22px;
-
+            margin-bottom: -20px;
+            
+            &:not(:last-of-type) {
                 margin-right: 60px;
+            }
+
 
             &::after {
                 content: "";
@@ -62,8 +65,8 @@
         background-color: $color-background;
         border-radius: 50%;
         border-color: $color-style;
-        width: 56px;
-        height: 56px;
+        height: 70px;
+        width: 70px;
         margin-top: .2rem;
         margin-left: 1.5rem;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -71,7 +74,7 @@
         font-size: 36px;
         position: relative;
         cursor: pointer;
-
+        
         img {
             height: 1em;
             width: 1em;
