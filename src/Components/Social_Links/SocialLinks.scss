@@ -1,0 +1,23 @@
+@import "src/scss/imports";
+
+.font-awe {
+  position: fixed;
+  color: $color-style;
+  list-style-type: none;
+  right: 10px;
+  top: 400px;
+  z-index: 1;
+  &__verticalLine {
+    width: 0.1px;
+    border: 3px solid;
+    height: 100px;
+    margin-left: 20px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+}
+
+.ListElement {
+  margin: 10px;
+  cursor: pointer;
+}
