@@ -1,103 +1,170 @@
-.Container {
-    
-    padding: 2.8rem 5rem  1rem 1rem;
-    background-color: #202020;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.2rem;
-    grid-auto-rows: minmax(auto, auto)
-}
-.hrContainer{
-    width: 75rem;
-    padding: 0rem 4rem;
-    align-content: center;
-}
-.Logo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    padding-left: 3rem;
-    //grid-auto-rows:minmax(auto, auto);
-    grid-auto-columns: min-content;
-}
-
-.institute-logo {
-    width: 6rem;
-    height: 8rem;
-
-}
-
-.links_div {
-    padding: 0.5rem 0rem;
-}
-a:hover{
-    color: white;
-    text-decoration: none;
-    font-size: 100%;
-
-}
-
-.span {
-    padding-top: 2.5rem;
-    align-content: flex-end;
-    width: 20rem;
-    height: 14rem;
-    // font-family: Gilroy;
-    font-size: 1.5rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.13;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
-}
-
-.containerTitle {
+.footer_u {
     display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    border-top: 2px solid grey;
+    width: 94vw;
+    height: 180px;
+    margin: 0 auto;
+    padding-top: 56px;
+
+    @media (min-width: 414px) and (max-width: 823px) {
+        flex-flow: row;
+        padding-top: 21px;
+    }
+
+    @media (max-width: 414px) {
+        flex-flow: column;
+        padding-top: 21px;
+    }
+
+
+    &__logo {
+        display: flex;
+        flex-flow: row;
+        justify-content: left;
+
+        @media (max-width: 823px) {
+            justify-content: center;
+        }
+    }
+
+    &__logo_svg {
+        padding-top: 36px;
+        padding-left: 30px;
+        width: 120px;
+
+        @media (min-width: 414px) and (max-width: 823px) {
+            width: 60px;
+
+        }
+
+        @media (max-width: 414px) {
+            width: 60px;
+            padding-top: 24px;
+        }
+    }
+
+    &__logo_span {
+        padding: 72px 24px 0px 12px;
+        align-content: flex-end;
+        width: 300px;
+        height: 168px;
+        font-size: 21.6px;
+        font-weight: 280;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+
+        @media (min-width: 414px) and (max-width: 823px) {
+            padding: 54px 24px 0px 10px;
+            align-content: flex-start;
+            width: 170px;
+            height: 126px;
+            font-size: 12px;
+        }
+
+        @media (max-width: 414px) {
+            padding: 42px 24px 0px 10px;
+            align-content: flex-start;
+            width: 230px;
+            height: 96px;
+            font-size: 12px;
+        }
+    }
 }
 
-.Links {
+.footer_l {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
 
-    width: 15rem;
-    height: 14rem;
-    //font-family: Gilroy;
-    font-size: 1rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.15;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
-    padding-left: 10rem;
-    
-}
+    @media (max-width: 823px) {
+        justify-content: flex-start;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
 
-.Linkname {
-    color: #ffffff
-}
+    &__links {
+        width: 160px;
+        height: 168px;
+        font-size: 15.6px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.15;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        padding-left: 90px;
+        padding-bottom: 47.25px;
 
-.hr-text {
-    width: 3rem;
-    padding-top: 1rem;
-    padding-left: 0.8rem;
-    height: 0rem;
-    
+        @media (max-width: 823px) {
+            width: 90px;
+            height: 122px;
+            font-size: 10px;
+            padding-left: 0px;
+        }
 
-}
+    }
 
-.Contact {
-    width: 28rem;
-    height: 14rem;
-    //font-family: Gilroy;
-    font-size: 1rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.15;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
-    padding-left:2rem ;
+    &__contact {
+        width: 560px;
+        height: 168px;
+        font-size: 15.6px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.15;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        padding-left: 24px;
+        padding-bottom: 47.25px;
+
+        @media (max-width: 823px) {
+            height: 122px;
+            font-size: 10px;
+            padding-left: 0px;
+        }
+
+    }
+
+    &__hr {
+        display: flex;
+    }
+
+    &__hr_text {
+        width: 52.2px;
+        padding-top: 12px;
+        padding-left: 9.6px;
+        height: 0px;
+
+        @media (max-width: 823px) {
+            width: 28px;
+            padding-top: 8px;
+        }
+
+    }
+
+    &__links_content {
+        padding: 8px 2px;
+        width: 400px;
+
+        @media (max-width: 823px) {
+            width: 280px;
+        }
+
+    }
+
+    &__links_cn {
+        color: #ffffff;
+    }
+
+    &__gmap {
+        padding: 16px 0px;
+    }
 }
