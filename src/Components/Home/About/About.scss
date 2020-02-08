@@ -61,56 +61,42 @@
       width: 350px;
       height: 420px;
       transform: translateX(-10px);
+      position: absolute;
     }
     &__Recpurplebig {
       width: 33.9px;
       height: 33.9px;
-      position: absolute;
-      top: 95px;
+      position: relative;
+      top: 0px;
       left: 50px;
-      animation: rotating 2s linear infinite;
     }
     &__Recpurplesmall {
       width: 13.9px;
       height: 13.9px;
-      position: absolute;
-      top: 120px;
-      left: 100px;
-      animation: rotating 2s linear infinite;
+      position: relative;
+      top: 15px;
+      left: 55px;
     }
     &__Recpink {
       width: 33.9px;
       height: 33.9px;
-      position: absolute;
-      top: 450px;
-      left: 265px;
-      animation: rotating 2s linear infinite;
+      position: relative;
+      top: 355px;
+      left: 220px;
     }
     &__Circpin {
       width: 33.9px;
       height: 33.9px;
-      position: absolute;
-      top: 475px;
-      left: 120px;
-      animation: rotating 2s linear infinite;
+      position: relative;
+      top: 385px;
+      left: 40px;
     }
     &__Circpurple {
       width: 33.9px;
       height: 33.9px;
-      position: absolute;
-      top: 155px;
-      left: 285px;
+      position: relative;
+      top: 50px;
+      left: 175px;
     }
-  }
-}
-@keyframes rotating {
-  0% {
-    transform: rotate(5deg);
-  }
-  50% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(-360deg);
   }
 }
