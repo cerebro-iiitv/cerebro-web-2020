@@ -14,45 +14,55 @@ class Countdown extends Component {
       hours: 0,
       min: 0,
       sec: 0,
-      countD: -1,
-      countH: -1,
-      countM: -1,
-      countS: -1
+      count: 0,
     };
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => {
-      const date = this.calculateCountdown(this.props.date);
-      date ? this.setState(date) : this.stop();
-      this.setState({
-        countS: this.state.sec * 1000,
-        countM: this.state.min * 60000 + this.state.countS,
-        countH: this.state.hours * 3600000 + this.state.countM,
-        countD: this.state.days * 86400000 + this.state.countH
-      });
-
-      console.log(this.state.countM, this.state.countH);
-      // console.log(this.state.sec);
-      this.secref.current.className = "Countdown-col";
-      this.minref.current.className = "Countdown-col";
-      this.hourref.current.className = "Countdown-col";
-      this.dayref.current.className = "Countdown-col";
-
-      if (this.state.countS % 2000 == 0) {
-        this.secref.current.className = "Countdown-col animation";
-      }
-      if (this.state.countM % (this.state.min * 60000) == 0) {
-        this.minref.current.className = "Countdown-col animation";
-      }
-      if (this.state.countH % (this.state.hours * 3600000 - 1000) == 0) {
-        this.hourref.current.className = "Countdown-col animation";
-      }
-      if (this.state.countD % 172799000 == 0) {
-        this.dayref.current.className = "Countdown-col animation";
-      }
-    }, 1000);
+    const date = this.calculateCountdown(this.props.date);
+    date ? this.setState(date) : this.stop();
+    this.updateHour();
+    this.updateMin();
+    this.updateSec();
   }
+  updateHour = () => {
+    setTimeout(() => {
+      this.hourref.current.className = "Countdown-col animation";
+      setTimeout(() => {
+        this.hourref.current.className = "Countdown-col";
+        this.setState({
+          hours: this.calculateHour()
+        });
+        this.updateHour();
+      }, 120);
+    }, this.calculateMin() * 60 * 1000);
+  };
+  updateMin = () => {
+    setTimeout(() => {
+      this.minref.current.className = "Countdown-col animation";
+      setTimeout(() => {
+        this.minref.current.className = "Countdown-col";
+        this.setState({
+          min: this.calculateMin(),
+        });
+        this.updateMin();
+      }, 120);
+
+    }, this.calculateSec() * 1000 + 880);
+  };
+
+  updateSec = () => {
+    setTimeout(() => {
+      this.secref.current.className = "Countdown-col animation";
+      setTimeout(() => {
+        this.secref.current.className = "Countdown-col";
+        this.setState({
+          sec: this.calculateSec()
+        });
+        this.updateSec();
+      }, 120);
+    }, 880);
+  };
 
   componentWillUnmount() {
     this.stop();
@@ -90,6 +100,21 @@ class Countdown extends Component {
     timeLeft.sec = diff;
 
     return timeLeft;
+  }
+
+  calculateSec() {
+    return this.calculateCountdown(this.props.date).sec;
+  }
+
+  calculateMin() {
+    return this.calculateCountdown(this.props.date).min;
+  }
+
+  calculateHour() {
+    return this.calculateCountdown(this.props.date).hours;
+  }
+  calculateDay() {
+    return this.calculateCountdown(this.props.date).days;
   }
 
   stop() {
