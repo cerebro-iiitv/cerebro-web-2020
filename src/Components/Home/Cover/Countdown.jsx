@@ -14,10 +14,10 @@ class Countdown extends Component {
       hours: 0,
       min: 0,
       sec: 0,
-      countD: 0,
-      countH: 0,
-      countM: 0,
-      countS: 0
+      countD: -1,
+      countH: -1,
+      countM: -1,
+      countS: -1
     };
   }
 
