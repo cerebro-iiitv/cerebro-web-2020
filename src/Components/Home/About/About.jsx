@@ -12,37 +12,27 @@ function About() {
         />
         <img
           src="media/Asset 16@4x.png"
-          className={
-            "aboutcontainer__images__Recpurplebig animation-particles-rotate"
-          }
+          className="aboutcontainer__images__Recpurplebig animation-particles-rotate"
           alt="rectanglepurple"
         />
         <img
           src="media/Asset 16@4x.png"
-          className={
-            "aboutcontainer__images__Recpurplesmall animation-particles-rotate"
-          }
+          className="aboutcontainer__images__Recpurplesmall animation-particles-rotate"
           alt="rectanglepurple"
         />
         <img
           src="media/Asset 14@4x.png"
-          className={
-            "aboutcontainer__images__Recpink animation-particles-rotate"
-          }
+          className="aboutcontainer__images__Recpink animation-particles-rotate"
           alt="recpink"
         />
         <img
           src="media/Asset 13@4x.png"
-          className={
-            "aboutcontainer__images__Circpin animation-particles-rotate"
-          }
+          className="aboutcontainer__images__Circpin animation-particles-rotate"
           alt="circpin"
         />
         <img
           src="media/Asset 15@4x.png"
-          className={
-            "aboutcontainer__images__Circpurple animation-particles-rotate"
-          }
+          className="aboutcontainer__images__Circpurple animation-particles-rotate"
           alt="circpurple"
         />
       </div>
