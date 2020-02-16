@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-import "../../../scss/abstracts/_animations.scss";
+
 function About() {
   return (
     <div className="aboutcontainer">

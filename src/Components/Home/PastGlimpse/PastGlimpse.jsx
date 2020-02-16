@@ -1,6 +1,5 @@
 import React from "react";
 import "./PastGlimpse.scss";
-import "../../../scss/abstracts/_animations.scss";
 
 function PastGlimpse() {
   return (
