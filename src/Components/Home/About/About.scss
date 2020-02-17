@@ -5,39 +5,46 @@
   display: flex;
   flex-flow: column;
   align-content: center;
+
   &__images {
     @media screen and (max-width: 475px) {
       height: 420px;
       margin-left: 40px;
       padding-left: 20px;
     }
+
     &__spaceship {
       width: 350px;
       height: 420px;
       transform: translateX(-10px);
       position: absolute;
+
       @media screen and (max-width: 475px) {
         width: 300px;
         height: 370px;
       }
     }
+
     &__Recpurplebig {
       width: 33.9px;
       height: 33.9px;
       position: relative;
       top: 0px;
       left: 50px;
+
       @media screen and (max-width: 475px) {
         width: 30px;
         height: 30px;
       }
     }
+
     &__Recpurplesmall {
       width: 13.9px;
       height: 13.9px;
       position: relative;
       top: 15px;
       left: 55px;
+
       @media screen and (max-width: 475px) {
         width: 11px;
         height: 11px;
@@ -45,12 +52,14 @@
         left: 55px;
       }
     }
+
     &__Recpink {
       width: 33.9px;
       height: 33.9px;
       position: relative;
       top: 355px;
       left: 220px;
+
       @media screen and (max-width: 475px) {
         width: 22px;
         height: 22px;
@@ -58,12 +67,14 @@
         left: 185px;
       }
     }
+
     &__Circpin {
       width: 33.9px;
       height: 33.9px;
       position: relative;
       top: 385px;
       left: 40px;
+
       @media screen and (max-width: 475px) {
         width: 22px;
         height: 22px;
@@ -71,12 +82,14 @@
         left: 40px;
       }
     }
+
     &__Circpurple {
       width: 33.9px;
       height: 33.9px;
       position: relative;
       top: 50px;
       left: 175px;
+
       @media screen and (max-width: 475px) {
         width: 30px;
         height: 30px;
@@ -85,6 +98,7 @@
       }
     }
   }
+
   &__card {
     width: 620px;
     height: 550px;
@@ -94,11 +108,13 @@
     @media screen and (width: 1920px) {
       margin-left: 600px;
     }
+
     @media screen and (max-width: 1340px) {
       height: 550px;
       padding: 0;
       margin-left: 500px;
     }
+
     @media screen and (max-width: 475px) {
       height: 400px;
       width: 100%;
@@ -108,26 +124,30 @@
     margin-left: 400px;
 
     flex-flow: column;
+
     &__header {
       margin: 0 auto;
       font-size: 40px;
       width: 100%;
       font-weight: 900;
-      font-family: "Gilroy-ExtraBold";
+      font-family: "Galano-Bold";
       line-height: 70px;
       text-align: center;
       padding-top: 40px;
+
       @media screen and (max-width: 475px) {
         align-items: center;
         width: 17%;
         font-size: 21px;
       }
     }
+
     &__content {
       font-size: 25px;
       font-family: "Gilroy-Light";
       line-height: 30px;
       text-align: start;
+
       @media screen and (max-width: 475px) {
         text-align: center;
         font-size: 16px;
