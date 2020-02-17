@@ -3,10 +3,11 @@
 .cover {
   display: flex;
   width: 80%;
-  margin: 50px auto;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   flex-flow: row;
+  height: calc(96vh - 73px);
   @media screen and (max-width:600px) {
     flex-flow: column-reverse;
   }
@@ -28,7 +29,10 @@
   line-height: 1.22;
   letter-spacing: normal;
   color: #ffffff;
-  margin: 0 auto;
+  @media screen and (max-width:600px) {
+    margin: 0 auto;
+  }
+ 
 
 }
 
@@ -40,7 +44,9 @@
   align-items: center;
   vertical-align: auto;
   justify-content: center;
-  margin: 0 auto;
+  @media screen and (max-width:600px) {
+    margin: 0 auto;
+  }
 
 }
 
@@ -74,7 +80,9 @@
   align-items: center;
   vertical-align: auto;
   flex-flow: row;
-  margin: 0 auto;
+  @media screen and (max-width:600px) {
+    margin: 0 auto;
+  }
 }
 
 .date-labels {
@@ -99,14 +107,14 @@
 
 .cover-image {
   width: fit-content;
-  width: 20rem;
-  height: 20rem;
+  width: 41rem;
+  height: 25rem;
   position: relative;
   display: flex;
   justify-content: center;
 
   .group {
-    width: 100%;
+    width: 36rem;
     align-self: center;
   }
 
@@ -115,45 +123,44 @@
   }
 
   .circ1 {
-    width: 2rem;
-    top: 35%;
-    left: -12px;
+    width: 3rem;
+    top: 30%;
+    left: 5%;
   }
 
   .circ2 {
-    width: 0.7rem;
-    top: 48%;
-    left: 15px;
+    width: 1rem;
+    top: 45%;
+    left: 12%;
   }
 
   .circ3 {
-    width: 0.5rem;
-    // top: -26px;
-    right: 85px;
+    width: 0.8rem;
+    top: -18%;
+    right: 32%;
   }
 
   .circ4 {
-    width: 1.5rem;
-    top: 20%;
-    right: 15px;
+    width: 2rem;
+    top: 8%;
+    right: 10%;
   }
 
   .circ5 {
-    width: 1rem;
+    width: 1.3rem;
     top: 50%;
-    right: 0px;
+    right: 6%;
   }
 
   .rect1 {
-    width: 3rem;
-    top: -10px;
-    right: 30%;
+    width: 3.5rem;
+    top: -20%;
+    right: 35%;
   }
 
   .rect2 {
-    width: 1.5rem;
-    top: 65%;
-    left: 40px;
+    width: 2.5rem;
+    top: 70%;
+    left: 15%;
   }
-
 }
