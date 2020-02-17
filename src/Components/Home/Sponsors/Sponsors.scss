@@ -27,14 +27,7 @@
 .sponsor_text_container {
   display: flex;
   width: 100%;
-  // height: max-content;
-  // margin: 0 auto;
-  // align-items: flex-start;
-  // vertical-align: auto;
   justify-content: center;
-  @media screen and (max-width: 475px) {
-    // padding: 100px 0px 0px;
-  }
 }
 .hr-container {
   padding: 8px 40px;
@@ -70,7 +63,6 @@
 }
 .sponsors_text {
   width: max-content;
-  // font-family: Gilroy;
   font-size: 40px;
   font-weight: 800;
   line-height: 1.22;

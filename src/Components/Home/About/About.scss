@@ -9,7 +9,6 @@
     @media screen and (max-width: 475px) {
       height: 420px;
       margin-left: 40px;
-      // align-self: flex-start;
       padding-left: 20px;
     }
     &__spaceship {
@@ -103,7 +102,6 @@
     @media screen and (max-width: 475px) {
       height: 400px;
       width: 100%;
-      // padding: 0;
       margin: 0px;
     }
 
@@ -123,7 +121,6 @@
         align-items: center;
         width: 17%;
         font-size: 21px;
-        // text-align: start;
       }
     }
     &__content {
@@ -142,10 +139,6 @@
       &__para2 {
         margin-top: 20px;
       }
-    }
-    @media screen and (max-width: 475px) {
-      // align-self: flex-start;
-      // padding: 100px;
     }
   }
 

@@ -5,7 +5,6 @@
   @media screen and (max-width: 475px) {
     flex-flow: column-reverse;
     align-self: center;
-    // padding: 100px;
   }
   flex-flow: row;
   justify-content: space-between;
@@ -28,7 +27,6 @@
       @media screen and (max-width: 475px) {
         align-self: center;
         font-size: 21px;
-        // width: 55%;
       }
       @media screen and (min-width: 476px) {
         margin: 0 auto;
@@ -43,7 +41,6 @@
       border-right: 4px solid $color-style;
       padding-right: 28px;
       @media screen and (max-width: 475px) {
-        // width: 100%;
         align-self: initial;
       }
       &::before {
@@ -76,7 +73,6 @@
   }
 
   &__images {
-    // align-self: center;
     &__group {
       position: relative;
       width: 430px;
@@ -87,7 +83,6 @@
       @media screen and (max-width: 475px) {
         width: 345px;
         position: unset;
-        // justify-content: flex-start;
         left: 0px;
         height: 325px;
         margin-left: 12%;
