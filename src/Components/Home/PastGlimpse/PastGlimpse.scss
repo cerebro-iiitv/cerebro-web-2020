@@ -2,19 +2,37 @@
 
 .past-glimpse {
   display: flex;
+  @media screen and (max-width: 475px) {
+    flex-flow: column-reverse;
+    align-self: center;
+    // padding: 100px;
+  }
   flex-flow: row;
   justify-content: space-between;
 
   &__container {
+    margin-top: 50px;
     width: 620px;
     height: 550px;
-    padding: 0px 80px 0px 80px;
     display: flex;
     flex-flow: column;
+    @media screen and (max-width: 475px) {
+      width: 100%;
+      justify-content: flex-start;
+      padding: 0px 0px 0px 0px;
+    }
+    padding: 0px 80px 0px 80px;
 
     &__heading {
-      margin: 0 auto;
       font-size: 40px;
+      @media screen and (max-width: 475px) {
+        align-self: center;
+        font-size: 21px;
+        // width: 55%;
+      }
+      @media screen and (min-width: 476px) {
+        margin: 0 auto;
+      }
     }
 
     &__slideshow {
@@ -24,7 +42,10 @@
       border-left: 4px solid $color-style;
       border-right: 4px solid $color-style;
       padding-right: 28px;
-
+      @media screen and (max-width: 475px) {
+        // width: 100%;
+        align-self: initial;
+      }
       &::before {
         content: "";
         display: inline-block;
@@ -55,13 +76,22 @@
   }
 
   &__images {
+    // align-self: center;
     &__group {
+      position: relative;
       width: 430px;
       height: 540px;
       @media screen and (max-width: 1340px) {
         left: 240px;
       }
-      position: relative;
+      @media screen and (max-width: 475px) {
+        width: 345px;
+        position: unset;
+        // justify-content: flex-start;
+        left: 0px;
+        height: 325px;
+        margin-left: 12%;
+      }
     }
 
     &__rec1 {
@@ -71,6 +101,12 @@
       @media screen and (max-width: 1340px) {
         top: 390px;
         left: 480px;
+      }
+      @media screen and (max-width: 475px) {
+        top: 225px;
+        left: 255px;
+        width: 25px;
+        height: 25px;
       }
       top: -160px;
       left: 370px;
@@ -84,6 +120,12 @@
         top: 460px;
         left: 470px;
       }
+      @media screen and (max-width: 475px) {
+        top: 265px;
+        left: 255px;
+        width: 15px;
+        height: 15px;
+      }
       top: -90px;
       left: 360px;
     }
@@ -96,6 +138,12 @@
         left: 405px;
         top: 420px;
       }
+      @media screen and (max-width: 475px) {
+        left: 190px;
+        top: 240px;
+        width: 22px;
+        height: 22px;
+      }
       left: 300px;
       top: -130px;
     }
@@ -107,6 +155,12 @@
       @media screen and (max-width: 1340px) {
         top: 460px;
         left: 405px;
+      }
+      @media screen and (max-width: 475px) {
+        top: 260px;
+        left: 190px;
+        width: 12px;
+        height: 12px;
       }
       top: -100px;
       left: 300px;
