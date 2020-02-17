@@ -7,7 +7,7 @@
     height: 180px;
     margin: 0 auto;
     padding-top: 56px;
-
+    overflow: hidden;
     @media (min-width: 414px) and (max-width: 823px) {
         flex-flow: row;
         padding-top: 21px;

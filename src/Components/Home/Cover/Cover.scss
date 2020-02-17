@@ -8,8 +8,10 @@
   align-items: center;
   flex-flow: row;
   height: calc(96vh - 73px);
+  overflow: hidden auto;
   @media screen and (max-width:600px) {
     flex-flow: column-reverse;
+    padding-bottom: 5rem;
   }
 }
 
@@ -31,6 +33,7 @@
   color: #ffffff;
   @media screen and (max-width:600px) {
     margin: 0 auto;
+    font-size: 49px;
   }
  
 
@@ -46,6 +49,7 @@
   justify-content: center;
   @media screen and (max-width:600px) {
     margin: 0 auto;
+    padding: 20px 0 40px;
   }
 
 }
@@ -116,6 +120,9 @@
   .group {
     width: 36rem;
     align-self: center;
+    @media screen and (max-width: 475px){
+      width: 18rem;
+    }
   }
 
   .cover-particle {
@@ -126,41 +133,75 @@
     width: 3rem;
     top: 30%;
     left: 5%;
+    @media screen and (max-width: 475px) {
+      top: 34%;
+      left: 27%;
+      width: 2rem;
+    }
   }
 
   .circ2 {
     width: 1rem;
     top: 45%;
     left: 12%;
+    @media screen and (max-width: 475px) {
+      width: 0.7rem;
+      top: 44%;
+      left: 30%;
+    }
   }
 
   .circ3 {
     width: 0.8rem;
     top: -18%;
     right: 32%;
+    @media screen and (max-width: 475px) {
+      top: 10%;
+      right: 42%;
+    }
   }
 
   .circ4 {
     width: 2rem;
     top: 8%;
     right: 10%;
+    @media screen and (max-width: 475px) {
+      width: 1.2rem;
+      top: 27%;
+      right: 30%;
+    }
   }
 
   .circ5 {
     width: 1.3rem;
     top: 50%;
     right: 6%;
+    @media screen and (max-width: 475px) {
+      width: 0.8rem;
+      top: 49%;
+      right: 27%;
+    }
   }
 
   .rect1 {
     width: 3.5rem;
     top: -20%;
     right: 35%;
+    @media screen and (max-width: 475px) {
+      top: 10%;
+      right: 45%;
+      width: 2.8rem;
+    }
   }
 
   .rect2 {
     width: 2.5rem;
     top: 70%;
     left: 15%;
+    @media screen and (max-width: 475px) {
+      width: 1.4rem;
+      top: 63%;
+      left: 34%;
+    }
   }
 }
