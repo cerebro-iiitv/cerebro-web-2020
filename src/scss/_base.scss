@@ -6,18 +6,19 @@
 }
 
 @font-face {
-  font-family: 'Gilroy-Light';
-  src: url('../fonts/Gilroy-Light.otf');
+  font-family: "Gilroy-Light";
+  src: url("../fonts/Gilroy-Light.otf");
 }
 
 @font-face {
-  font-family: 'Gilroy-ExtraBold';
-  src: url('../fonts/Gilroy-ExtraBold.otf');
+  font-family: "Gilroy-ExtraBold";
+  src: url("../fonts/Gilroy-ExtraBold.otf");
 }
 
 body {
-  font-family: 'Gilroy-Light';
+  font-family: "Gilroy-Light";
   background-color: $color-background;
   color: $color-body;
   overflow-x: hidden;
+  width: 100%;
 }
