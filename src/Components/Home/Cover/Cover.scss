@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   flex-flow: row;
-  @media screen and (max-width:375px) {
+  @media screen and (max-width:600px) {
     flex-flow: column-reverse;
   }
 }
@@ -53,8 +53,8 @@
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
-  @media screen and (max-width:375px){
-    font-size: 25px;
+  @media screen and (max-width:600px){
+    font-size: 80%;
   }
 }
 
@@ -92,8 +92,8 @@
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
-  @media screen and (max-width:375px){
-    font-size: 20px;
+  @media screen and (max-width:600px){
+    font-size: 80%;
   }
 }
 

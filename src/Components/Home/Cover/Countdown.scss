@@ -3,7 +3,7 @@
   border: solid 2px #56ceca;
   min-width: 320px;
   margin: 0 10px;
-  @media screen and (max-width:375px){
+  @media screen and (max-width:475px){
     min-width: 164px;
   }
 }
@@ -17,13 +17,13 @@
   width: 78.5px;
   text-align: center;
   position: relative;
-  @media screen and (max-width:375px){
+  @media screen and (max-width:475px){
     width: 39px;
   }
   strong {
     font-size: 50px;
     transition: all 0.1s linear;
-    @media screen and (max-width:375px){
+    @media screen and (max-width:475px){
       font-size: 30px;
     }
   }
@@ -43,7 +43,7 @@
   position: absolute;
   top: -35px;
   left: 36px;
-  @media screen and (max-width:375px){
+  @media screen and (max-width:475px){
     left: 15px;
   }
 }
