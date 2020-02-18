@@ -31,4 +31,12 @@ body {
   color: $color-body;
   overflow: hidden auto;
   width: 100%;
+  
+}
+
+#root{
+  margin: 0 10%;
+  @media screen and (max-width:$mobile-view) {
+    margin:0;
+  }
 }
