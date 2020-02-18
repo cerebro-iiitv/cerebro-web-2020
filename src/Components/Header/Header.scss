@@ -1,5 +1,14 @@
 @import '../../scss/imports';
 
+@keyframes glow-2 {
+    0% {
+        filter: brightness(250%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
+
 .navbar {
     display: flex;
     flex-flow: row;
@@ -11,12 +20,16 @@
 
     &__logo {
         height: 70px;
+        animation: glow-2 2s linear infinite alternate;
     }
 
     &__links {
         display: flex;
         flex-flow: row;
         list-style-type: none;
+        @media screen and (max-width:475px){
+            display: none;
+        }
 
         &__li {
             display: block;
@@ -28,6 +41,10 @@
             text-decoration: none;
             font-size: 22px;
             margin-bottom: -20px;
+            @media screen and (max-width: 475px){
+                display: none;
+            }
+    
             
             &:not(:last-of-type) {
                 margin-right: 100px;
@@ -73,6 +90,9 @@
         font-size: 36px;
         position: relative;
         cursor: pointer;
+        @media screen and (max-width: 475px){
+            display: none;
+        }
         
         img {
             height: 1em;
