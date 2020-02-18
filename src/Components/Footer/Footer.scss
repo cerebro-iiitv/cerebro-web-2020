@@ -1,4 +1,4 @@
-.footer_u {
+.footer {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -8,15 +8,26 @@
     margin: 0 auto;
     padding-top: 56px;
     overflow: hidden;
-    @media (min-width: 414px) and (max-width: 823px) {
-        flex-flow: row;
+    @media (min-width: 600px) and (max-width: 823px) {
         padding-top: 21px;
     }
 
-    @media (max-width: 414px) {
+    @media (max-width: 600px) {
+        justify-content: center;
         flex-flow: column;
-        padding-top: 21px;
+        padding: 21px 0px 50px;
+        height: 450px;
     }
+}
+
+.footer_u {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 150%;
+    margin: 0 auto;
+    padding-left: 24px;
 
 
     &__logo {
@@ -27,6 +38,11 @@
         @media (max-width: 823px) {
             justify-content: center;
         }
+
+        @media (max-width: 600px) {
+            justify-content: center;
+            padding-top: 75px;
+        }
     }
 
     &__logo_svg {
@@ -34,12 +50,12 @@
         padding-left: 30px;
         width: 120px;
 
-        @media (min-width: 414px) and (max-width: 823px) {
+        @media (min-width: 600px) and (max-width: 823px) {
             width: 60px;
 
         }
 
-        @media (max-width: 414px) {
+        @media (max-width: 600px) {
             width: 60px;
             padding-top: 24px;
         }
@@ -59,7 +75,7 @@
         text-align: left;
         color: #ffffff;
 
-        @media (min-width: 414px) and (max-width: 823px) {
+        @media (min-width: 600px) and (max-width: 823px) {
             padding: 54px 24px 0px 10px;
             align-content: flex-start;
             width: 170px;
@@ -67,7 +83,7 @@
             font-size: 12px;
         }
 
-        @media (max-width: 414px) {
+        @media (max-width: 600px) {
             padding: 42px 24px 0px 10px;
             align-content: flex-start;
             width: 230px;
@@ -86,6 +102,14 @@
         justify-content: flex-start;
         margin-left: 2.5vw;
         margin-right: 2.5vw;
+    }
+
+    @media (max-width: 600px) {
+        flex-flow: column;
+        justify-content: center;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        padding-bottom: 15%;
     }
 
     &__links {
@@ -109,6 +133,31 @@
             padding-left: 0px;
         }
 
+        @media (max-width: 600px) {
+            width: 96%;
+            font-size: 10px;
+            padding-left: 0px;
+            height: 168px;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        &_content {
+            padding: 8px 2px;
+            width: 400px;
+
+            @media (max-width: 823px) {
+                width: 100%;
+            }
+
+        }
+
+        &_cn {
+            color: #ffffff;
+        }
+
+
     }
 
     &__contact {
@@ -131,10 +180,49 @@
             padding-left: 0px;
         }
 
+        @media (max-width: 600px) {
+            width: 96%;
+            font-size: 10px;
+            padding-left: 0px;
+            text-align: center;
+            justify-content: center;
+            padding-bottom: 10px;
+        }
+
+        &_content {
+            padding: 8px 2px;
+            width: 400px;
+
+            @media (max-width: 823px) {
+                width: 100%;
+            }
+
+        }
+
+        &_cn {
+            color: #ffffff;
+        }
+
+        &_gmap {
+            padding: 16px 0px;
+        }
+
     }
 
     &__hr {
         display: flex;
+        font-family: 'Galano-Bold';
+
+        @media (max-width: 600px) {
+            justify-content: center;
+        }
+
+        &_container {
+            @media (max-width: 600px) {
+                justify-content: center;
+            }
+        }
+
     }
 
     &__hr_text {
@@ -148,23 +236,20 @@
             padding-top: 8px;
         }
 
-    }
-
-    &__links_content {
-        padding: 8px 2px;
-        width: 400px;
-
-        @media (max-width: 823px) {
-            width: 280px;
+        @media (max-width: 600px) {
+            justify-content: center;
         }
 
-    }
+        &_1 {
+            width: 28px;
+            padding-top: 8px;
+            padding-left: 9.6px;
+            padding-right: 9.6px;
+            height: 0px;
 
-    &__links_cn {
-        color: #ffffff;
-    }
-
-    &__gmap {
-        padding: 16px 0px;
+            @media (min-width: 415px) {
+                display: none;
+            }
+        }
     }
 }
