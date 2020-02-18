@@ -2,12 +2,12 @@
 
 .cover {
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   flex-flow: row;
-  height: calc(96vh - 73px);
+  height: calc(90vh - 73px);
   @media screen and (max-width:600px) {
     flex-flow: column-reverse;
   }
