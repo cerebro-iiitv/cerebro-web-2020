@@ -7,7 +7,8 @@
   align-content: center;
   overflow: hidden;
   &__images {
-    @media screen and (max-width: 475px) {
+    
+    @media screen and (max-width: $mobile-view) {
       height: 420px;
       margin-left: 40px;
       padding-left: 20px;
@@ -19,7 +20,7 @@
       transform: translateX(-10px);
       position: absolute;
 
-      @media screen and (max-width: 475px) {
+      @media screen and (max-width: $mobile-view) {
         width: 300px;
         height: 370px;
       }
@@ -32,7 +33,7 @@
       top: 0px;
       left: 50px;
 
-      @media screen and (max-width: 475px) {
+      @media screen and (max-width: $mobile-view) {
         width: 30px;
         height: 30px;
       }
@@ -45,7 +46,7 @@
       top: 15px;
       left: 55px;
 
-      @media screen and (max-width: 475px) {
+      @media screen and (max-width: $mobile-view) {
         width: 11px;
         height: 11px;
         top: 8px;
@@ -60,7 +61,7 @@
       top: 355px;
       left: 220px;
 
-      @media screen and (max-width: 475px) {
+      @media screen and (max-width: $mobile-view) {
         width: 22px;
         height: 22px;
         top: 300px;
@@ -75,7 +76,7 @@
       top: 385px;
       left: 40px;
 
-      @media screen and (max-width: 475px) {
+      @media screen and (max-width: $mobile-view) {
         width: 22px;
         height: 22px;
         top: 330px;
@@ -90,7 +91,7 @@
       top: 50px;
       left: 175px;
 
-      @media screen and (max-width: 475px) {
+      @media screen and (max-width: $mobile-view) {
         width: 30px;
         height: 30px;
         top: 40px;
@@ -115,7 +116,7 @@
       margin-left: 500px;
     }
 
-    @media screen and (max-width: 475px) {
+    @media screen and (max-width: $mobile-view) {
       height: 400px;
       width: 100%;
       margin: 0px;
@@ -135,7 +136,7 @@
       text-align: center;
       padding-top: 40px;
 
-      @media screen and (max-width: 475px) {
+      @media screen and (max-width: $mobile-view) {
         align-items: center;
         width: 17%;
         font-size: 21px;
@@ -148,7 +149,7 @@
       line-height: 30px;
       text-align: start;
 
-      @media screen and (max-width: 475px) {
+      @media screen and (max-width: $mobile-view) {
         text-align: center;
         font-size: 16px;
         padding: 15px 40px;
@@ -162,7 +163,7 @@
     }
   }
 
-  @media screen and(max-width:475px) {
+  @media screen and(max-width:$mobile-view) {
     flex-flow: column;
     margin-left: 0px;
   }
