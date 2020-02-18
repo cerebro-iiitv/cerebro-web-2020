@@ -1,21 +1,35 @@
 @import '../../scss/imports';
 
+@keyframes glow-2 {
+    0% {
+        filter: brightness(250%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
+
 .navbar {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 100%;
     margin: 15px auto 0;
+    overflow: hidden ;
 
     &__logo {
         height: 70px;
+        animation: glow-2 2s linear infinite alternate;
     }
 
     &__links {
         display: flex;
         flex-flow: row;
         list-style-type: none;
+        @media screen and (max-width:475px){
+            display: none;
+        }
 
         &__li {
             display: block;
@@ -27,9 +41,13 @@
             text-decoration: none;
             font-size: 22px;
             margin-bottom: -20px;
+            @media screen and (max-width: 475px){
+                display: none;
+            }
+    
             
             &:not(:last-of-type) {
-                margin-right: 60px;
+                margin-right: 100px;
             }
 
 
@@ -51,8 +69,6 @@
             &:hover, &.active {
                 color: $color-style;
                 font-size: 22px;
-                // border-bottom: 5px solid $color-style;
-
                 &::after {
                     background-color: $color-style;
                     width: 100%;
@@ -74,6 +90,9 @@
         font-size: 36px;
         position: relative;
         cursor: pointer;
+        @media screen and (max-width: 475px){
+            display: none;
+        }
         
         img {
             height: 1em;

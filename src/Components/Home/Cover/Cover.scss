@@ -2,14 +2,19 @@
 
 .cover {
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   flex-flow: row;
-  height: calc(96vh - 73px);
-  @media screen and (max-width:600px) {
+  height: calc(90vh - 73px);
+  overflow: hidden auto;
+
+  @media screen and (max-width:$mobile-view) {
+    height: calc(115vh - 73px);
     flex-flow: column-reverse;
+    padding-bottom: 5rem;
+    justify-content: center;
   }
 }
 
@@ -18,7 +23,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
 }
 
 .cerebro-title {
@@ -29,8 +34,10 @@
   line-height: 1.22;
   letter-spacing: normal;
   color: #ffffff;
-  @media screen and (max-width:600px) {
+
+  @media screen and (max-width:$mobile-view) {
     margin: 0 auto;
+    font-size: 49px;
   }
 }
 
@@ -42,8 +49,10 @@
   align-items: center;
   vertical-align: auto;
   justify-content: center;
-  @media screen and (max-width:600px) {
+
+  @media screen and (max-width:$mobile-view) {
     margin: 0 auto;
+    padding: 20px 0 40px;
   }
 
 }
@@ -57,7 +66,8 @@
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
-  @media screen and (max-width:600px){
+
+  @media screen and (max-width:$mobile-view) {
     font-size: 80%;
   }
 }
@@ -69,7 +79,7 @@
 
 .hr-second-title {
   text-decoration-color: #29abe2;
-  width: 3rem;
+  width: 2rem;
   padding-top: 0.1rem;
 }
 
@@ -78,7 +88,8 @@
   align-items: center;
   vertical-align: auto;
   flex-flow: row;
-  @media screen and (max-width:600px) {
+
+  @media screen and (max-width:$mobile-view) {
     margin: 0 auto;
   }
 }
@@ -89,7 +100,6 @@
 
 .t {
   margin: 0;
-  // width: 10px;
   font-size: 25px;
   font-weight: 100;
   font-stretch: normal;
@@ -98,7 +108,8 @@
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
-  @media screen and (max-width:600px){
+
+  @media screen and (max-width:$mobile-view) {
     font-size: 80%;
   }
 }
@@ -114,6 +125,14 @@
   .group {
     width: 36rem;
     align-self: center;
+
+    @media screen and (max-width:$QHD-screen) {
+      width: 25rem;
+    }
+
+    @media screen and (max-width: $mobile-view) {
+      width: 18rem;
+    }
   }
 
   .cover-particle {
@@ -124,41 +143,119 @@
     width: 3rem;
     top: 30%;
     left: 5%;
+
+    @media screen and (max-width:$QHD-screen) {
+      width: 2rem;
+      left: 18%;
+    }
+
+    @media screen and (max-width: $mobile-view) {
+      top: 34%;
+      left: 27%;
+      width: 2rem;
+    }
   }
 
   .circ2 {
     width: 1rem;
     top: 45%;
     left: 12%;
+
+    @media screen and (max-width:$QHD-screen) {
+      top: 40%;
+      left: 23%;
+    }
+
+    @media screen and (max-width: $mobile-view) {
+      width: 0.7rem;
+      top: 44%;
+      left: 30%;
+    }
   }
 
   .circ3 {
     width: 0.8rem;
     top: -18%;
     right: 32%;
+
+    @media screen {
+      top: 0;
+      right: 32%;
+    }
+
+    @media screen and (max-width: $mobile-view) {
+      top: 10%;
+      right: 42%;
+    }
   }
 
   .circ4 {
     width: 2rem;
     top: 8%;
     right: 10%;
+
+    @media screen and (max-width:$QHD-screen) {
+      width: 1.5rem;
+      top: 18%;
+      right: 21%;
+    }
+
+    @media screen and (max-width: $mobile-view) {
+      width: 1.2rem;
+      top: 27%;
+      right: 30%;
+    }
   }
 
   .circ5 {
     width: 1.3rem;
     top: 50%;
     right: 6%;
+
+    @media screen and (max-width:$QHD-screen) {
+      width: 0.8rem;
+      top: 49%;
+      right: 17%;
+    }
+
+    @media screen and (max-width: $mobile-view) {
+      width: 0.8rem;
+      top: 49%;
+      right: 27%;
+    }
   }
 
   .rect1 {
     width: 3.5rem;
     top: -20%;
     right: 35%;
+
+    @media screen and (max-width:$QHD-screen) {
+      top: 0;
+      right: 35%;
+    }
+
+    @media screen and (max-width: $mobile-view) {
+      top: 10%;
+      right: 45%;
+      width: 2.8rem;
+    }
   }
 
   .rect2 {
     width: 2.5rem;
     top: 70%;
     left: 15%;
+
+    @media screen and (max-width:$QHD-screen) {
+      top: 65%;
+      left: 24%;
+    }
+
+    @media screen and (max-width: $mobile-view) {
+      width: 1.4rem;
+      top: 63%;
+      left: 34%;
+    }
   }
 }

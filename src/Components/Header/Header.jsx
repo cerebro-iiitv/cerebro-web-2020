@@ -1,9 +1,11 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 import './Header.scss'
-
+import Navbar from './BurgerMenu/Navbar'
+import 'font-awesome/css/font-awesome.min.css';
 const Header = () => (
     <nav className="navbar">
+        <Navbar />
         <img className="navbar__logo" src="media/logo-without-name.png"></img>
 
         <ul className="navbar__links">
