@@ -20,10 +20,9 @@
 
 .sponsor_container {
   padding: 100px 80px 120px;
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 600px) {
     padding: 100px 0px 0px;
   }
-  // width: 80%;
   overflow: hidden auto;
 }
 .sponsor_text_container {
@@ -34,7 +33,7 @@
 .hr-container {
   padding: 8px 40px;
   display: inline-block;
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 600px) {
     padding: 2px 20px;
   }
 }
@@ -44,13 +43,13 @@
   &__line1 {
     padding: 10px 0px 0px;
     margin-left: 128px;
-    @media screen and (max-width: 475px) {
+    @media screen and (max-width: 600px) {
       width: 35px;
       padding-top: 5px;
       margin-left: 45px;
     }
   }
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 600px) {
     width: 35px;
     padding-top: 5px;
   }
@@ -58,7 +57,7 @@
 .hr-txt2 {
   width: 208px;
   padding-top: 10px;
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 600px) {
     width: 80px;
     padding-top: 5px;
   }
@@ -71,37 +70,25 @@
   line-height: 1.22;
   text-align: left;
   color: #ffffff;
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 600px) {
     font-size: 20px;
   }
 }
 .sponsor_wrapper {
   padding-top: 48px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: row;
-  @media screen and (max-width: 475px) {
-    flex-flow: column;
-    display: grid;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  @media screen and (max-width: 600px) {
     padding: 20px;
-  }
-}
-.sponsor_wrapper2 {
-  padding-top: 48px;
-  display: flex;
-  justify-content: center;
-  flex-flow: row;
-  @media screen and (max-width: 475px) {
-    width: 92%;
-    flex-flow: row;
-    display: flex;
-    padding: 20px;
+    grid-template-columns: auto auto;
   }
 }
 .sponsor_img {
   height: 128px;
+  align-self: center;
+  justify-self: center;
   animation: glow 4s linear infinite;
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 600px) {
     height: 80px;
   }
 }

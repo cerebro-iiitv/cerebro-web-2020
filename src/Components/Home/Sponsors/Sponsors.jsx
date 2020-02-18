@@ -24,30 +24,27 @@ function Sponsors() {
         </div>
       </div>
       <div class="sponsor_wrapper">
-        <div class="sponsor_wrapper2">
-          <img
-            src="media/stickermuletransparent.png"
-            className="sponsor_img"
-            alt="sponsor One"
-          />
-          <img
-            src="media/souledstoretransparent.png"
-            className="sponsor_img"
-            alt="sponsor Two"
-          />
-        </div>
-        <div class="sponsor_wrapper2">
-          <img
-            src="media/stickermuletransparent.png"
-            className="sponsor_img"
-            alt="sponsor Three"
-          />
-          <img
-            src="media/souledstoretransparent.png"
-            className="sponsor_img"
-            alt="sponsor Four"
-          />
-        </div>
+        <img
+          src="media/stickermuletransparent.png"
+          className="sponsor_img"
+          alt="sponsor One"
+        />
+        <img
+          src="media/souledstoretransparent.png"
+          className="sponsor_img"
+          alt="sponsor Two"
+        />
+        <img
+          src="media/stickermuletransparent.png"
+          className="sponsor_img"
+          alt="sponsor Three"
+        />
+        <img
+          src="media/souledstoretransparent.png"
+          className="sponsor_img"
+          alt="sponsor Four"
+        />
+
       </div>
     </div>
   );

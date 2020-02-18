@@ -12,6 +12,7 @@
   @media screen and (max-width:600px) {
     flex-flow: column-reverse;
     padding-bottom: 5rem;
+    justify-content: center;
   }
 }
 
@@ -45,6 +46,7 @@
   align-items: center;
   vertical-align: auto;
   justify-content: center;
+  margin-left: -15px;
   @media screen and (max-width:600px) {
     margin: 0 auto;
     padding: 20px 0 40px;
@@ -73,7 +75,7 @@
 
 .hr-second-title {
   text-decoration-color: #29abe2;
-  width: 3rem;
+  width: 2rem;
   padding-top: 0.1rem;
 }
 
@@ -118,7 +120,7 @@
   .group {
     width: 36rem;
     align-self: center;
-    @media screen and (max-width: 475px){
+    @media screen and (max-width: 600px){
       width: 18rem;
     }
   }
@@ -131,7 +133,7 @@
     width: 3rem;
     top: 30%;
     left: 5%;
-    @media screen and (max-width: 475px) {
+    @media screen and (max-width: 600px) {
       top: 34%;
       left: 27%;
       width: 2rem;
@@ -142,7 +144,7 @@
     width: 1rem;
     top: 45%;
     left: 12%;
-    @media screen and (max-width: 475px) {
+    @media screen and (max-width: 600px) {
       width: 0.7rem;
       top: 44%;
       left: 30%;
@@ -153,7 +155,7 @@
     width: 0.8rem;
     top: -18%;
     right: 32%;
-    @media screen and (max-width: 475px) {
+    @media screen and (max-width: 600px) {
       top: 10%;
       right: 42%;
     }
@@ -163,7 +165,7 @@
     width: 2rem;
     top: 8%;
     right: 10%;
-    @media screen and (max-width: 475px) {
+    @media screen and (max-width: 600px) {
       width: 1.2rem;
       top: 27%;
       right: 30%;
@@ -174,7 +176,7 @@
     width: 1.3rem;
     top: 50%;
     right: 6%;
-    @media screen and (max-width: 475px) {
+    @media screen and (max-width: 600px) {
       width: 0.8rem;
       top: 49%;
       right: 27%;
@@ -185,7 +187,7 @@
     width: 3.5rem;
     top: -20%;
     right: 35%;
-    @media screen and (max-width: 475px) {
+    @media screen and (max-width: 600px) {
       top: 10%;
       right: 45%;
       width: 2.8rem;
@@ -196,7 +198,7 @@
     width: 2.5rem;
     top: 70%;
     left: 15%;
-    @media screen and (max-width: 475px) {
+    @media screen and (max-width: 600px) {
       width: 1.4rem;
       top: 63%;
       left: 34%;
