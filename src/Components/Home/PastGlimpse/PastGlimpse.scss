@@ -2,13 +2,21 @@
 
 .past-glimpse {
   display: flex;
-  @media screen and (max-width: 475px) {
+
+  @media screen and (max-width: $mobile-view) {
     flex-flow: column-reverse;
     align-self: center;
   }
+
+  @media screen and (max-width: $QHD-screen) {
+    // flex-flow: column-reverse;
+    // align-self: center;
+    left: 100px;
+  }
+
   flex-flow: row;
   justify-content: space-between;
-  overflow: hidden ;
+  overflow: hidden;
 
   &__container {
     margin-top: 50px;
@@ -16,20 +24,22 @@
     height: 550px;
     display: flex;
     flex-flow: column;
-    @media screen and (max-width: 475px) {
+
+    @media screen and (max-width: $mobile-view) {
       width: 100%;
       justify-content: flex-start;
       padding: 0px 0px 0px 0px;
     }
-    padding: 0px 80px 0px 80px;
 
     &__heading {
       font-size: 40px;
       font-family: "Galano-Bold";
-      @media screen and (max-width: 475px) {
+
+      @media screen and (max-width: $mobile-view) {
         align-self: center;
         font-size: 21px;
       }
+
       @media screen and (min-width: 476px) {
         margin: 0 auto;
       }
@@ -41,10 +51,15 @@
       height: 430px;
       border-left: 4px solid $color-style;
       border-right: 4px solid $color-style;
-      padding-right: 28px;
-      @media screen and (max-width: 475px) {
+
+      @media screen and (max-width: $mobile-view) {
         align-self: initial;
       }
+
+      @media screen and (max-width: $QHD-screen) {
+        width: 550px;
+      }
+
       &::before {
         content: "";
         display: inline-block;
@@ -64,25 +79,30 @@
         border: 5px solid $color-style;
         background-color: #222222;
         border-radius: 50%;
-        transform: translate(635px, -410px);
+        transform: translate(537px, -410px);
       }
 
       &__slide {
-        width: 580px;
+        width: 90%;
         height: 100%;
       }
     }
   }
 
   &__images {
+    width: 450px;
+    left: 300px;
+
     &__group {
       position: relative;
       width: 430px;
       height: 540px;
-      @media screen and (max-width: 1340px) {
-        left: 240px;
+
+      @media screen and (max-width: $QHD-screen) {
+        // left: 240px;
       }
-      @media screen and (max-width: 475px) {
+
+      @media screen and (max-width: $mobile-view) {
         width: 345px;
         position: unset;
         left: 0px;
@@ -95,16 +115,19 @@
       width: 43.9px;
       height: 43.9px;
       position: relative;
-      @media screen and (max-width: 1340px) {
+
+      @media screen and (max-width: $QHD-screen) {
         top: 390px;
-        left: 480px;
+        left: 210px;
       }
-      @media screen and (max-width: 475px) {
+
+      @media screen and (max-width: $mobile-view) {
         top: 225px;
         left: 255px;
         width: 25px;
         height: 25px;
       }
+
       top: -160px;
       left: 370px;
     }
@@ -113,16 +136,19 @@
       width: 30.5px;
       height: 30.5px;
       position: relative;
-      @media screen and (max-width: 1340px) {
-        top: 460px;
-        left: 470px;
+
+      @media screen and (max-width: $QHD-screen) {
+        top: 430px;
+        left: 220px;
       }
-      @media screen and (max-width: 475px) {
+
+      @media screen and (max-width: $mobile-view) {
         top: 265px;
         left: 255px;
         width: 15px;
         height: 15px;
       }
+
       top: -90px;
       left: 360px;
     }
@@ -131,16 +157,19 @@
       width: 36.8px;
       height: 36.8px;
       position: relative;
-      @media screen and (max-width: 1340px) {
-        left: 405px;
+
+      @media screen and (max-width: $QHD-screen) {
+        left: 165px;
         top: 420px;
       }
-      @media screen and (max-width: 475px) {
+
+      @media screen and (max-width: $mobile-view) {
         left: 190px;
         top: 240px;
         width: 22px;
         height: 22px;
       }
+
       left: 300px;
       top: -130px;
     }
@@ -149,16 +178,19 @@
       width: 19.4px;
       height: 19.4px;
       position: relative;
-      @media screen and (max-width: 1340px) {
-        top: 460px;
-        left: 405px;
+
+      @media screen and (max-width: $QHD-screen) {
+        top: 455px;
+        left: 165px;
       }
-      @media screen and (max-width: 475px) {
+
+      @media screen and (max-width: $mobile-view) {
         top: 260px;
         left: 190px;
         width: 12px;
         height: 12px;
       }
+
       top: -100px;
       left: 300px;
     }
