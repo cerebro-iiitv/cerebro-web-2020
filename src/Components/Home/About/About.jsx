@@ -1,6 +1,6 @@
 import React from "react";
-
 import "./About.scss";
+
 function About() {
   return (
     <div className="aboutcontainer">
@@ -12,27 +12,27 @@ function About() {
         />
         <img
           src="media/Asset 16@4x.png"
-          className="aboutcontainer__images__Recpurplebig"
+          className="aboutcontainer__images__Recpurplebig animation-particles-rotate"
           alt="rectanglepurple"
         />
         <img
           src="media/Asset 16@4x.png"
-          className="aboutcontainer__images__Recpurplesmall"
+          className="aboutcontainer__images__Recpurplesmall animation-particles-rotate"
           alt="rectanglepurple"
         />
         <img
           src="media/Asset 14@4x.png"
-          className="aboutcontainer__images__Recpink"
+          className="aboutcontainer__images__Recpink animation-particles-rotate"
           alt="recpink"
         />
         <img
           src="media/Asset 13@4x.png"
-          className="aboutcontainer__images__Circpin"
+          className="aboutcontainer__images__Circpin animation-particles-rotate"
           alt="circpin"
         />
         <img
           src="media/Asset 15@4x.png"
-          className="aboutcontainer__images__Circpurple"
+          className="aboutcontainer__images__Circpurple animation-particles-rotate"
           alt="circpurple"
         />
       </div>

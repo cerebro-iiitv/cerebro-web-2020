@@ -3,49 +3,157 @@
 
 .aboutcontainer {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
+  align-content: center;
+
+  &__images {
+    @media screen and (max-width: 475px) {
+      height: 420px;
+      margin-left: 40px;
+      padding-left: 20px;
+    }
+
+    &__spaceship {
+      width: 350px;
+      height: 420px;
+      transform: translateX(-10px);
+      position: absolute;
+
+      @media screen and (max-width: 475px) {
+        width: 300px;
+        height: 370px;
+      }
+    }
+
+    &__Recpurplebig {
+      width: 33.9px;
+      height: 33.9px;
+      position: relative;
+      top: 0px;
+      left: 50px;
+
+      @media screen and (max-width: 475px) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &__Recpurplesmall {
+      width: 13.9px;
+      height: 13.9px;
+      position: relative;
+      top: 15px;
+      left: 55px;
+
+      @media screen and (max-width: 475px) {
+        width: 11px;
+        height: 11px;
+        top: 8px;
+        left: 55px;
+      }
+    }
+
+    &__Recpink {
+      width: 33.9px;
+      height: 33.9px;
+      position: relative;
+      top: 355px;
+      left: 220px;
+
+      @media screen and (max-width: 475px) {
+        width: 22px;
+        height: 22px;
+        top: 300px;
+        left: 185px;
+      }
+    }
+
+    &__Circpin {
+      width: 33.9px;
+      height: 33.9px;
+      position: relative;
+      top: 385px;
+      left: 40px;
+
+      @media screen and (max-width: 475px) {
+        width: 22px;
+        height: 22px;
+        top: 330px;
+        left: 40px;
+      }
+    }
+
+    &__Circpurple {
+      width: 33.9px;
+      height: 33.9px;
+      position: relative;
+      top: 50px;
+      left: 175px;
+
+      @media screen and (max-width: 475px) {
+        width: 30px;
+        height: 30px;
+        top: 40px;
+        left: 160px;
+      }
+    }
+  }
 
   &__card {
     width: 620px;
     height: 550px;
-    margin-left: 200px;
     padding: 0px 0 0px 100px;
     display: flex;
-    flex-flow: column;
-    @media screen and (max-width: 1100px) {
-      height: 550px;
-      padding: 0;
-      margin-left: 10px;
-    }
-    @media screen and (max-width: 500px) {
-      height: 350px;
-      padding: 0;
-      margin: 0 0 0 40;
-    }
+
     @media screen and (width: 1920px) {
       margin-left: 600px;
     }
+
+    @media screen and (max-width: 1340px) {
+      height: 550px;
+      padding: 0;
+      margin-left: 500px;
+    }
+
+    @media screen and (max-width: 475px) {
+      height: 400px;
+      width: 100%;
+      margin: 0px;
+    }
+
+    margin-left: 400px;
+
+    flex-flow: column;
+
     &__header {
       margin: 0 auto;
       font-size: 40px;
+      width: 100%;
       font-weight: 900;
-      font-family: "Gilroy-ExtraBold";
-      line-height: 130px;
-      @media screen and (max-width: 400px) {
-        font-size: 20px;
+      font-family: "Galano-Bold";
+      line-height: 70px;
+      text-align: center;
+      padding-top: 40px;
+
+      @media screen and (max-width: 475px) {
+        align-items: center;
+        width: 17%;
+        font-size: 21px;
       }
     }
+
     &__content {
       font-size: 25px;
       font-family: "Gilroy-Light";
       line-height: 30px;
       text-align: start;
-      @media screen and (max-width: 1100px) {
-        font-size: 35px;
-      }
-      @media screen and (max-width: 400px) {
-        line-height: 17px;
-        font-size: 13px;
+
+      @media screen and (max-width: 475px) {
+        text-align: center;
+        font-size: 16px;
+        padding: 15px 40px;
+        width: 80%;
+        line-height: 18px;
       }
 
       &__para2 {
@@ -53,64 +161,9 @@
       }
     }
   }
-  &__images {
-    @media screen and (max-width: 500px) {
-      display: none;
-    }
-    &__spaceship {
-      width: 350px;
-      height: 420px;
-      transform: translateX(-10px);
-    }
-    &__Recpurplebig {
-      width: 33.9px;
-      height: 33.9px;
-      position: absolute;
-      top: 95px;
-      left: 50px;
-      animation: rotating 2s linear infinite;
-    }
-    &__Recpurplesmall {
-      width: 13.9px;
-      height: 13.9px;
-      position: absolute;
-      top: 120px;
-      left: 100px;
-      animation: rotating 2s linear infinite;
-    }
-    &__Recpink {
-      width: 33.9px;
-      height: 33.9px;
-      position: absolute;
-      top: 450px;
-      left: 265px;
-      animation: rotating 2s linear infinite;
-    }
-    &__Circpin {
-      width: 33.9px;
-      height: 33.9px;
-      position: absolute;
-      top: 475px;
-      left: 120px;
-      animation: rotating 2s linear infinite;
-    }
-    &__Circpurple {
-      width: 33.9px;
-      height: 33.9px;
-      position: absolute;
-      top: 155px;
-      left: 285px;
-    }
-  }
-}
-@keyframes rotating {
-  0% {
-    transform: rotate(5deg);
-  }
-  50% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(-360deg);
+
+  @media screen and(max-width:475px) {
+    flex-flow: column;
+    margin-left: 0px;
   }
 }

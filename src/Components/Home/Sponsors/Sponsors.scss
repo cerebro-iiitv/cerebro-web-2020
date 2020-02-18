@@ -20,19 +20,21 @@
 
 .sponsor_container {
   padding: 100px 80px 120px;
+  @media screen and (max-width: 475px) {
+    padding: 100px 0px 0px;
+  }
 }
 .sponsor_text_container {
   display: flex;
-  width: max-content;
-  height: max-content;
-  margin: 0 auto;
-  align-items: flex-start;
-  vertical-align: auto;
+  width: 100%;
   justify-content: center;
 }
 .hr-container {
   padding: 8px 40px;
   display: inline-block;
+  @media screen and (max-width: 475px) {
+    padding: 2px 20px;
+  }
 }
 .hr-txt {
   padding: 10px 0px 0px;
@@ -40,28 +42,64 @@
   &__line1 {
     padding: 10px 0px 0px;
     margin-left: 128px;
+    @media screen and (max-width: 475px) {
+      width: 35px;
+      padding-top: 5px;
+      margin-left: 45px;
+    }
+  }
+  @media screen and (max-width: 475px) {
+    width: 35px;
+    padding-top: 5px;
   }
 }
 .hr-txt2 {
   width: 208px;
   padding-top: 10px;
+  @media screen and (max-width: 475px) {
+    width: 80px;
+    padding-top: 5px;
+  }
 }
 .sponsors_text {
+  font-family: Galano-Bold;
   width: max-content;
-  height: 73px;
-  // font-family: Gilroy;
   font-size: 40px;
   font-weight: 800;
   line-height: 1.22;
   text-align: left;
   color: #ffffff;
+  @media screen and (max-width: 475px) {
+    font-size: 20px;
+  }
 }
 .sponsor_wrapper {
   padding-top: 48px;
   display: flex;
   justify-content: space-evenly;
+  flex-flow: row;
+  @media screen and (max-width: 475px) {
+    flex-flow: column;
+    display: grid;
+    padding: 20px;
+  }
+}
+.sponsor_wrapper2 {
+  padding-top: 48px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  @media screen and (max-width: 475px) {
+    width: 92%;
+    flex-flow: row;
+    display: flex;
+    padding: 20px;
+  }
 }
 .sponsor_img {
   height: 128px;
   animation: glow 4s linear infinite;
+  @media screen and (max-width: 475px) {
+    height: 80px;
+  }
 }
