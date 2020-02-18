@@ -10,7 +10,12 @@ function Cover() {
             <div className="inner-container">
                 <h1 className="cerebro-title">CEREBRO</h1>
                 <div className="cont">
-                    <div className="second-title">Techfest IIIT Vadodara</div>
+                    <div className="hr-container-x">
+                        <div className="hr-second-title">
+                            <hr color="#29abe2" />
+                        </div>
+                    </div>
+                    <div className="second-title">27<sup>th</sup> - 29<sup>th</sup> March 2020</div>
                     <div className="hr-container-x">
                         <div className="hr-second-title">
                             <hr color="#29abe2" />
