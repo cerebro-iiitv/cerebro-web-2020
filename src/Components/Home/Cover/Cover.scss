@@ -14,6 +14,7 @@
     height: calc(115vh - 73px);
     flex-flow: column-reverse;
     padding-bottom: 5rem;
+    justify-content: center;
   }
 }
 
@@ -78,7 +79,7 @@
 
 .hr-second-title {
   text-decoration-color: #29abe2;
-  width: 3rem;
+  width: 2rem;
   padding-top: 0.1rem;
 }
 
