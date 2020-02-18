@@ -6,6 +6,10 @@
   flex-flow: column;
   align-content: center;
 
+  overflow: hidden;
+
+
+
   &__images {
     @media screen and (max-width: 475px) {
       height: 420px;
