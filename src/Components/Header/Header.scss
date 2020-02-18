@@ -7,6 +7,7 @@
     align-items: center;
     width: 100%;
     margin: 15px auto 0;
+    overflow: hidden ;
 
     &__logo {
         height: 70px;
@@ -51,8 +52,6 @@
             &:hover, &.active {
                 color: $color-style;
                 font-size: 22px;
-                // border-bottom: 5px solid $color-style;
-
                 &::after {
                     background-color: $color-style;
                     width: 100%;

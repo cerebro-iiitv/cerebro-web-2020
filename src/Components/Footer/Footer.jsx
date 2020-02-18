@@ -16,9 +16,9 @@ function Footer() {
 			<div className="footer_l__links">
 				<div className="footer_l__hr_container">
 					<div className="footer_l__hr" >
-						<div className="footer_l__hr_text_1"><hr color="#25cbc0" /></div>
+						<div className="footer_l__hr_text_1"><hr color="#29abe2" /></div>
 						<h2>Links</h2>
-						<div className="footer_l__hr_text"><hr color="#25cbc0" /></div>
+						<div className="footer_l__hr_text"><hr color="#29abe2" /></div>
 						<br /><br /><br /></div>
 				</div>
 				<div className="footer_l__links_content"><a className="footer_l__links_cn" >Home</a></div>
@@ -29,9 +29,9 @@ function Footer() {
 			<div className="footer_l__contact">
 				<div>
 					<div className="footer_l__hr" >
-						<div className="footer_l__hr_text_1"><hr color="#25cbc0" /></div>
+						<div className="footer_l__hr_text_1"><hr color="#29abe2" /></div>
 						<h2>Contact</h2>
-						<div className="footer_l__hr_text"><hr color="#25cbc0" /></div><br /><br /><br /></div>
+						<div className="footer_l__hr_text"><hr color="#29abe2" /></div><br /><br /><br /></div>
 				</div>
 				<div className="footer_l__contact_content"><a className="footer_l__contact_cn" >Email: cerebro@iiitv.ac.in                             </a></div>
 				<div className="footer_l__contact_content"><a className="footer_l__contact_cn" >Phone: +91-9370645038</a></div>
