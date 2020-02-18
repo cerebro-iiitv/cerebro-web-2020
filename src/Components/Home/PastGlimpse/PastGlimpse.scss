@@ -13,7 +13,7 @@
   &__container {
     margin-top: 50px;
     width: 620px;
-    height: 550px;
+    height: 850px;
     display: flex;
     flex-flow: column;
     @media screen and (max-width: 475px) {
@@ -36,35 +36,56 @@
     }
 
     &__slideshow {
-      margin: 80px auto;
-      width: 620px;
+      margin: 50px auto;
+      width: 600px;
       height: 430px;
-      border-left: 4px solid $color-style;
-      border-right: 4px solid $color-style;
-      padding-right: 28px;
-      @media screen and (max-width: 475px) {
-        align-self: initial;
-      }
-      &::before {
-        content: "";
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        border: 5px solid $color-style;
-        background-color: #222222;
-        border-radius: 50%;
-        transform: translate(-17px, -20px);
-      }
+      border-radius: 20px;
+      background-color: #202020;
+      padding: 30px;
+      padding-right: 0px;
+      z-index: 2;
 
-      &::after {
-        content: "";
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        border: 5px solid $color-style;
-        background-color: #222222;
-        border-radius: 50%;
-        transform: translate(635px, -410px);
+      &__list {
+        display: grid;
+        grid-gap: 10px 20px;
+        position: relative;
+        top: -200px;
+        left: -50px;
+        padding: 10px;
+        justify-content: center;
+        width: 730px;
+        height: 250px;
+        border: solid 2px #29abe2;
+        z-index: 1;
+
+        &__des {
+          display: grid;
+          grid-gap: 0px 15px;
+          position: relative;
+          top: 165px;
+          left: 0px;
+          grid-template-columns: auto auto auto auto;
+          padding: 10px;
+          justify-content: center;
+          width: 420px;
+          height: 200px;
+          border-radius: 10px;
+          background-color: #202020;
+          z-index: 2;
+
+          &__items {
+            width: 70px;
+            height: 60px;
+            border-radius: 10px;
+            border: solid 4px #29abe2;
+            z-index: 3;
+          }
+
+          &__images {
+            width: 50px;
+            height: 100%;
+          }
+        }
       }
 
       &__slide {
