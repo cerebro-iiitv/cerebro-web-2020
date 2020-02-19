@@ -8,8 +8,8 @@ import './scss/_base.scss'
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/events" component={Events} />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/events" component={Events} />
     </Switch>
   </BrowserRouter>
 , document.getElementById('root'))
