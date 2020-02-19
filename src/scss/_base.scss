@@ -29,6 +29,14 @@ body {
   font-family: "Gilroy-Light";
   background-color: $color-background;
   color: $color-body;
-  overflow-x: hidden;
+  overflow: hidden auto;
   width: 100%;
+  
+}
+
+#root{
+  margin: 0 10%;
+  @media screen and (max-width:$mobile-view) {
+    margin:0;
+  }
 }
