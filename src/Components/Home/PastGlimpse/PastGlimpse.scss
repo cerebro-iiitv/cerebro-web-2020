@@ -9,24 +9,33 @@
   }
 
   @media screen and (max-width: $QHD-screen) {
-    // flex-flow: column-reverse;
-    // align-self: center;
     left: 100px;
   }
 
   flex-flow: row;
+  width: 100%;
+  margin: 0 auto;
   justify-content: space-between;
   overflow: hidden;
 
   &__container {
     margin-top: 50px;
-    width: 620px;
-    height: 850px;
+    margin: 0 auto;
+    align-items: center;
+    height: max-content;
+    flex-direction: column;
+    justify-content: center;
     display: flex;
     flex-flow: column;
 
     @media screen and (max-width: $mobile-view) {
       width: 100%;
+      justify-content: flex-start;
+      padding: 0px 0px 0px 0px;
+    }
+
+    @media screen and (max-width: $QHD-screen) {
+      width: 50%;
       justify-content: flex-start;
       padding: 0px 0px 0px 0px;
     }
@@ -47,10 +56,13 @@
 
     &__slideshow {
       margin: 50px auto;
-      width: 600px;
-      height: 430px;
+      width: 400px;
+      height: 225px;
       border-radius: 20px;
+      justify-content: center;
       background-color: #202020;
+      border: solid 4px #29abe2;
+      box-shadow: 0 0 0 25px #202020;
       padding: 30px;
       padding-right: 0px;
       z-index: 2;
@@ -60,12 +72,12 @@
         grid-gap: 10px 20px;
         position: relative;
         top: -200px;
-        left: -50px;
+        left: -10px;
         padding: 10px;
         justify-content: center;
-        width: 730px;
+        width: 580px;
         height: 250px;
-        border: solid 2px #29abe2;
+        border: solid 4px #29abe2;
         z-index: 1;
 
         &__des {
@@ -86,19 +98,22 @@
           &__items {
             width: 70px;
             height: 60px;
-            border-radius: 10px;
+            padding: 3px;
+            border-radius: 8px;
+            justify-content: center;
             border: solid 4px #29abe2;
             z-index: 3;
-          }
 
-          &__images {
-            width: 50px;
-            height: 100%;
+            &__images {
+              width: 70px;
+              height: 100%;
+            }
           }
         }
       }
 
       &__slide {
+        // max-width: 500px;
         width: 90%;
         height: 100%;
       }
@@ -115,7 +130,8 @@
       height: 540px;
 
       @media screen and (max-width: $QHD-screen) {
-        // left: 240px;
+        width: 345px;
+        height: 325px;
       }
 
       @media screen and (max-width: $mobile-view) {
