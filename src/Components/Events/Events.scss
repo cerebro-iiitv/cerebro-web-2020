@@ -1,1 +1,9 @@
 @import "../../scss/imports";
+
+.event{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 100px auto;
+}
