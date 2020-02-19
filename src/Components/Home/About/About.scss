@@ -5,15 +5,14 @@
   display: flex;
   flex-flow: row wrap;
   align-content: center;
-  justify-content:space-around;
+  justify-content: space-around;
   overflow: hidden;
-   @media screen and (max-width: $mobile-view) {
-      flex-flow: column wrap;
-      
-    }
+  @media screen and (max-width: $mobile-view) {
+    flex-flow: column wrap;
+  }
 
-  &__images {   
-    margin-left:50px; 
+  &__images {
+    margin-left: 50px;
     @media screen and (max-width: $mobile-view) {
       flex-flow: column wrap;
       height: 420px;
@@ -40,7 +39,6 @@
       left: -51px;
 
       @media screen and (max-width: $mobile-view) {
-
         width: 30px;
         height: 30px;
       }
@@ -67,7 +65,6 @@
       top: 355px;
       left: 125px;
       @media screen and (max-width: $mobile-view) {
-
         width: 22px;
         height: 22px;
         top: 300px;
@@ -81,7 +78,6 @@
       position: relative;
       top: 385px;
       left: -45px;
-
 
       @media screen and (max-width: $mobile-view) {
         width: 22px;
@@ -99,7 +95,6 @@
       left: 85px;
 
       @media screen and (max-width: $mobile-view) {
-
         width: 30px;
         height: 30px;
         top: 40px;
@@ -113,21 +108,15 @@
     height: 550px;
     display: flex;
 
-    @media screen and (width: 1920px) {
-      margin-left: 600px;
-    }
-
     @media screen and (max-width: 1340px) {
       height: 550px;
       padding: 0;
     }
 
     @media screen and (max-width: $mobile-view) {
-
       height: 400px;
       width: 100%;
     }
-
 
     flex-flow: column;
 
@@ -142,7 +131,6 @@
       padding-top: 40px;
 
       @media screen and (max-width: $mobile-view) {
-
         padding-top: 20px;
 
         align-items: center;
@@ -157,8 +145,7 @@
       line-height: 30px;
       text-align: start;
       @media screen and (max-width: $mobile-view) {
-
-      margin-right:22px;
+        margin-right: 22px;
         text-align: center;
         font-size: 16px;
         padding: 15px 40px;
@@ -172,9 +159,7 @@
     }
   }
 
-
   @media screen and(max-width:$mobile-view) {
-
     flex-flow: column;
     margin-left: 0px;
   }

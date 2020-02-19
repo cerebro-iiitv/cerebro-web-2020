@@ -1,103 +1,103 @@
-@import '../../scss/imports';
+@import "../../scss/imports";
 
 @keyframes glow-2 {
-    0% {
-        filter: brightness(250%);
-    }
-    100% {
-        filter: brightness(100%);
-    }
+  0% {
+    filter: brightness(250%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
 }
 
 .navbar {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 15px auto 0;
+  overflow: hidden;
+
+  &__logo {
+    height: 70px;
+    animation: glow-2 2s linear infinite alternate;
+  }
+
+  &__links {
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 15px auto 0;
-    overflow: hidden ;
-
-    &__logo {
-        height: 70px;
-        animation: glow-2 2s linear infinite alternate;
+    list-style-type: none;
+    @media screen and (max-width: 475px) {
+      display: none;
     }
 
-    &__links {
-        display: flex;
-        flex-flow: row;
-        list-style-type: none;
-        @media screen and (max-width:475px){
-            display: none;
+    &__li {
+      display: block;
+      padding: 10px 5px;
+      transition: all 0.15s ease;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      margin-bottom: -20px;
+      @media screen and (max-width: 475px) {
+        display: none;
+      }
+
+      &:not(:last-of-type) {
+        margin-right: 100px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 0;
+        background-color: $color-style;
+        border-radius: 3px;
+        transition: 0.15s;
+        margin: 10px auto 0;
+      }
+
+      &.active {
+        font-weight: bolder;
+      }
+
+      &:hover,
+      &.active {
+        color: $color-style;
+        cursor: arrow;
+        font-size: 22px;
+        &::after {
+          background-color: $color-style;
+          width: 100%;
         }
+      }
+    }
+  }
 
-        &__li {
-            display: block;
-            padding: 10px 5px;
-            transition: all 0.15s ease;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: white;
-            text-decoration: none;
-            font-size: 22px;
-            margin-bottom: -20px;
-            @media screen and (max-width: 475px){
-                display: none;
-            }
-    
-            
-            &:not(:last-of-type) {
-                margin-right: 100px;
-            }
-
-
-            &::after {
-                content: "";
-                display: block;
-                height: 3px;
-                width: 0;
-                background-color: $color-style;
-                border-radius: 3px;
-                transition: 0.15s;
-                margin: 10px auto 0;
-            }
-
-            &.active {
-                font-weight: bolder;
-            }
-
-            &:hover, &.active {
-                color: $color-style;
-                font-size: 22px;
-                &::after {
-                    background-color: $color-style;
-                    width: 100%;
-                }
-            }
-        }
+  &__login {
+    background-color: $color-background;
+    border-radius: 50%;
+    border-color: $color-style;
+    height: 70px;
+    width: 70px;
+    margin-top: 0.2rem;
+    margin-left: 1.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    line-height: 1;
+    font-size: 36px;
+    position: relative;
+    cursor: pointer;
+    @media screen and (max-width: 475px) {
+      display: none;
     }
 
-    &__login {
-        background-color: $color-background;
-        border-radius: 50%;
-        border-color: $color-style;
-        height: 70px;
-        width: 70px;
-        margin-top: .2rem;
-        margin-left: 1.5rem;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-        line-height: 1;
-        font-size: 36px;
-        position: relative;
-        cursor: pointer;
-        @media screen and (max-width: 475px){
-            display: none;
-        }
-        
-        img {
-            height: 1em;
-            width: 1em;
-            transform: translate(0,0.1rem);
-        }
+    img {
+      height: 1em;
+      width: 1em;
+      transform: translate(0, 0.1rem);
     }
+  }
 }

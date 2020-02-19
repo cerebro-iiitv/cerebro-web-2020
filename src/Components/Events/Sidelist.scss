@@ -1,0 +1,29 @@
+@import "../../scss/imports";
+
+.sidebarmenu {
+  display: flex;
+  &__links {
+    display: flex;
+    flex-flow: column wrap;
+    cursor: pointer;
+    &__link {
+      margin-top: 7px;
+      margin-bottom: 7px;
+      font-family: "Galano-Light";
+      list-style-type: none;
+      color: white;
+      font-size: 18px;
+      &.active {
+        font-weight: bolder;
+      }
+      &:hover,
+      &.active {
+        color: $color-style;
+        &::after {
+          background-color: $color-style;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
