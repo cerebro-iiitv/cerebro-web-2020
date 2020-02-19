@@ -1,4 +1,5 @@
 @import "../../../scss/imports";
+@import "../../../scss/base";
 
 .cover {
   display: flex;
@@ -30,7 +31,7 @@
   font-size: 80px;
   font-weight: 800;
   font-stretch: normal;
-  font-style: normal;
+  font-family: "Galano-Bold";
   line-height: 1.22;
   letter-spacing: normal;
   color: #ffffff;
