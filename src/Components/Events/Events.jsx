@@ -10,7 +10,7 @@ class Events extends Component {
                 <Header />
                 <div>
                     <div>Circle</div>
-                    <div>Main</div>
+                    <div><Main /></div>
                     <div>Side List</div>
                 </div>
             </div>
