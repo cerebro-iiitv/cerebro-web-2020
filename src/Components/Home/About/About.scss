@@ -3,21 +3,27 @@
 
 .aboutcontainer {
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   align-content: center;
+  justify-content:space-around;
   overflow: hidden;
-  &__images {
-    
+   @media screen and (max-width: $mobile-view) {
+      flex-flow: column wrap;
+      
+    }
+
+  &__images {   
+    margin-left:50px; 
     @media screen and (max-width: $mobile-view) {
+      flex-flow: column wrap;
       height: 420px;
-      margin-left: 40px;
-      padding-left: 20px;
+      margin-left: 210px;
     }
 
     &__spaceship {
       width: 350px;
       height: 420px;
-      transform: translateX(-10px);
+      transform: translateX(-100px);
       position: absolute;
 
       @media screen and (max-width: $mobile-view) {
@@ -31,9 +37,10 @@
       height: 33.9px;
       position: relative;
       top: 0px;
-      left: 50px;
+      left: -51px;
 
       @media screen and (max-width: $mobile-view) {
+
         width: 30px;
         height: 30px;
       }
@@ -44,13 +51,12 @@
       height: 13.9px;
       position: relative;
       top: 15px;
-      left: 55px;
+      left: -55px;
 
       @media screen and (max-width: $mobile-view) {
         width: 11px;
         height: 11px;
         top: 8px;
-        left: 55px;
       }
     }
 
@@ -59,13 +65,13 @@
       height: 33.9px;
       position: relative;
       top: 355px;
-      left: 220px;
-
+      left: 125px;
       @media screen and (max-width: $mobile-view) {
+
         width: 22px;
         height: 22px;
         top: 300px;
-        left: 185px;
+        left: 95px;
       }
     }
 
@@ -74,13 +80,14 @@
       height: 33.9px;
       position: relative;
       top: 385px;
-      left: 40px;
+      left: -45px;
+
 
       @media screen and (max-width: $mobile-view) {
         width: 22px;
         height: 22px;
         top: 330px;
-        left: 40px;
+        left: -50px;
       }
     }
 
@@ -89,13 +96,14 @@
       height: 33.9px;
       position: relative;
       top: 50px;
-      left: 175px;
+      left: 85px;
 
       @media screen and (max-width: $mobile-view) {
+
         width: 30px;
         height: 30px;
         top: 40px;
-        left: 160px;
+        left: 70px;
       }
     }
   }
@@ -103,7 +111,6 @@
   &__card {
     width: 620px;
     height: 550px;
-    padding: 0px 0 0px 100px;
     display: flex;
 
     @media screen and (width: 1920px) {
@@ -113,16 +120,14 @@
     @media screen and (max-width: 1340px) {
       height: 550px;
       padding: 0;
-      margin-left: 500px;
     }
 
     @media screen and (max-width: $mobile-view) {
+
       height: 400px;
       width: 100%;
-      margin: 0px;
     }
 
-    margin-left: 400px;
 
     flex-flow: column;
 
@@ -137,6 +142,9 @@
       padding-top: 40px;
 
       @media screen and (max-width: $mobile-view) {
+
+        padding-top: 20px;
+
         align-items: center;
         width: 17%;
         font-size: 21px;
@@ -148,8 +156,9 @@
       font-family: "Gilroy-Light";
       line-height: 30px;
       text-align: start;
-
       @media screen and (max-width: $mobile-view) {
+
+      margin-right:22px;
         text-align: center;
         font-size: 16px;
         padding: 15px 40px;
@@ -163,7 +172,9 @@
     }
   }
 
+
   @media screen and(max-width:$mobile-view) {
+
     flex-flow: column;
     margin-left: 0px;
   }
