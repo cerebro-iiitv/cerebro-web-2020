@@ -6,13 +6,14 @@ import Sidelist from "./Sidelist";
 import Main from "./Main";
 import "./Events.scss";
 import events from '../../util/event'
+import Circle from "./Circle";
 class Events extends Component {
   render() {
     return (
       <div>
         <Header />
         <div className="event">
-          <div>Circle</div>
+          <div><Circle/> </div>
           <div>
             <Main events={events}/>
           </div>
