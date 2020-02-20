@@ -68,7 +68,7 @@ class Navbar extends Component {
 				<nav id='navbar-container' className="navbar">
 					<div id="drawer-button" className="container">
 						<span id="drawer-button-span" onClick={this.showDrawer}>
-							<i className="fa fa-bars" />
+							<i className="fa fa-bars hamPosition" />
 						</span>
 					</div>
 
