@@ -9,6 +9,7 @@
   &__container {
     height: max-content;
     justify-content: center;
+    align-items: center;
 
     &__title {
       font-size: 80px;
@@ -29,6 +30,84 @@
       display: flex;
       justify-content: space-between;
       padding: 10px;
+
+      &__vl {
+        border-left: 2px solid #1bbcf1;
+        font-size: 2.5rem;
+      }
+
+      &__left {
+        width: 300px;
+        display: flex;
+        flex-flow: column;
+        margin: 40px auto;
+        justify-content: space-between;
+
+        &__details {
+          display: flex;
+          padding: 10px;
+        }
+
+        &__description {
+          //   padding: 30px;
+          font-size: 21px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-family: "Galano";
+          line-height: 1.14;
+          letter-spacing: normal;
+        }
+
+        &__info {
+          //   display: flex;
+          padding: 5px;
+          font-family: Gilroy;
+          font-size: 21px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.14;
+          letter-spacing: normal;
+
+          &__colorchange {
+            color: #03b0ef;
+          }
+        }
+      }
+      &__right {
+        display: flex;
+        flex-flow: column;
+        margin: 40px auto;
+        padding: 20px;
+        justify-content: space-between;
+
+        &__rules {
+          width: 300px;
+          padding: 10px;
+          border: solid 1px #29abe2;
+          //   font-size: 100px;
+          font-family: Gilroy;
+          font-size: 20px;
+          font-weight: 200;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.14;
+          letter-spacing: normal;
+        }
+        &__reg {
+          padding-top: 10px;
+          text-align: left;
+          color: #1d9fc9;
+        }
+      }
+    }
+
+    &__button {
+      width: 180px;
+      height: 56px;
+      border-radius: 33px;
+      box-shadow: 0 3px 6px 0 rgba(105, 224, 216, 0.16);
+      background-color: #1bbcf1;
     }
   }
 }
