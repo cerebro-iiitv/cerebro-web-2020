@@ -1,15 +1,26 @@
+@import "../../../scss/imports";
+
 .box {
-  border-radius: 18px;
-  border: solid 2px #56ceca;
+  border-radius: 12px;
+  border: solid 2px $color-style;
   min-width: 320px;
   margin: 0 10px;
-  @media screen and (max-width:475px){
+
+  @media screen and (max-width: $hd-screen) {
+    min-width: 240px;
+  }
+  
+  @media screen and (max-width: $mobile-view) {
     min-width: 164px;
   }
 }
 
 .Countdown {
   margin: 4px auto;
+  
+  @media screen and (max-width: $mobile-view) {
+    margin: 0px auto;
+  }
 }
 
 .Countdown-col {
@@ -17,14 +28,26 @@
   width: 78.5px;
   text-align: center;
   position: relative;
-  @media screen and (max-width:475px){
+
+  @media screen and (max-width: $hd-screen) {
+    width: 65px;
+  }
+  
+  @media screen and (max-width: $mobile-view) {
     width: 39px;
   }
+
   strong {
     font-size: 50px;
+    font-family: 'GalanoAlt-Bold';
     transition: all 0.1s linear;
-    @media screen and (max-width:475px){
-      font-size: 30px;
+
+    @media screen and (max-width: $hd-screen) {
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: $mobile-view) {
+      font-size: 24px;
     }
   }
 }
@@ -35,15 +58,27 @@
 }
 
 .vl {
-  border-left: 2px solid #56ceca;
+  border-left: 2px solid $color-style;
   font-size: 2.5rem;
+  
+  @media screen and (max-width: $mobile-view) {
+    font-size: 1.8rem;
+  }
 }
 
 .countdown-col-label {
   position: absolute;
   top: -35px;
   left: 36px;
-  @media screen and (max-width:475px){
-    left: 15px;
+
+  @media screen and (max-width: $hd-screen) {
+    left: 28px;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: $mobile-view) {
+    left: 18px;
+    top: -25px;
+    font-size: 12px;
   }
 }
