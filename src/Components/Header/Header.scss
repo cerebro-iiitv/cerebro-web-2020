@@ -17,7 +17,8 @@
     width: 100%;
     margin: 15px auto 0;
     overflow: hidden ;
-
+    box-sizing: border-box;
+    
     &__logo {
         height: 70px;
         animation: glow-2 2s linear infinite alternate;
@@ -26,8 +27,16 @@
     &__links {
         display: flex;
         flex-flow: row;
+        justify-content: space-between;
         list-style-type: none;
-        @media screen and (max-width:475px){
+        width: calc(100% - 400px);
+        max-width: 1200px;
+        
+        @media screen and (max-width: $hd-screen){
+            width: calc(100% - 300px);
+        }
+
+        @media screen and (max-width: $mobile-view){
             display: none;
         }
 
@@ -41,15 +50,9 @@
             text-decoration: none;
             font-size: 22px;
             margin-bottom: -20px;
-            @media screen and (max-width: 475px){
+            @media screen and (max-width: $mobile-view){
                 display: none;
             }
-    
-            
-            &:not(:last-of-type) {
-                margin-right: 100px;
-            }
-
 
             &::after {
                 content: "";
@@ -83,14 +86,12 @@
         border-color: $color-style;
         height: 70px;
         width: 70px;
-        margin-top: .2rem;
-        margin-left: 1.5rem;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
         line-height: 1;
         font-size: 36px;
         position: relative;
         cursor: pointer;
-        @media screen and (max-width: 475px){
+        @media screen and (max-width: $mobile-view){
             display: none;
         }
         
@@ -99,5 +100,9 @@
             width: 1em;
             transform: translate(0,0.1rem);
         }
+    }
+
+    @media screen and (max-width: $mobile-view) {
+        padding: 0 15px;   
     }
 }

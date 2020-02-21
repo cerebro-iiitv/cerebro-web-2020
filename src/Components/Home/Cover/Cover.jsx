@@ -1,43 +1,35 @@
-import React from "react";
+import React from 'react';
 import Countdown from './Countdown';
-import "./Cover.scss";
+import 'font-awesome/css/font-awesome.min.css';
+import './Cover.scss';
 
 function Cover() {
     const currentDate = new Date();
     const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
     return (
         <div className="cover">
-            <div className="inner-container">
-                <h1 className="cerebro-title">CEREBRO</h1>
-                <div className="cont">
-                    <div className="hr-container-x">
-                        <div className="hr-second-title">
-                            <hr color="#29abe2" />
-                        </div>
-                    </div>
-                    <div className="second-title">27<sup>th</sup> - 29<sup>th</sup> March 2020</div>
-                    <div className="hr-container-x">
-                        <div className="hr-second-title">
-                            <hr color="#29abe2" />
-                        </div>
-                    </div>
+             <div className="cover__social-links">
+                <div className="cover__social-links__container">
+                    <a className="cover__social-links__link"><i className="fa fa-instagram"></i></a>
+                    <a className="cover__social-links__link"><i className="fa fa-twitter"></i></a>
+                    <a className="cover__social-links__link"><i className="fa fa-facebook"></i></a>
                 </div>
-                <br />
-                <div className="timer">
+
+                <a className="cover__social-links__link down-arrow"><i className="fa fa-chevron-down"></i></a>
+            </div>
+            <div className="cover__titles">
+                <h1 className="cover__titles__title">Cerebro</h1>
+                <p className="cover__titles__date"><span>27<sup>th</sup> - 29<sup>th</sup> March 2020</span></p>
+                <div className="cover__titles__timer">
                     <p className="t">T - </p>
                     <Countdown date={`${year}-03-06T00:00:00`} />
                     <p className="t">For the launch</p>
                 </div>
             </div>
-            <div className="cover-image">
-                <img src="media/cover/Asset 1@4x.png" className="group animation-space-float" alt="haha"></img>
-                <img src="media/cover/Asset 7@4x.png" className="cover-particle rect1 animation-particles-rotate"></img>
-                <img src="media/cover/Asset 9@4x.png" className="cover-particle circ1 animation-particles-rotate"></img>
-                <img src="media/cover/Asset 8@4x.png" className="cover-particle circ3 animation-particles-rotate"></img>
-                <img src="media/cover/Asset 10@4x.png" className="cover-particle circ2 animation-particles-rotate"></img>
-                <img src="media/cover/Asset 11@4x.png" className="cover-particle rect2 animation-particles-rotate"></img>
-                <img src="media/cover/Asset 6@4x.png" className="cover-particle circ4 animation-particles-rotate"></img>
-                <img src="media/cover/Asset 4@4x.png" className="cover-particle circ5 animation-particles-rotate"></img>
+            <div className="cover__image">
+                <img className="cover__image__bg-left" src="media/cover/cover-bg-left.png" alt="Cerebro helmet background" />
+                <img className="cover__image__bg-right" src="media/cover/cover-bg-right.png" alt="Cerebro helmet background" />
+                <img className="cover__image__helmet animation-space-float" src="media/cover/helmet.png" alt="Cerebro helmet" />
             </div>
         </div>
     );
