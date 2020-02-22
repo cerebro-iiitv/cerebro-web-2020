@@ -11,12 +11,12 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-      <Header />
-      <Cover />
-      <About />
-      <PastGlimpse />
-      <Sponsors />
-      <Footer />
+        <Header />
+        <Cover />
+        <About />
+        <PastGlimpse />
+        <Sponsors />
+        <Footer />
       </div>
     )
   }

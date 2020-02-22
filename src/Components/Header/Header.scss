@@ -15,7 +15,8 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 15px auto 0;
+    padding-top: 15px;
+    margin: 0 auto;
     overflow: hidden ;
     box-sizing: border-box;
     
@@ -103,6 +104,6 @@
     }
 
     @media screen and (max-width: $mobile-view) {
-        padding: 0 15px;   
+        padding: 15px 15px 0;   
     }
 }
