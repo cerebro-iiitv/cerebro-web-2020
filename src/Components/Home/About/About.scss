@@ -3,9 +3,8 @@
 
 .aboutcontainer {
   display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content:space-around;
+  flex-direction: row;
+  margin: 7% 0;
   overflow: hidden;
    @media screen and (max-width: $mobile-view) {
       flex-flow: column wrap;
@@ -13,22 +12,22 @@
     }
 
   &__images {   
-    margin-left:50px; 
+    margin: 3%;
     @media screen and (max-width: $mobile-view) {
-      flex-flow: column wrap;
-      height: 420px;
-      margin-left: 210px;
+      height: 70%;
     }
 
     &__spaceship {
-      width: 350px;
-      height: 420px;
-      transform: translateX(-100px);
-      position: absolute;
+      height: auto;
+      width: 90%;
 
       @media screen and (max-width: $mobile-view) {
-        width: 300px;
-        height: 370px;
+        width: 70%;
+        height: auto;
+        max-width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
@@ -109,26 +108,8 @@
   }
 
   &__card {
-    width: 620px;
-    height: 550px;
+    margin: 3%;
     display: flex;
-
-    @media screen and (width: 1920px) {
-      margin-left: 600px;
-    }
-
-    @media screen and (max-width: 1340px) {
-      height: 550px;
-      padding: 0;
-    }
-
-    @media screen and (max-width: $mobile-view) {
-
-      height: 400px;
-      width: 100%;
-    }
-
-
     flex-flow: column;
 
     &__header {
@@ -139,12 +120,8 @@
       font-family: "Galano-Bold";
       line-height: 70px;
       text-align: center;
-      padding-top: 40px;
 
       @media screen and (max-width: $mobile-view) {
-
-        padding-top: 20px;
-
         align-items: center;
         width: 17%;
         font-size: 21px;
@@ -157,11 +134,9 @@
       line-height: 30px;
       text-align: start;
       @media screen and (max-width: $mobile-view) {
-
-      margin-right:22px;
         text-align: center;
         font-size: 16px;
-        padding: 15px 40px;
+        margin: auto;
         width: 80%;
         line-height: 18px;
       }
@@ -171,8 +146,7 @@
       }
     }
   }
-
-
+  
   @media screen and(max-width:$mobile-view) {
 
     flex-flow: column;

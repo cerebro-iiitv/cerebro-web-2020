@@ -9,7 +9,7 @@
   }
 
   @media screen and (max-width: $QHD-screen) {
-    left: 100px;
+    flex-flow: column;
   }
 
   flex-flow: row;
@@ -27,6 +27,7 @@
     justify-content: center;
     display: flex;
     flex-flow: column;
+    order: 2;
 
     @media screen and (max-width: $mobile-view) {
       width: 100%;
@@ -35,9 +36,6 @@
     }
 
     @media screen and (max-width: $QHD-screen) {
-      width: 50%;
-      justify-content: flex-start;
-      padding: 0px 0px 0px 0px;
     }
 
     &__heading {
@@ -47,10 +45,7 @@
       @media screen and (max-width: $mobile-view) {
         align-self: center;
         font-size: 21px;
-      }
-
-      @media screen and (min-width: 476px) {
-        margin: 0 auto;
+        text-align: center;
       }
     }
 
@@ -113,33 +108,35 @@
       }
 
       &__slide {
-        // max-width: 500px;
-        width: 90%;
         height: 100%;
+        width: 94%;
+        height: auto;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    
       }
     }
   }
 
   &__images {
-    width: 450px;
-    left: 300px;
+    order: 1;
 
     &__group {
       position: relative;
-      width: 430px;
-      height: 540px;
+      width: 50%;
+      height: auto;
 
-      @media screen and (max-width: $QHD-screen) {
-        width: 345px;
-        height: 325px;
-      }
+      // @media screen and (max-width: $QHD-screen) {
+      //   // width: 345px;
+      //   // height: 325px;
+      //   display: block;
+      //   margin: 2rem auto;
+      // }
 
       @media screen and (max-width: $mobile-view) {
-        width: 345px;
-        position: unset;
-        left: 0px;
-        height: 325px;
-        margin-left: 12%;
+        display: block;
+        margin: 2rem auto;
       }
     }
 
