@@ -27,7 +27,7 @@ const Header = () => (
     </ul>
 
     <button className="navbar__login">
-      <img class="g_img" src="media/google.png" alt="" />
+      <img className="g_img" src="media/google.png" alt="" />
     </button>
   </nav>
 );
