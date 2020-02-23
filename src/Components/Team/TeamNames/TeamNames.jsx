@@ -1,7 +1,7 @@
 import React from 'react'
 
 const TeamNames = ({teamdata, selectTeam, selectedTeam}) => {
-
+console.log(selectedTeam);
   const teamnames = Object.keys(teamdata).map(teamname => {
     return (
       <p
