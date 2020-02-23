@@ -15,24 +15,24 @@ class Navbar extends Component {
 	onOpenModal = () => {
 		this.setState({ open: true });
 	};
-
+	
 	onCloseModal = () => {
 		this.setState({
 			open: false,
 		});
 	};
-
+	
 	showDrawer = () => {
 		this.setState({
 			drawerOut: true
 		});
-
+		
 		try {
 			document.getElementById('user-profile-main').style.zIndex = -1;
 			document.getElementById('social-icons').style.zIndex = -1;
 		} catch { }
 	};
-
+	
 	hideDrawer = () => {
 		this.setState({
 			drawerOut: false
@@ -61,15 +61,11 @@ class Navbar extends Component {
 	}
 
 	render() {
-		const { auth, signOut, assets } = this.props;
-		const { open } = this.state;
 		return (
 			<div id="hamburger-container">
-				<nav id='navbar-container' className="navbar">
+				<nav id='navbar-container' >
 					<div id="drawer-button" className="container">
-						<span id="drawer-button-span" onClick={this.showDrawer}>
-							<i className="fa fa-bars" />
-						</span>
+						<img src="media/menu.svg" alt="Open menu" onClick={this.showDrawer} />
 					</div>
 
 					<div
