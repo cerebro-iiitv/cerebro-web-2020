@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Sidelist from "./Sidelist";
-import Main from "./Main";
+import Main from "./Main"/ain;
 import "./Events.scss";
 class Events extends Component {
   render() {

@@ -37,7 +37,7 @@ function About() {
         /> */}
       </div>
       <div className="aboutcontainer__card">
-        <div className="aboutcontainer__card__header">
+        <div className="aboutcontainer__card__header section-title">
           <h3>ABOUT</h3>
         </div>
         <div className="aboutcontainer__card__content">

@@ -43,19 +43,6 @@ class Navbar extends Component {
 		} catch { }
 	};
 
-	componentDidMount() {
-		document.addEventListener('scroll', e => {
-			let elem = document.getElementById('navbar-container')
-			if (window.pageYOffset > 38) {
-				if (!elem.classList.contains('scrolled')) {
-					elem.classList.add('scrolled')
-				}
-			} else {
-				elem.classList.remove('scrolled')
-			}
-		})
-	}
-
 	componentDidUpdate() {
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
 	}
@@ -76,23 +63,23 @@ class Navbar extends Component {
 
 					<div id="drawer" className={this.state.drawerOut ? 'drawer-visible' : null}>
 						<NavLink className="list_element" onClick={this.hideDrawer} exact to="/">
-						<i class="fa fa-home"></i>
+						<i className="fa fa-home"></i>
 							<span className="elements">home</span>
                         </NavLink>
-						<NavLink className="list_element" onClick={this.hideDrawer} to="/about">
-						<i class="fa fa-calendar"></i>
+						<NavLink className="list_element" onClick={this.hideDrawer} to="/events">
+						<i className="fa fa-calendar"></i>
 							<span className="elements">EVENTS</span>
                         </NavLink>
 						<NavLink className="list_element" onClick={this.hideDrawer} to="/team">
-						<i class="fa fa-users"></i>
+						<i className="fa fa-users"></i>
 							<span className="elements">TEAM</span>
                         </NavLink>
 						<NavLink className="list_element" onClick={this.hideDrawer} to="/timeline">
-							<i class="fa fa-hourglass-half"></i>
+							<i className="fa fa-hourglass-half"></i>
 							<span className="elements">TIMELINE</span>
                         </NavLink>
 						<NavLink className="list_element" onClick={this.hideDrawer} to="/timeline">
-						<i class="fa fa-info"></i>
+						<i className="fa fa-info"></i>
 						<span className="elements">BROCHURE</span>
                         </NavLink>
 					</div>

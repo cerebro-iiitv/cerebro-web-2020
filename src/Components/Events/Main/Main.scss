@@ -1,0 +1,149 @@
+@import "../../../scss/imports";
+@import "../../../scss/base";
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  &__container {
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+      width: max-content;
+      margin: 0 auto;
+      font-size: 80px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-family: "Gilroy-Light";
+      line-height: 1.22;
+      letter-spacing: normal;
+      color: #ffffff;
+
+      @media screen and (max-width: $mobile-view) {
+        margin: 0 auto;
+        font-size: 49px;
+      }
+    }
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px auto;
+
+      @media screen and (max-width: $mobile-view) {
+        width: 400px;
+        margin: 0 auto;
+        padding-left: 10px;
+      }
+
+      &__vl {
+        margin: 30px auto;
+        border-left: 2px solid #1bbcf1;
+        font-size: 2.5rem;
+      }
+
+      &__left {
+        width: 250px;
+        display: flex;
+        flex-flow: column;
+        margin: 40px auto;
+        justify-content: space-between;
+
+        @media screen and (max-width: $mobile-view) {
+          width: 145px;
+          height: 22px;
+        }
+
+        &__details {
+          display: flex;
+          padding: 10px;
+        }
+
+        &__description {
+          font-size: 21px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-family: "Gilroy-Light";
+          line-height: 1.14;
+          letter-spacing: normal;
+          @media screen and (max-width: $mobile-view) {
+            padding-bottom: 30px;
+            font-size: 20px;
+            width: 137px;
+            height: 91px;
+          }
+        }
+
+        &__info {
+          font-family: "Gilroy-Light";
+          font-size: 21px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.14;
+          letter-spacing: normal;
+
+          @media screen and (max-width: $mobile-view) {
+            font-size: 15px;
+          }
+
+          &__colorchange {
+            color: #03b0ef;
+          }
+        }
+      }
+      &__right {
+        display: flex;
+        flex-flow: column;
+        margin: 40px auto;
+        padding: 20px;
+        justify-content: space-between;
+
+        @media screen and (max-width: $mobile-view) {
+          width: 182px;
+        }
+
+        &__rules {
+          width: 300px;
+          padding: 10px;
+          border: solid 1px #29abe2;
+          border-radius: 10px;
+          font-family: "Gilroy-Light";
+          font-size: 20px;
+          font-weight: 200;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.14;
+          letter-spacing: normal;
+
+          @media screen and (max-width: $mobile-view) {
+            width: 180px;
+            border: none;
+          }
+        }
+        &__reg {
+          padding-top: 10px;
+          text-align: left;
+          color: #1d9fc9;
+
+          &__but {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    &__button {
+      font-family: Gilroy;
+      font-size: 20px;
+      width: 180px;
+      height: 56px;
+      border-radius: 33px;
+      box-shadow: 0 3px 6px 0 rgba(105, 224, 216, 0.16);
+      background-color: #1bbcf1;
+    }
+  }
+}

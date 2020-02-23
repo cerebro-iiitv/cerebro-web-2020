@@ -15,8 +15,11 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 15px auto 0;
+  padding-top: 15px;
+  margin: 0 auto;
   overflow: hidden;
+  box-sizing: border-box;
+  z-index: 10;
 
   &__logo {
     height: 70px;
@@ -27,47 +30,42 @@
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding-top: 15px;
-    margin: 0 auto;
-    overflow: hidden ;
-    box-sizing: border-box;
-    
-    &__logo {
-        height: 70px;
-        animation: glow-2 2s linear infinite alternate;
+    list-style-type: none;
+    width: calc(100% - 400px);
+    max-width: 1200px;
+
+    @media screen and (max-width: $hd-screen) {
+      width: calc(100% - 300px);
     }
 
-    &__links {
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        list-style-type: none;
-        width: calc(100% - 400px);
-        max-width: 1200px;
-        
-        @media screen and (max-width: $hd-screen){
-            width: calc(100% - 300px);
-        }
+    @media screen and (max-width: $mobile-view) {
+      display: none;
+    }
 
-        @media screen and (max-width: $mobile-view){
-            display: none;
-        }
+    &__li {
+      display: block;
+      padding: 10px 5px;
+      transition: all 0.15s ease;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      margin-bottom: -20px;
+      @media screen and (max-width: $mobile-view) {
+        display: none;
+      }
 
-        &__li {
-            display: block;
-            padding: 10px 5px;
-            transition: all 0.15s ease;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: white;
-            text-decoration: none;
-            font-size: 22px;
-            margin-bottom: -20px;
-            @media screen and (max-width: $mobile-view){
-                display: none;
-            }
+      &::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 0;
+        background-color: $color-style;
+        border-radius: 3px;
+        transition: 0.15s;
+        margin: 10px auto 0;
+      }
 
       &.active {
         font-weight: bolder;
@@ -76,8 +74,8 @@
       &:hover,
       &.active {
         color: $color-style;
-        cursor: arrow;
         font-size: 22px;
+        cursor: pointer;
         &::after {
           background-color: $color-style;
           width: 100%;
@@ -86,29 +84,67 @@
     }
   }
 
-    &__login {
-        background-color: $color-background;
-        border-radius: 50%;
-        border-color: $color-style;
-        height: 70px;
-        width: 70px;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-        line-height: 1;
-        font-size: 36px;
-        position: relative;
-        cursor: pointer;
-        @media screen and (max-width: $mobile-view){
-            display: none;
-        }
-        
-        img {
-            height: 1em;
-            width: 1em;
-            transform: translate(0,0.1rem);
-        }
+  &__login {
+    background-color: $color-background;
+    border-radius: 50%;
+    border-color: $color-style;
+    height: 70px;
+    width: 70px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    line-height: 1;
+    font-size: 36px;
+    position: relative;
+    cursor: pointer;
+    @media screen and (max-width: $mobile-view) {
+      display: none;
     }
 
-    @media screen and (max-width: $mobile-view) {
-        padding: 15px 15px 0;   
+    img {
+      height: 1em;
+      width: 1em;
+      transform: translate(0, 0.1rem);
     }
+  }
+
+  @media screen and (max-width: $mobile-view) {
+    padding: 15px 15px 0;
+  }
+}
+
+.brochure {
+  display: inline-block;
+  color: rgba(94, 201, 248, 0.9);
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin: 0 2.3rem;
+  text-transform: uppercase;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0);
+  padding-bottom: 0.4rem;
+  cursor: pointer;
+}
+
+.brochure:hover {
+  color: rgba(lighten(#5ec9f8, 10%), 1);
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.9);
+}
+
+.brochure.active {
+  color: #5ec9f8;
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.9);
+}
+
+.styles_closeButton__20ID4 {
+  top: 3px;
+  right: -33px;
+  background-color: #5ec9f8;
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+.styles_modal__gNwvD,
+.styles_overlay__CLSq- {
+  padding: 0;
 }
