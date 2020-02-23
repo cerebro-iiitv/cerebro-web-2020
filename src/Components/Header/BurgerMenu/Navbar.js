@@ -80,7 +80,7 @@ class Navbar extends Component {
 							<span className="elements">home</span>
                         </NavLink>
 						<NavLink className="list_element" onClick={this.hideDrawer} to="/events">
-						<i class="fa fa-calendar"></i>
+						<i className="fa fa-calendar"></i>
 							<span className="elements">EVENTS</span>
                         </NavLink>
 						<NavLink className="list_element" onClick={this.hideDrawer} to="/team">
