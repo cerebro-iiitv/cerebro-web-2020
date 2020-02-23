@@ -12,6 +12,8 @@
     align-items: center;
 
     &__title {
+      width: max-content;
+      margin: 0 auto;
       font-size: 80px;
       font-weight: 800;
       font-stretch: normal;
@@ -29,9 +31,10 @@
     &__content {
       display: flex;
       justify-content: space-between;
-      padding: 10px;
+      margin: 10px auto;
 
       &__vl {
+        margin: 30px auto;
         border-left: 2px solid #1bbcf1;
         font-size: 2.5rem;
       }
@@ -60,7 +63,7 @@
 
         &__info {
           //   display: flex;
-          padding: 5px;
+          // padding: 5px;
           font-family: Gilroy;
           font-size: 21px;
           font-weight: 300;
@@ -85,6 +88,7 @@
           width: 300px;
           padding: 10px;
           border: solid 1px #29abe2;
+          border-radius: 10px;
           //   font-size: 100px;
           font-family: Gilroy;
           font-size: 20px;

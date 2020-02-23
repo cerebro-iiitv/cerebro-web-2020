@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 
 import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import Sidelist from "./Sidelist/Sidelist";
 import Main from "./Main/Main";
 import "./Events.scss";
-import { events } from "../../util/event";
+import { events } from "../Events/util/event";
 import Circle from "./Circle/Circle";
 class Events extends Component {
   constructor(props) {
@@ -41,7 +40,6 @@ class Events extends Component {
             />
           </div>
         </div>
-        <Footer />
       </div>
     );
   }
