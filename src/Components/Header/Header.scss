@@ -73,6 +73,7 @@
             &:hover, &.active {
                 color: $color-style;
                 font-size: 22px;
+                cursor: pointer;
                 &::after {
                     background-color: $color-style;
                     width: 100%;
@@ -106,4 +107,41 @@
     @media screen and (max-width: $mobile-view) {
         padding: 15px 15px 0;   
     }
+}
+
+.brochure {
+    display: inline-block;
+    color: rgba(94, 201, 248, 0.9);
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: 0 2.3rem;
+    text-transform: uppercase;
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear;
+    border-bottom: 0.2rem solid rgba(255, 255, 255, 0);
+    padding-bottom: 0.4rem;
+    cursor: pointer;
+}
+
+.brochure:hover {
+    color: rgba(lighten(#5EC9F8, 10%), 1);
+    border-bottom: 0.2rem solid rgba(255, 255, 255, 0.9);
+}
+
+.brochure.active {
+    color: #5EC9F8;
+    border-bottom: 0.2rem solid rgba(255, 255, 255, 0.9);
+}
+
+.styles_closeButton__20ID4 {
+    top: 3px;
+    right: -33px;
+    background-color: #5ec9f8;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.styles_modal__gNwvD, .styles_overlay__CLSq- {
+    padding: 0;
 }
