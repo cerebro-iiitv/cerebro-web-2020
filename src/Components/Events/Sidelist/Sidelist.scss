@@ -1,10 +1,9 @@
-@import "../../scss/imports";
+@import "../../../scss/imports";
 
 .sidebarmenu {
   display: flex;
   &__links {
-    display: flex;
-    flex-flow: column wrap;
+    display: grid;
     cursor: pointer;
     &__link {
       margin-top: 7px;

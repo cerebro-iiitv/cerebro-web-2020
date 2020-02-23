@@ -7,4 +7,9 @@
     flex-flow: row;
     justify-content: space-between;
     margin: 100px auto;
+
+    @media screen and (max-width:$mobile-view) {
+        flex-flow: column-reverse;
+        align-items: center;
+    }
 }
