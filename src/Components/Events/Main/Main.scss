@@ -33,6 +33,12 @@
       justify-content: space-between;
       margin: 10px auto;
 
+      @media screen and (max-width: $mobile-view) {
+        width: 400px;
+        margin: 0 auto;
+        padding-left: 10px;
+      }
+
       &__vl {
         margin: 30px auto;
         border-left: 2px solid #1bbcf1;
@@ -40,11 +46,16 @@
       }
 
       &__left {
-        width: 300px;
+        width: 250px;
         display: flex;
         flex-flow: column;
         margin: 40px auto;
         justify-content: space-between;
+
+        @media screen and (max-width: $mobile-view) {
+          width: 145px;
+          height: 22px;
+        }
 
         &__details {
           display: flex;
@@ -52,18 +63,21 @@
         }
 
         &__description {
-          //   padding: 30px;
           font-size: 21px;
           font-weight: 300;
           font-stretch: normal;
           font-family: "Galano";
           line-height: 1.14;
           letter-spacing: normal;
+          @media screen and (max-width: $mobile-view) {
+            padding-bottom: 30px;
+            font-size: 20px;
+            width: 137px;
+            height: 91px;
+          }
         }
 
         &__info {
-          //   display: flex;
-          // padding: 5px;
           font-family: Gilroy;
           font-size: 21px;
           font-weight: 300;
@@ -71,6 +85,10 @@
           font-style: normal;
           line-height: 1.14;
           letter-spacing: normal;
+
+          @media screen and (max-width: $mobile-view) {
+            font-size: 15px;
+          }
 
           &__colorchange {
             color: #03b0ef;
@@ -84,12 +102,15 @@
         padding: 20px;
         justify-content: space-between;
 
+        @media screen and (max-width: $mobile-view) {
+          width: 182px;
+        }
+
         &__rules {
           width: 300px;
           padding: 10px;
           border: solid 1px #29abe2;
           border-radius: 10px;
-          //   font-size: 100px;
           font-family: Gilroy;
           font-size: 20px;
           font-weight: 200;
@@ -97,15 +118,25 @@
           font-style: normal;
           line-height: 1.14;
           letter-spacing: normal;
+
+          @media screen and (max-width: $mobile-view) {
+            width: 180px;
+            border: none;
+            // padding: 5;
+          }
         }
         &__reg {
           padding-top: 10px;
           text-align: left;
           color: #1d9fc9;
+
+          &__but {
+            display: flex;
+            justify-content: center;
+          }
         }
       }
     }
-
     &__button {
       width: 180px;
       height: 56px;

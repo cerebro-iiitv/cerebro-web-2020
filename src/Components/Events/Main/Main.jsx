@@ -16,7 +16,7 @@ export class Main extends Component {
     }
   }
   render() {
-    const rule = this.state.event.rules.map((rule,index) => {
+    const rule = this.state.event.rules.map((rule, index) => {
       return <li key={index}>{rule}</li>;
     });
     return (
@@ -69,7 +69,9 @@ export class Main extends Component {
               </div>
             </div>
           </div>
-          <button className="main__container__button">Register</button>
+          <div className="main__container__content__right__reg__but">
+            <button className="main__container__button">Register</button>
+          </div>
         </div>
       </div>
     );
