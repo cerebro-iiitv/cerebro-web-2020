@@ -113,18 +113,14 @@
     flex-flow: column;
 
     &__header {
-      margin: 0 auto;
-      font-size: 40px;
+      margin: 0 auto 30px;
       width: 100%;
-      font-weight: 900;
-      font-family: "Galano-Bold";
-      line-height: 70px;
       text-align: center;
 
       @media screen and (max-width: $mobile-view) {
         align-items: center;
         width: 17%;
-        font-size: 21px;
+        margin: 0 auto;
       }
     }
 
@@ -133,12 +129,16 @@
       font-family: "Gilroy-Light";
       line-height: 30px;
       text-align: start;
+      border-left: 2px solid $color-style;
+      padding-left: 30px;
       @media screen and (max-width: $mobile-view) {
         text-align: center;
         font-size: 16px;
         margin: auto;
         width: 80%;
         line-height: 18px;
+        padding-left: 0px;
+        border-left: 0px;
       }
 
       &__para2 {
