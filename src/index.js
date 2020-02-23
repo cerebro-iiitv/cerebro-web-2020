@@ -4,6 +4,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Home from './Components/Home/Home'
 import Timeline from './Components/Timeline/Timeline'
 import './scss/_base.scss'
+import './fonts.css'
 import Team from './Components/Team/Team'
 
 ReactDOM.render(
