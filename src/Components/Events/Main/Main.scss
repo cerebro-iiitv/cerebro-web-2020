@@ -17,7 +17,7 @@
       font-size: 80px;
       font-weight: 800;
       font-stretch: normal;
-      font-family: "Galano-Bold";
+      font-family: "Gilroy-Light";
       line-height: 1.22;
       letter-spacing: normal;
       color: #ffffff;
@@ -66,7 +66,7 @@
           font-size: 21px;
           font-weight: 300;
           font-stretch: normal;
-          font-family: "Galano";
+          font-family: "Gilroy-Light";
           line-height: 1.14;
           letter-spacing: normal;
           @media screen and (max-width: $mobile-view) {
@@ -78,7 +78,7 @@
         }
 
         &__info {
-          font-family: Gilroy;
+          font-family: "Gilroy-Light";
           font-size: 21px;
           font-weight: 300;
           font-stretch: normal;
@@ -111,7 +111,7 @@
           padding: 10px;
           border: solid 1px #29abe2;
           border-radius: 10px;
-          font-family: Gilroy;
+          font-family: "Gilroy-Light";
           font-size: 20px;
           font-weight: 200;
           font-stretch: normal;
@@ -122,7 +122,6 @@
           @media screen and (max-width: $mobile-view) {
             width: 180px;
             border: none;
-            // padding: 5;
           }
         }
         &__reg {
@@ -138,6 +137,8 @@
       }
     }
     &__button {
+      font-family: Gilroy;
+      font-size: 20px;
       width: 180px;
       height: 56px;
       border-radius: 33px;
