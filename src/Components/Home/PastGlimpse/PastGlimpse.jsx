@@ -78,7 +78,7 @@ class PastGlimpse extends Component {
 
 
         <div className="past-glimpse__images">
-          <img
+          {/* <img
             src="media/pastGlimpse/Ellipse 32.png"
             className="past-glimpse__images__elli1"
             alt="elli1"
@@ -97,7 +97,7 @@ class PastGlimpse extends Component {
             src="media/pastGlimpse/Rectangle 30.png"
             className="past-glimpse__images__rec2"
             alt="rec2"
-          ></img>
+          ></img> */}
           <img
             src="media/pastGlimpse/Group 55.png"
             className="past-glimpse__images__group"

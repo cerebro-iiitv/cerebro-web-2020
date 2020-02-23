@@ -26,39 +26,48 @@
   &__links {
     display: flex;
     flex-flow: row;
-    list-style-type: none;
-    @media screen and (max-width: 475px) {
-      display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 15px;
+    margin: 0 auto;
+    overflow: hidden ;
+    box-sizing: border-box;
+    
+    &__logo {
+        height: 70px;
+        animation: glow-2 2s linear infinite alternate;
     }
 
-    &__li {
-      display: block;
-      padding: 10px 5px;
-      transition: all 0.15s ease;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: white;
-      text-decoration: none;
-      font-size: 22px;
-      margin-bottom: -20px;
-      @media screen and (max-width: 475px) {
-        display: none;
-      }
+    &__links {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        list-style-type: none;
+        width: calc(100% - 400px);
+        max-width: 1200px;
+        
+        @media screen and (max-width: $hd-screen){
+            width: calc(100% - 300px);
+        }
 
-      &:not(:last-of-type) {
-        margin-right: 100px;
-      }
+        @media screen and (max-width: $mobile-view){
+            display: none;
+        }
 
-      &::after {
-        content: "";
-        display: block;
-        height: 3px;
-        width: 0;
-        background-color: $color-style;
-        border-radius: 3px;
-        transition: 0.15s;
-        margin: 10px auto 0;
-      }
+        &__li {
+            display: block;
+            padding: 10px 5px;
+            transition: all 0.15s ease;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            margin-bottom: -20px;
+            @media screen and (max-width: $mobile-view){
+                display: none;
+            }
 
       &.active {
         font-weight: bolder;
@@ -77,27 +86,29 @@
     }
   }
 
-  &__login {
-    background-color: $color-background;
-    border-radius: 50%;
-    border-color: $color-style;
-    height: 70px;
-    width: 70px;
-    margin-top: 0.2rem;
-    margin-left: 1.5rem;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    line-height: 1;
-    font-size: 36px;
-    position: relative;
-    cursor: pointer;
-    @media screen and (max-width: 475px) {
-      display: none;
+    &__login {
+        background-color: $color-background;
+        border-radius: 50%;
+        border-color: $color-style;
+        height: 70px;
+        width: 70px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        line-height: 1;
+        font-size: 36px;
+        position: relative;
+        cursor: pointer;
+        @media screen and (max-width: $mobile-view){
+            display: none;
+        }
+        
+        img {
+            height: 1em;
+            width: 1em;
+            transform: translate(0,0.1rem);
+        }
     }
 
-    img {
-      height: 1em;
-      width: 1em;
-      transform: translate(0, 0.1rem);
+    @media screen and (max-width: $mobile-view) {
+        padding: 15px 15px 0;   
     }
-  }
 }

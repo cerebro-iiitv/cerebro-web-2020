@@ -1,12 +1,14 @@
 @import "src/scss/imports";
 #drawer-button {
 
-    span {
-        color: white;
-        font-size: 2.8rem;
-
+    img {
+        width: 40px;
+        filter: brightness(125%);
+        transition: 0.1s linear;
+        
         &:hover {
             cursor: pointer;
+            filter: brightness(150%);
         }
     }
 
@@ -34,7 +36,7 @@
 
 #hamburger-container {
     display: none;
-    @media screen and (max-width:475px){
+    @media screen and (max-width: $mobile-view){
         display: initial;
     }
 }
@@ -42,6 +44,7 @@
 #drawer {
     position: fixed;
     width: 70%;
+    max-width: 288px;
     background-color: black;
     height: 100%;
     bottom: 0;
