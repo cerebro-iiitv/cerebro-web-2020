@@ -43,19 +43,6 @@ class Navbar extends Component {
 		} catch { }
 	};
 
-	componentDidMount() {
-		document.addEventListener('scroll', e => {
-			let elem = document.getElementById('navbar-container')
-			if (window.pageYOffset > 38) {
-				if (!elem.classList.contains('scrolled')) {
-					elem.classList.add('scrolled')
-				}
-			} else {
-				elem.classList.remove('scrolled')
-			}
-		})
-	}
-
 	componentDidUpdate() {
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
 	}
@@ -79,7 +66,7 @@ class Navbar extends Component {
 						<i className="fa fa-home"></i>
 							<span className="elements">home</span>
                         </NavLink>
-						<NavLink className="list_element" onClick={this.hideDrawer} to="/about">
+						<NavLink className="list_element" onClick={this.hideDrawer} to="/events">
 						<i className="fa fa-calendar"></i>
 							<span className="elements">EVENTS</span>
                         </NavLink>

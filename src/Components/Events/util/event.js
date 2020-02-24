@@ -1,7 +1,7 @@
 export const events = [
   {
     Title: "Typeracer",
-    description: "Both the rounds online as well as",
+    description: "Let the programming juice flow in your brain!",
     rules: [
       "Both the rounds online as well as onsite will follow the ACM style ranking system",
       "Any type of plagiarism detected will lead to immediate disqualification",
