@@ -14,13 +14,18 @@
     &__title {
       width: max-content;
       margin: 0 auto;
-      font-size: 80px;
+      font-size: 60px;
       font-weight: 800;
       font-stretch: normal;
       font-family: "Gilroy-Light";
       line-height: 1.22;
       letter-spacing: normal;
       color: #ffffff;
+
+      @media screen and (max-width: $mobile-view) {
+        margin: 0 auto;
+        font-size: 49px;
+      }
 
       @media screen and (max-width: $mobile-view) {
         margin: 0 auto;

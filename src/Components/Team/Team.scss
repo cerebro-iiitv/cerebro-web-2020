@@ -44,7 +44,30 @@
 
     &__members {
       height: calc(100vh - 145px);
+      padding-right: 30px;
       overflow: visible auto;
+
+      // Custom Scrollbar styling
+      &::-webkit-scrollbar {
+        width: 10px;
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgba($color-style, 0.8);
+      }
+
+      &::-webkit-scrollbar-track {
+        // border: 1px solid $color-style;
+        background-color: $color-background;
+      }
+
+      // For Internet Explorer
+      & {
+        scrollbar-face-color: $color-style;
+        scrollbar-track-color: $color-background;
+      }
 
       &__container {
         display: grid;
