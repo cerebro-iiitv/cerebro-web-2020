@@ -6,11 +6,12 @@ const Sidelist = props => {
     return (
       <li
         key={index}
-        className="sidebarmenu__links__link"
+        className={`sidebarmenu__links__link ${
+          index === props.index ? "active" : ""
+        }`}
         onClick={() => {
-          return props.updateEvent(index)
-        }
-        }
+          return props.updateEvent(index);
+        }}
       >
         <a>{event.Title}</a>
       </li>
