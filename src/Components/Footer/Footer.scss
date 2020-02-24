@@ -6,7 +6,8 @@
     width: 100%;
     height: 180px;
     margin: 0 auto;
-    padding-top: 56px;
+    padding-top: 42px;
+    padding-bottom: 42px;
     overflow: hidden;
     @media (min-width: 600px) and (max-width: 823px) {
         padding-top: 21px;
@@ -14,6 +15,7 @@
 
     @media (max-width: 600px) {
         justify-content: center;
+        width: 90%;
         flex-flow: column;
         padding: 21px 0px 50px;
         height: 450px;
@@ -27,8 +29,12 @@
     width: 100%;
     height: 150%;
     margin: 0 auto;
-    padding-left: 24px;
+    padding-left: 12px;
 
+    @media (max-width: 600px) {
+       
+        padding-left: 12.5%;
+    }
 
     &__logo {
         display: flex;
@@ -47,8 +53,11 @@
 
     &__logo_svg {
         padding-top: 36px;
-        padding-left: 30px;
+        padding-left: 5%;
         width: 120px;
+        @media (min-width: 824px) and (max-width: 1024px){
+            width:90px
+        }
 
         @media (min-width: 600px) and (max-width: 823px) {
             width: 60px;
@@ -58,6 +67,7 @@
         @media (max-width: 600px) {
             width: 60px;
             padding-top: 24px;
+            padding-left: 15%;
         }
     }
 
@@ -75,6 +85,14 @@
         text-align: left;
         color: #ffffff;
 
+        @media (min-width: 824px) and (max-width: 1024px) {
+            padding: 64px 24px 0px 10px;
+            align-content: flex-start;
+            width: 240px;
+            height: 144px;
+            font-size: 15px;
+        }
+        
         @media (min-width: 600px) and (max-width: 823px) {
             padding: 54px 24px 0px 10px;
             align-content: flex-start;
@@ -96,7 +114,7 @@
 .footer_l {
     display: flex;
     flex-flow: row;
-    justify-content: flex-start;
+    justify-content: center;
 
     @media (max-width: 823px) {
         justify-content: flex-start;
@@ -123,8 +141,12 @@
         letter-spacing: normal;
         text-align: left;
         color: #ffffff;
-        padding-left: 90px;
-        padding-bottom: 47.25px;
+        padding-left: 3%;
+        @media (max-width: 1024px) {
+           font-size: 12px;
+           padding-left: 0%;
+           width:144px;
+        }
 
         @media (max-width: 823px) {
             width: 90px;
@@ -149,6 +171,7 @@
 
             @media (max-width: 823px) {
                 width: 100%;
+                padding: 6px 2px;
             }
 
         }
@@ -171,9 +194,11 @@
         letter-spacing: normal;
         text-align: left;
         color: #ffffff;
-        padding-left: 24px;
-        padding-bottom: 47.25px;
-
+        padding-left: 4.5%;
+         @media (max-width: 1024px) {
+             font-size: 12px;
+             padding-left: 0%;
+         }
         @media (max-width: 823px) {
             height: 122px;
             font-size: 10px;
@@ -195,6 +220,7 @@
 
             @media (max-width: 823px) {
                 width: 100%;
+                padding: 6px 2px;
             }
 
         }
@@ -205,6 +231,9 @@
 
         &_gmap {
             padding: 16px 0px;
+            @media (max-width: 823px) {
+                padding: 12px 2px;
+            }
         }
 
     }
