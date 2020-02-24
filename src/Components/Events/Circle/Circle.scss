@@ -1,4 +1,4 @@
-@import '../../../scss/imports';
+@import "../../../scss/imports";
 
 .circle {
   width: 250px;
@@ -7,10 +7,10 @@
     width: 450px;
     position: absolute;
     left: -3%;
-    @media screen and (max-width:1920px) {
+    @media screen and (max-width: 1920px) {
       left: -4%;
     }
-    @media screen and (max-width:$QHD-screen) {
+    @media screen and (max-width: $QHD-screen) {
       left: -5%;
     }
   }
@@ -20,12 +20,12 @@
     position: absolute;
     left: -1.5%;
     top: 220px;
-    @media screen and (max-width:1920px) {
+    @media screen and (max-width: 1920px) {
       left: -2.5%;
     }
-    @media screen and (max-width:$QHD-screen) {
+    @media screen and (max-width: $QHD-screen) {
       left: -2.5%;
-      top:222.5px;
+      top: 222.5px;
     }
   }
 
@@ -35,12 +35,11 @@
     left: 1.5%;
     top: 300px;
 
-    @media screen and (max-width:1920px) {
+    @media screen and (max-width: 1920px) {
       left: 1.5%;
     }
-    @media screen and (max-width:$QHD-screen) {
+    @media screen and (max-width: $QHD-screen) {
       left: 3%;
     }
   }
-
 }

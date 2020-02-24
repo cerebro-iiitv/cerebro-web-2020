@@ -2,12 +2,17 @@
 
 .sidebarmenu {
   display: flex;
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 225px auto;
+  height: 100%;
+  box-sizing: border-box;
   &__links {
     display: flex;
     flex-direction: column;
     @media screen and (max-width: $mobile-view) {
       flex-direction: row;
-      // justify-content: space-evenly;
+      justify-content: space-evenly;
     }
     cursor: pointer;
     &__link {
