@@ -27,40 +27,51 @@ class Countdown extends Component {
   }
   updateHour = () => {
     setTimeout(() => {
-      this.hourref.current.className = "Countdown-col animation";
-      setTimeout(() => {
-        this.hourref.current.className = "Countdown-col";
-        this.setState({
-          hours: this.calculateHour()
-        });
-        this.updateHour();
-      }, 120);
+      try {
+        this.hourref.current.className = "Countdown-col animation";
+        setTimeout(() => {
+          try {
+            this.hourref.current.className = "Countdown-col";
+            this.setState({
+              hours: this.calculateHour()
+            });
+            this.updateHour();
+          } catch (err) {}
+        }, 120);
+      } catch (err) {}
     }, this.calculateMin() * 60 * 1000);
   };
   updateMin = () => {
     setTimeout(() => {
-      this.minref.current.className = "Countdown-col animation";
+      try {
+          this.minref.current.className = "Countdown-col animation";
+          setTimeout(() => {
+            try {
+              this.minref.current.className = "Countdown-col";
+              this.setState({
+                min: this.calculateMin(),
+              });
+              this.updateMin();
+            } catch (err) {}
+          }, 120);
+        } catch (err) {}
+      }, this.calculateSec() * 1000 + 880);
+    };
+    
+    updateSec = () => {
       setTimeout(() => {
-        this.minref.current.className = "Countdown-col";
-        this.setState({
-          min: this.calculateMin(),
-        });
-        this.updateMin();
-      }, 120);
-
-    }, this.calculateSec() * 1000 + 880);
-  };
-
-  updateSec = () => {
-    setTimeout(() => {
-      this.secref.current.className = "Countdown-col animation";
-      setTimeout(() => {
-        this.secref.current.className = "Countdown-col";
-        this.setState({
-          sec: this.calculateSec()
-        });
-        this.updateSec();
-      }, 120);
+        try {
+          this.secref.current.className = "Countdown-col animation";
+          setTimeout(() => {
+            try {
+              this.secref.current.className = "Countdown-col";
+              this.setState({
+                sec: this.calculateSec()
+              });
+              this.updateSec();
+            } catch (err) {}
+          }, 120);
+        } catch (err) {}
     }, 880);
   };
 
