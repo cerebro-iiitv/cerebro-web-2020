@@ -19,7 +19,7 @@
 <hr>
 <h4 align="center"> Website for Cerebro powered by
 <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png" width="40" align="center"> and
-<img src="https://img.icons8.com/windows/32/000000/django.png" width="30" align="center"></h4>
+<img src="https://kevin-brown.com/images/django-logo.svg" width="30" align="center"></h4>
 
 ### Development 🔧
 
