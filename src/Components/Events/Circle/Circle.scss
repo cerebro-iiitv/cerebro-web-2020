@@ -16,6 +16,11 @@
       left: -5%;
     }
 
+    @media screen and (max-width: $mobile-view) {
+      position: relative;
+      left: -40%;
+    }
+
     transition: all 1s linear;
   }
 
@@ -34,6 +39,13 @@
       left: -2.5%;
       top: 222.5px;
     }
+
+    @media screen and (max-width: $mobile-view) {
+      position: relative;
+      /* margin: -165px -15px; */
+      top: -418px;
+      left: -62px;
+    }
   }
 
   &__dial4 {
@@ -48,6 +60,13 @@
 
     @media screen and (max-width: $QHD-screen) {
       left: 3%;
+    }
+
+    @media screen and (max-width: $mobile-view) {
+      position: relative;
+      margin: -105px 60px;
+      top: -616px;
+      left: -18%;
     }
   }
 }

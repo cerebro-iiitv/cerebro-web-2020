@@ -1,12 +1,11 @@
 @import "../../scss/imports";
 
 .event {
-  width: 100%;
-  // height: 500px;
+  width: 80vw;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  margin: 100px auto;
+  margin: 100px auto 0 auto;
 
   @media screen and (max-width: $mobile-view) {
     flex-flow: column;
@@ -23,12 +22,3 @@
     }
   }
 }
-// .event :nth-child(1) {
-//   order: 3;
-// }
-// .event :nth-child(2) {
-//   order: 1;
-// }
-// .event :nth-child(3) {
-//   order: 2;
-// }
