@@ -37,4 +37,4 @@ yarn start
 
 ### Authors ✍️
 
-©️ [Web Team Cerebro](https://github.com/orgs/cerebro-iiitv/teams/web-team) ✨# Cerebro 2020 Website
+©️ [Web Team Cerebro](https://github.com/orgs/cerebro-iiitv/teams/web-team) ✨
