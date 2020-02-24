@@ -7,12 +7,16 @@
     width: 450px;
     position: absolute;
     left: -3%;
+
     @media screen and (max-width: 1920px) {
       left: -4%;
     }
+
     @media screen and (max-width: $QHD-screen) {
       left: -5%;
     }
+
+    transition: all 1s linear;
   }
 
   &__dial3 {
@@ -20,9 +24,12 @@
     position: absolute;
     left: -1.5%;
     top: 220px;
+    transition: all 1s linear;
+
     @media screen and (max-width: 1920px) {
       left: -2.5%;
     }
+
     @media screen and (max-width: $QHD-screen) {
       left: -2.5%;
       top: 222.5px;
@@ -38,8 +45,17 @@
     @media screen and (max-width: 1920px) {
       left: 1.5%;
     }
+
     @media screen and (max-width: $QHD-screen) {
       left: 3%;
     }
   }
+}
+
+.rotate {
+  transform: rotate(30deg);
+}
+
+.rotate-rev {
+  transform: rotate(-30deg);
 }
