@@ -93,24 +93,26 @@
     border-radius: 50%;
     bottom: 7%;
     z-index: 1000;
+    justify-content: center;
+    align-content: center;
 
     &:hover {
         background-color: #ffffff;
         color: #5EC9F8;
     }
 
-    @media screen and (max-width: 980px) {
-        margin-left: auto;
-        margin-right: auto;
-        width: 42px;
-        height: 42px;
-        left: 0;
-        right: 0;
-    }
-
     @media only screen and (max-width: 1170px) {
         top: 20px;
     }
+    @media screen and (max-width: 980px) {
+        display: flex;
+        margin-left: auto;
+        width: 30px;
+        height: 36px;
+        top: 87%;
+        right: 5%;
+    }
+
 }
 
 .eventLink {
