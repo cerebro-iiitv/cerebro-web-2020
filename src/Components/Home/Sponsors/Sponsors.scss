@@ -20,7 +20,7 @@
 
 .sponsor_container {
   padding: 100px 0px 120px;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $mobile-view) {
     padding: 100px 0px 0px;
   }
   overflow: hidden auto;
@@ -33,7 +33,7 @@
 .hr-container {
   padding: 8px 40px;
   display: inline-block;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $mobile-view) {
     padding: 2px 20px;
   }
 }
@@ -43,13 +43,13 @@
   &__line1 {
     padding: 10px 0px 0px;
     margin-left: 128px;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $mobile-view) {
       width: 35px;
       padding-top: 5px;
       margin-left: 45px;
     }
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $mobile-view) {
     width: 35px;
     padding-top: 5px;
   }
@@ -57,7 +57,7 @@
 .hr-txt2 {
   width: 208px;
   padding-top: 10px;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $mobile-view) {
     width: 80px;
     padding-top: 5px;
   }
@@ -70,15 +70,16 @@
   line-height: 1.22;
   text-align: left;
   color: #ffffff;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $mobile-view) {
     font-size: 20px;
   }
 }
 .sponsor_wrapper {
   padding-top: 48px;
   display: grid;
+  grid-gap: 1rem;
   grid-template-columns: auto auto auto auto;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $mobile-view) {
     padding: 20px;
     grid-template-columns: auto auto;
   }
@@ -88,7 +89,7 @@
   align-self: center;
   justify-self: center;
   animation: glow 4s linear infinite;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $mobile-view) {
     height: 80px;
   }
 }

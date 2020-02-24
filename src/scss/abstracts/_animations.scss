@@ -25,3 +25,16 @@
 .animation-space-float {
   animation: space-float 3s ease-in-out infinite alternate;
 }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation-fade-in {
+  animation: fade-in .4s ease-in-out;
+}

@@ -1,230 +1,95 @@
 @import "../../../scss/imports";
 
-.past-glimpse {
-  display: flex;
-
-  @media screen and (max-width: $mobile-view) {
-    flex-flow: column-reverse;
-    align-self: center;
-  }
-
-  @media screen and (max-width: $QHD-screen) {
-    left: 100px;
-  }
-
-  flex-flow: row;
-  width: 100%;
-  margin: 0 auto;
-  justify-content: space-between;
-  overflow: hidden;
-
-  &__container {
-    margin-top: 50px;
-    margin: 0 auto;
-    align-items: center;
-    height: max-content;
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-    flex-flow: column;
-
-    @media screen and (max-width: $mobile-view) {
-      width: 100%;
-      justify-content: flex-start;
-      padding: 0px 0px 0px 0px;
-    }
-
-    @media screen and (max-width: $QHD-screen) {
-      width: 50%;
-      justify-content: flex-start;
-      padding: 0px 0px 0px 0px;
-    }
-
-    &__heading {
-      font-size: 40px;
-      font-family: "Galano-Bold";
-
-      @media screen and (max-width: $mobile-view) {
-        align-self: center;
-        font-size: 21px;
-      }
-
-      @media screen and (min-width: 476px) {
-        margin: 0 auto;
-      }
-    }
-
-    &__slideshow {
-      margin: 50px auto;
-      width: 400px;
-      height: 225px;
-      border-radius: 20px;
-      justify-content: center;
-      background-color: #202020;
-      border: solid 4px #29abe2;
-      box-shadow: 0 0 0 25px #202020;
-      padding: 30px;
-      padding-right: 0px;
-      z-index: 2;
-
-      &__list {
-        display: grid;
-        grid-gap: 10px 20px;
-        position: relative;
-        top: -200px;
-        left: -10px;
-        padding: 10px;
-        justify-content: center;
-        width: 580px;
-        height: 250px;
-        border: solid 4px #29abe2;
-        z-index: 1;
-
-        &__des {
-          display: grid;
-          grid-gap: 0px 15px;
-          position: relative;
-          top: 165px;
-          left: 0px;
-          grid-template-columns: auto auto auto auto;
-          padding: 10px;
-          justify-content: center;
-          width: 420px;
-          height: 200px;
-          border-radius: 10px;
-          background-color: #202020;
-          z-index: 2;
-
-          &__items {
-            width: 70px;
-            height: 60px;
-            padding: 3px;
-            border-radius: 8px;
-            justify-content: center;
-            border: solid 4px #29abe2;
-            z-index: 3;
-
-            &__images {
-              width: 70px;
-              height: 100%;
-            }
-          }
-        }
-      }
-
-      &__slide {
-        // max-width: 500px;
-        width: 90%;
-        height: 100%;
-      }
-    }
+.gallery {
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
   }
 
   &__images {
-    width: 450px;
-    left: 300px;
+    height: 800px;
+    padding: 10px;
+    border: 2px solid $color-style;
+    border-radius: 10px;
+    box-sizing: border-box;
 
-    &__group {
-      position: relative;
-      width: 430px;
-      height: 540px;
-
-      @media screen and (max-width: $QHD-screen) {
-        width: 345px;
-        height: 325px;
-      }
-
-      @media screen and (max-width: $mobile-view) {
-        width: 345px;
-        position: unset;
-        left: 0px;
-        height: 325px;
-        margin-left: 12%;
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: repeat(3, auto);
+      grid-auto-flow: dense;
+      gap: 10px;
+      height: 100%;
+      width: 100%;
+  
+      div {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: auto 100%;
+        filter: grayscale(1) brightness(50%);
+        transition: filter 0.15s,  background-size 0.2s ease-out;
+  
+        &:hover {
+          filter: grayscale(0) brightness(100%);
+          background-size: auto 115%;
+  
+          &.wide {
+            background-size: 115%;
+          }
+        }
+  
+        &.wide {
+          grid-area: auto / span 2;
+          background-size: 100%;
+          background-position: top;
+        }
+  
+        &.big {
+          grid-area: span 2 / span 2;
+        }
+        
+        &.tall {
+          grid-area: span 2;
+        }
       }
     }
+  }
 
-    &__rec1 {
-      width: 43.9px;
-      height: 43.9px;
-      position: relative;
+  @media screen and (max-width: $mobile-view) {
+    &__images {
+      border-left: 0px;
+      border-right: 0px;
+      border-radius: 0px;
+      height: 200px;
+      overflow: auto hidden;
+      width: 100%;
+      padding: 20px 10px;
 
-      @media screen and (max-width: $QHD-screen) {
-        top: 390px;
-        left: 210px;
+      &__container {
+        display: block;
+        width: max-content;
+        height: 100%;
+        box-sizing: border-box;
+
+        div {
+          display: inline-block;
+          height: 100%;
+          width: 277px;
+          background-size: 100%;
+          background-position: center;
+          filter: grayscale(0);
+
+          &:hover {
+            background-size: 115%;
+          }
+
+          &:not(:last-of-type) {
+            margin-right: 10px;
+          }
+        }
       }
-
-      @media screen and (max-width: $mobile-view) {
-        top: 225px;
-        left: 255px;
-        width: 25px;
-        height: 25px;
-      }
-
-      top: -160px;
-      left: 370px;
-    }
-
-    &__rec2 {
-      width: 30.5px;
-      height: 30.5px;
-      position: relative;
-
-      @media screen and (max-width: $QHD-screen) {
-        top: 430px;
-        left: 220px;
-      }
-
-      @media screen and (max-width: $mobile-view) {
-        top: 265px;
-        left: 255px;
-        width: 15px;
-        height: 15px;
-      }
-
-      top: -90px;
-      left: 360px;
-    }
-
-    &__elli1 {
-      width: 36.8px;
-      height: 36.8px;
-      position: relative;
-
-      @media screen and (max-width: $QHD-screen) {
-        left: 165px;
-        top: 420px;
-      }
-
-      @media screen and (max-width: $mobile-view) {
-        left: 190px;
-        top: 240px;
-        width: 22px;
-        height: 22px;
-      }
-
-      left: 300px;
-      top: -130px;
-    }
-
-    &__elli2 {
-      width: 19.4px;
-      height: 19.4px;
-      position: relative;
-
-      @media screen and (max-width: $QHD-screen) {
-        top: 455px;
-        left: 165px;
-      }
-
-      @media screen and (max-width: $mobile-view) {
-        top: 260px;
-        left: 190px;
-        width: 12px;
-        height: 12px;
-      }
-
-      top: -100px;
-      left: 300px;
     }
   }
 }

@@ -5,38 +5,29 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: "Gilroy-Light";
-  src: url("../fonts/Gilroy-Light.otf");
-}
-
-@font-face {
-  font-family: "Gilroy-ExtraBold";
-  src: url("../fonts/Gilroy-ExtraBold.otf");
-}
-
-@font-face {
-  font-family: 'Galano-Bold';
-  src: url('../fonts/GalanoGrotesqueDEMO-Bold.otf');
-}
-
-@font-face {
-  font-family: 'GalanoAlt-Bold';
-  src: url('../fonts/GalanoGrotesqueAltDEMO-Bold.otf');
-}
-
 body {
   font-family: "Gilroy-Light";
   background-color: $color-background;
   color: $color-body;
-  overflow: hidden auto;
   width: 100%;
-  
+  overflow: hidden auto;
 }
 
 #root{
   margin: 0 10%;
+  min-height: 100vh;
+  
   @media screen and (max-width:$mobile-view) {
     margin:0;
+  }
+}
+
+.section-title {
+  font-size: 40px!important;
+  text-transform: uppercase;
+  font-family: 'Galano-Bold';
+
+  @media screen and (max-width: $mobile-view) {
+    font-size: 24px!important;
   }
 }

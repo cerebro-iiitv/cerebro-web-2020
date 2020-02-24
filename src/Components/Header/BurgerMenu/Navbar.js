@@ -15,24 +15,24 @@ class Navbar extends Component {
 	onOpenModal = () => {
 		this.setState({ open: true });
 	};
-
+	
 	onCloseModal = () => {
 		this.setState({
 			open: false,
 		});
 	};
-
+	
 	showDrawer = () => {
 		this.setState({
 			drawerOut: true
 		});
-
+		
 		try {
 			document.getElementById('user-profile-main').style.zIndex = -1;
 			document.getElementById('social-icons').style.zIndex = -1;
 		} catch { }
 	};
-
+	
 	hideDrawer = () => {
 		this.setState({
 			drawerOut: false
@@ -43,33 +43,16 @@ class Navbar extends Component {
 		} catch { }
 	};
 
-	componentDidMount() {
-		document.addEventListener('scroll', e => {
-			let elem = document.getElementById('navbar-container')
-			if (window.pageYOffset > 38) {
-				if (!elem.classList.contains('scrolled')) {
-					elem.classList.add('scrolled')
-				}
-			} else {
-				elem.classList.remove('scrolled')
-			}
-		})
-	}
-
 	componentDidUpdate() {
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
 	}
 
 	render() {
-		const { auth, signOut, assets } = this.props;
-		const { open } = this.state;
 		return (
 			<div id="hamburger-container">
-				<nav id='navbar-container' className="navbar">
+				<nav id='navbar-container' >
 					<div id="drawer-button" className="container">
-						<span id="drawer-button-span" onClick={this.showDrawer}>
-							<i className="fa fa-bars hamPosition" />
-						</span>
+						<img src="media/menu.svg" alt="Open menu" onClick={this.showDrawer} />
 					</div>
 
 					<div
