@@ -10,8 +10,8 @@ function Cover() {
         <div className="cover">
              <div className="cover__social-links">
                 <div className="cover__social-links__container">
-                    <a className="cover__social-links__link"><i className="fa fa-instagram"></i></a>
                     <a className="cover__social-links__link"><i className="fa fa-twitter"></i></a>
+                    <a className="cover__social-links__link"><i className="fa fa-instagram"></i></a>
                     <a className="cover__social-links__link"><i className="fa fa-facebook"></i></a>
                 </div>
 
