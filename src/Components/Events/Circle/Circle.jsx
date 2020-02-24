@@ -4,18 +4,19 @@ import "./Circle.scss";
 class Circle extends Component {
   constructor(props) {
     super(props);
-    this.dial2ref = React.createRef();
-    this.dial3ref = React.createRef();
   }
 
   componentWillReceiveProps(nextprops) {
+    var dial2 = document.querySelector(".circle__dial2");
+    var dial3 = document.querySelector(".circle__dial3");
     if (nextprops !== this.props) {
-      this.dial2ref.current.className = "circle__dial2 rotate";
-      this.dial3ref.current.className = "circle__dial3 rotate-rev";
-      setTimeout(() => {
-        this.dial2ref.current.className = "circle__dial2";
-        this.dial3ref.current.className = "circle__dial3";
-      }, 1000);
+      console.log(
+        nextprops.index,
+        this.props.index,
+        nextprops.index - this.props.index
+      );
+      dial2.style.webkitTransform = "rotate(" + nextprops.index * 30 + "deg)";
+      dial3.style.webkitTransform = "rotate(" + -nextprops.index * 30 + "deg)";
     }
   }
 
@@ -23,13 +24,11 @@ class Circle extends Component {
     return (
       <div className="circle">
         <img
-          ref={this.dial2ref}
           src="media/event/Group 98.svg"
           className="circle__dial2"
           alt="dial2"
         />
         <img
-          ref={this.dial3ref}
           src="media/event/Group 97.svg"
           className="circle__dial3"
           alt="dial3"
