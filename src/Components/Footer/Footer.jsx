@@ -35,7 +35,7 @@ function Footer() {
 				</div>
 				<div className="footer_l__contact_content"><a className="footer_l__contact_cn" >Email: cerebro@iiitv.ac.in                             </a></div>
 				<div className="footer_l__contact_content"><a className="footer_l__contact_cn" >Phone: +91-9370645038</a></div>
-				<div className="footer_l__contact_content"><a className="footer_l__contact_cn" >Address: c/o Block No.9, Government Engineering<div className="footer_l__contact_gmap"> College, Sector-28, Gandhinagar, Gujarat - 382028</div></a></div>
+				<div className="footer_l__contact_content"><a className="footer_l__contact_cn" >Address: c/o Block No.9, Government Engineering<div className="footer_l__contact_gmap">College, Sector-28, Gandhinagar, Gujarat - 382028</div></a></div>
 			</div>
 		</div>
 	</div>
