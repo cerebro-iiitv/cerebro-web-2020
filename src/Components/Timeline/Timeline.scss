@@ -1,0 +1,128 @@
+@import "../../scss/imports";
+
+.vertical-timeline-element-date {
+    color: red !important;
+}
+
+@media only screen and (min-width: 1170px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+        position: absolute;
+        width: 100%;
+        left: 144%;
+        top: -3px;
+        font-size: 16px;
+        font-size: 1.5rem;
+    }
+
+    .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
+        left: auto;
+        right: 144%;
+        text-align: right;
+    }
+}
+
+.timeline {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+.vertical-timeline {
+    left: 2%;
+}
+
+.vertical-timeline-element-title {
+    color: white;
+    font-size: 17px;
+}
+
+.vertical-timeline-element-subtitle {
+    color: white;
+    font-size: 13px;
+}
+
+
+.vertical-timeline-element-content p {
+    font-size: 16px;
+    color: #5EC9F8;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+    background-color: black;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+    color: white !important;
+    opacity: 1;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+    background: rgba(94, 201, 248, 0.9);
+    width: 30px;
+    left: 51.4%;
+    top: 10%;
+    height: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .vertical-timeline-element-content .vertical-timeline-element-date {
+        font-size: 14px;
+        font-size: 15px;
+    }
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date, .vertical-timeline-element-content p {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.timelinePdf {
+    display: inline-block;
+    color: rgba(#5EC9F8, 0.9);
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.1s linear;
+    border-bottom: 0.2rem solid rgba(255, 255, 255, 0);
+    position: fixed;
+    left: 95%;
+    margin-left: -50px;
+    font-size: 1.6rem;
+    border: 1px solid #5ec9f8;
+    padding: 10px 13px;
+    border-radius: 50%;
+    bottom: 7%;
+    z-index: 1000;
+
+    &:hover {
+        background-color: #ffffff;
+        color: #5EC9F8;
+    }
+
+    @media screen and (max-width: 980px) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 42px;
+        height: 42px;
+        left: 0;
+        right: 0;
+    }
+
+    @media only screen and (max-width: 1170px) {
+        top: 20px;
+    }
+}
+
+.eventLink {
+    text-decoration: none;
+}
+
+.shadow-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, $color-background);
+    pointer-events: none;
+  }

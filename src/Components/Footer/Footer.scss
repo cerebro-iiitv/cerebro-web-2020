@@ -6,11 +6,14 @@
     width: 100%;
     height: 180px;
     margin: 0 auto;
-    padding-top: 42px;
-    padding-bottom: 42px;
+    padding-top: 56px;
+    padding-bottom: 32px;
     overflow: hidden;
+
     @media (min-width: 600px) and (max-width: 823px) {
         padding-top: 21px;
+        padding-bottom: 0px;
+        height: 80%;
     }
 
     @media (max-width: 600px) {
@@ -31,8 +34,12 @@
     margin: 0 auto;
     padding-left: 12px;
 
+    @media (min-width: 600px) and (max-width: 823px) {
+        width: 70%;
+        height: 80%;
+    }
+
     @media (max-width: 600px) {
-       
         padding-left: 12.5%;
     }
 
@@ -55,8 +62,9 @@
         padding-top: 36px;
         padding-left: 5%;
         width: 120px;
-        @media (min-width: 824px) and (max-width: 1024px){
-            width:90px
+
+        @media (min-width: 824px) and (max-width: 1280px) {
+            width: 90px
         }
 
         @media (min-width: 600px) and (max-width: 823px) {
@@ -78,21 +86,18 @@
         height: 168px;
         font-size: 21.6px;
         font-weight: 280;
-        font-stretch: normal;
-        font-style: normal;
         line-height: 1.13;
-        letter-spacing: normal;
         text-align: left;
         color: #ffffff;
 
-        @media (min-width: 824px) and (max-width: 1024px) {
+        @media (min-width: 824px) and (max-width: 1280px) {
             padding: 64px 24px 0px 10px;
             align-content: flex-start;
             width: 240px;
             height: 144px;
             font-size: 15px;
         }
-        
+
         @media (min-width: 600px) and (max-width: 823px) {
             padding: 54px 24px 0px 10px;
             align-content: flex-start;
@@ -114,12 +119,18 @@
 .footer_l {
     display: flex;
     flex-flow: row;
-    justify-content: center;
+
+    @media (min-width: 812px) {
+        justify-content: flex-end;
+        width: 78%;
+    }
 
     @media (max-width: 823px) {
         justify-content: flex-start;
         margin-left: 2.5vw;
         margin-right: 2.5vw;
+        width: 89%;
+        height: 80%
     }
 
     @media (max-width: 600px) {
@@ -133,19 +144,17 @@
     &__links {
         width: 160px;
         height: 168px;
-        font-size: 15.6px;
+        font-size: 100%;
         font-weight: 300;
-        font-stretch: normal;
-        font-style: normal;
         line-height: 1.15;
-        letter-spacing: normal;
         text-align: left;
         color: #ffffff;
-        padding-left: 3%;
-        @media (max-width: 1024px) {
-           font-size: 12px;
-           padding-left: 0%;
-           width:144px;
+        padding-left: 5%;
+
+        @media (max-width: 1280px) {
+            font-size: 12px;
+            padding-left: 0%;
+            width: 144px;
         }
 
         @media (max-width: 823px) {
@@ -173,36 +182,32 @@
                 width: 100%;
                 padding: 6px 2px;
             }
-
         }
 
         &_cn {
             color: #ffffff;
         }
-
-
     }
 
     &__contact {
-        width: 560px;
+        width: 100%;
         height: 168px;
-        font-size: 15.6px;
+        font-size: 100%;
         font-weight: 300;
-        font-stretch: normal;
-        font-style: normal;
         line-height: 1.15;
-        letter-spacing: normal;
         text-align: left;
         color: #ffffff;
-        padding-left: 4.5%;
-         @media (max-width: 1024px) {
-             font-size: 12px;
-             padding-left: 0%;
-         }
+        padding-left: 3.2%;
+
+        @media (max-width: 1280px) {
+            font-size: 12px;
+            padding-left: 0%;
+        }
+
         @media (max-width: 823px) {
             height: 122px;
             font-size: 10px;
-            padding-left: 0px;
+            padding-left: 3%;
         }
 
         @media (max-width: 600px) {
@@ -222,7 +227,6 @@
                 width: 100%;
                 padding: 6px 2px;
             }
-
         }
 
         &_cn {
@@ -231,11 +235,11 @@
 
         &_gmap {
             padding: 16px 0px;
+
             @media (max-width: 823px) {
                 padding: 12px 2px;
             }
         }
-
     }
 
     &__hr {
@@ -251,7 +255,6 @@
                 justify-content: center;
             }
         }
-
     }
 
     &__hr_text {
