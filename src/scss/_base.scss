@@ -5,26 +5,6 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: "Gilroy-Light";
-  src: url("../fonts/Gilroy-Light.otf");
-}
-
-@font-face {
-  font-family: "Gilroy-ExtraBold";
-  src: url("../fonts/Gilroy-ExtraBold.otf");
-}
-
-@font-face {
-  font-family: "Galano-Bold";
-  src: url("../fonts/GalanoGrotesqueDEMO-Bold.otf");
-}
-
-@font-face {
-  font-family: "GalanoAlt-Bold";
-  src: url("../fonts/GalanoGrotesqueAltDEMO-Bold.otf");
-}
-
 body {
   font-family: "Gilroy-Light";
   background-color: $color-background;
