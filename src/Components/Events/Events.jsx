@@ -27,7 +27,7 @@ class Events extends Component {
         <Header />
         <div className="event">
           <div>
-            <Circle />{" "}
+            <Circle index={this.state.eventIndex} />
           </div>
           <div>
             <Main event={events[this.state.eventIndex]} />
