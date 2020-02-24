@@ -10,7 +10,7 @@
     flex-flow: column wrap;
   }
 
-  &__images {   
+  &__images {
     margin: 3%;
     @media screen and (max-width: $mobile-view) {
       height: 70%;
@@ -141,7 +141,7 @@
       }
     }
   }
-  
+
   @media screen and(max-width:$mobile-view) {
     flex-flow: column;
     margin-left: 0px;

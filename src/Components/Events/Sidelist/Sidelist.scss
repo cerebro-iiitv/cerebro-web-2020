@@ -2,12 +2,23 @@
 
 .sidebarmenu {
   display: flex;
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 225px auto;
+  height: 100%;
+  box-sizing: border-box;
   &__links {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: $mobile-view) {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
     cursor: pointer;
     &__link {
       margin-top: 7px;
       margin-bottom: 7px;
+      margin-left: 20px;
       font-family: "Galano-Light";
       list-style-type: none;
       color: white;
