@@ -3,6 +3,10 @@
 .circle {
   width: 250px;
 
+  @media screen and (max-width: $QHD-screen) {
+    width: 180px;
+  }
+
   &__dial2 {
     width: 450px;
     position: absolute;
@@ -13,12 +17,16 @@
     }
 
     @media screen and (max-width: $QHD-screen) {
-      left: -5%;
+      left: -18%;
     }
 
     @media screen and (max-width: $mobile-view) {
       position: relative;
-      left: -40%;
+      left: -85%;
+    }
+
+    @media screen and (max-width: 600px) {
+      left: -76%;
     }
 
     transition: all 1s linear;
@@ -36,15 +44,18 @@
     }
 
     @media screen and (max-width: $QHD-screen) {
-      left: -2.5%;
+      left: -14.5%;
       top: 222.5px;
     }
 
     @media screen and (max-width: $mobile-view) {
       position: relative;
-      /* margin: -165px -15px; */
       top: -418px;
-      left: -62px;
+      left: -115px;
+    }
+
+    @media screen and (max-width: 600px) {
+      left: -54%;
     }
   }
 
@@ -59,14 +70,18 @@
     }
 
     @media screen and (max-width: $QHD-screen) {
-      left: 3%;
+      left: -8%;
     }
 
     @media screen and (max-width: $mobile-view) {
       position: relative;
       margin: -105px 60px;
-      top: -616px;
-      left: -18%;
+      top: -615px;
+      left: -54%;
+    }
+
+    @media screen and (max-width: 600px) {
+      left: -42%;
     }
   }
 }
