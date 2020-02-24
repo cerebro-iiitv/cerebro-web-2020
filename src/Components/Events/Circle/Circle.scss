@@ -1,20 +1,46 @@
+@import '../../../scss/imports';
+
 .circle {
-  width: 450px;
+  width: 250px;
 
   &__dial2 {
     width: 450px;
     position: absolute;
+    left: -3%;
+    @media screen and (max-width:1920px) {
+      left: -4%;
+    }
+    @media screen and (max-width:$QHD-screen) {
+      left: -5%;
+    }
   }
 
   &__dial3 {
-    width: 350px;
-    transform: translate(47px, 48px);
-    position: relative;
+    width: 375px;
+    position: absolute;
+    left: -1.5%;
+    top: 220px;
+    @media screen and (max-width:1920px) {
+      left: -2.5%;
+    }
+    @media screen and (max-width:$QHD-screen) {
+      left: -2.5%;
+      top:222.5px;
+    }
   }
 
   &__dial4 {
-    width: 250px;
-    transform: translate(97px, -255px);
-    position: relative;
+    width: 225px;
+    position: absolute;
+    left: 1.5%;
+    top: 300px;
+
+    @media screen and (max-width:1920px) {
+      left: 1.5%;
+    }
+    @media screen and (max-width:$QHD-screen) {
+      left: 3%;
+    }
   }
+
 }
