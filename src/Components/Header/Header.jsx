@@ -41,7 +41,7 @@ class Header extends Component {
                         <span className="navbar__links__li" onClick={this.onOpenModal}>Brochure</span>
                     </ul>
 
-                    <button className="navbar__login"><img class="g_img" src="media/google.png" alt="" /></button>
+                    <a className="navbar__login"><img class="g_img" src="media/google.png" alt="" /></a>
                 </nav>
 
                 <Modal open={open} onClose={this.onCloseModal} center>
