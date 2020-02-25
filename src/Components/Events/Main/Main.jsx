@@ -17,7 +17,7 @@ export class Main extends Component {
   }
   render() {
     const rule = this.state.event.rules.map((rule, index) => {
-      return <li key={index}>{rule}</li>;
+      return <li key={index}>{rule}<br /><br /></li>;
     });
     return (
       <div className="main">

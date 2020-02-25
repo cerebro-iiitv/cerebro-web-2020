@@ -21,22 +21,32 @@
     }
 
     @media screen and (max-width: $mobile-view) {
+      width: 400px;
       position: fixed;
       top: 80%;
       left: 24%;
     }
 
     @media screen and (max-width: 800px) {
+      width: 400px;
       position: fixed;
-      top: 80%;
-      left: 14%;
+      bottom: -150px;
+      top: 75%;
+      left: 24%;
     }
 
     @media screen and (max-width: 550px) {
-      left: -76%;
       position: fixed;
-      top: 80%;
-      left: -5%;
+      top: 72%;
+      left: 15%;
+      width: 375px;
+    }
+
+    @media screen and (max-width: 475px) {
+      width: 285px;
+      position: fixed;
+      top: 76%;
+      left: 15%;
     }
 
     transition: all 0.25s linear;
@@ -65,15 +75,24 @@
     }
 
     @media screen and (max-width: 800px) {
-      top: 84%;
+      width: 325px;
+      top: 80%;
       position: fixed;
-      left: 20%;
+      left: 29%;
     }
 
     @media screen and (max-width: 550px) {
-      top: 86%;
+      width: 310px;
+      top: 75%;
       position: fixed;
-      left: 4%;
+      left: 21%
+    }
+
+    @media screen and (max-width: 475px) {
+      width: 245px;
+      position: fixed;
+      top: 80%;
+      left: 20%;
     }
   }
 
@@ -98,17 +117,23 @@
     }
 
     @media screen and (max-width: 800px) {
-      left: -76%;
       position: fixed;
-      top: 90%;
-      left: 32%;
+      top: 88%;
+      left: 36%;
     }
 
     @media screen and (max-width: 550px) {
-      left: -42%;
+      width: 185px;
       position: fixed;
-      top: 94%;
-      left: 22%;
+      top: 86%;
+      left: 33%;
+    }
+
+    @media screen and (max-width: 475px) {
+      width: 135px;
+      position: fixed;
+      top: 88%;
+      left: 35%;
     }
   }
 }
