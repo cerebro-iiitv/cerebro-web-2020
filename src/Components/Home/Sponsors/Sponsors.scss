@@ -89,7 +89,13 @@
   align-self: center;
   justify-self: center;
   animation: glow 4s linear infinite;
+  @media screen and (max-width: $QHD-screen){
+    height: 112px;
+  }
   @media screen and (max-width: $mobile-view) {
     height: 80px;
+  }
+  @media screen and (max-width: $small-mobile){
+    height: 60px;
   }
 }
