@@ -8,7 +8,6 @@
   overflow: hidden;
    @media screen and (max-width: $mobile-view) {
       flex-flow: column wrap;
-      
     }
 
   &__images {   
@@ -16,93 +15,125 @@
     @media screen and (max-width: $mobile-view) {
       height: 70%;
     }
+    padding-right: 5%;
 
-    &__spaceship {
-      height: auto;
-      width: 90%;
+    &__spaceship1 {
+      width: 30vw;
+      z-index: 1;
+      display: flex;
+      position: relative;
+      top: -2.5vw;
+
+      @media screen and (max-width: $mobile-view) {
+        width: 75%;
+        top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &__spaceship2 {
+      width: 30vw;
+      display: flex;
+      z-index: 2;
+      position: relative;
+      top: -8vw;
+      animation: space-float 3s ease-in-out infinite alternate;
 
       @media screen and (max-width: $mobile-view) {
         width: 70%;
-        height: auto;
-        max-width: 300px;
-        display: block;
+        top: -11vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &__spaceship3 {
+      width: 16vw;
+      position: relative;
+      display: flex;
+      z-index: 1;
+      top: -15vw;
+      left: 10.5vw;
+
+      @media screen and (max-width: $mobile-view) {
+        width: 40%;
+        top: -25vw;
+        left: 9vw;
         margin-left: auto;
         margin-right: auto;
       }
     }
 
     &__Recpurplebig {
-      width: 33.9px;
-      height: 33.9px;
+      width: 3vw;
+      height: 3vw;
       position: relative;
-      top: 0px;
-      left: -51px;
+      left: 5.5vw;
 
       @media screen and (max-width: $mobile-view) {
-
-        width: 30px;
-        height: 30px;
+        width: 8vw;
+        height: 8vw;
+        top: 8vw;
+        left: 24vw;
       }
     }
 
     &__Recpurplesmall {
-      width: 13.9px;
-      height: 13.9px;
+      width: 1.2vw;
+      height: 1.2vw;
       position: relative;
-      top: 15px;
-      left: -55px;
-
+      top: 0.5vw;
+      left: 6vw;
+      
       @media screen and (max-width: $mobile-view) {
-        width: 11px;
-        height: 11px;
-        top: 8px;
+        width: 3vw;
+        height: 3vw;
+        top: 9vw;
+        left: 25vw;
       }
     }
 
     &__Recpink {
-      width: 33.9px;
-      height: 33.9px;
+      width: 2.5vw;
+      height: 2.5vw;
       position: relative;
-      top: 355px;
-      left: 125px;
-      @media screen and (max-width: $mobile-view) {
+      top: 31vw;
+      left: 21.5vw;
 
-        width: 22px;
-        height: 22px;
-        top: 300px;
-        left: 95px;
+      @media screen and (max-width: $mobile-view) {
+        width: 6vw;
+        height: 6vw;
+        top: 73vw;
+        left: 57vw;
       }
     }
 
     &__Circpin {
-      width: 33.9px;
-      height: 33.9px;
+      width: 2.5vw;
+      height: 2.5vw;
       position: relative;
-      top: 385px;
-      left: -45px;
-
-
+      top: 34vw;
+      left: 4vw;
+    
       @media screen and (max-width: $mobile-view) {
-        width: 22px;
-        height: 22px;
-        top: 330px;
-        left: -50px;
+        width: 6vw;
+        height: 6vw;
+        top: 81vw;
+        left: 20vw;
       }
     }
 
     &__Circpurple {
-      width: 33.9px;
-      height: 33.9px;
+      width: 3vw;
+      height: 3vw;
       position: relative;
-      top: 50px;
-      left: 85px;
-
+      top: 5vw;
+      left: 19vw;
+    
       @media screen and (max-width: $mobile-view) {
-
-        width: 30px;
-        height: 30px;
-        top: 40px;
-        left: 70px;
+        width: 7vw;
+        height: 7vw;
+        top: 19vw;
+        left: 50vw;
       }
     }
   }
