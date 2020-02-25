@@ -5,11 +5,6 @@ function About() {
   return (
     <div className="aboutcontainer">
       <div className="aboutcontainer__images">
-        {/* <img
-          src="media/Asset 12@4x.png"
-          className="aboutcontainer__images__spaceship"
-          alt="spaceship"
-        /> */}
         <img
           src="media/Asset 16@4x.png"
           className="aboutcontainer__images__Recpurplebig animation-particles-rotate"
