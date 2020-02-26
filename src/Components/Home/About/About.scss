@@ -68,6 +68,7 @@
       height: 3vw;
       position: relative;
       left: 5.5vw;
+      z-index: 3;
 
       @media screen and (max-width: $mobile-view) {
         width: 8vw;
@@ -83,6 +84,7 @@
       position: relative;
       top: 0.5vw;
       left: 6vw;
+      z-index: 3;
       
       @media screen and (max-width: $mobile-view) {
         width: 3vw;
@@ -98,6 +100,7 @@
       position: relative;
       top: 31vw;
       left: 21.5vw;
+      z-index: 3;
 
       @media screen and (max-width: $mobile-view) {
         width: 6vw;
@@ -113,6 +116,7 @@
       position: relative;
       top: 34vw;
       left: 4vw;
+      z-index: 3;
     
       @media screen and (max-width: $mobile-view) {
         width: 6vw;
@@ -128,6 +132,7 @@
       position: relative;
       top: 5vw;
       left: 19vw;
+      z-index: 3;
     
       @media screen and (max-width: $mobile-view) {
         width: 7vw;
