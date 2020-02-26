@@ -220,12 +220,21 @@
   top: 10px;
   left: 365px;
   z-index: 3;
+  
   @media screen and (max-width: $mobile-view){
     width: 20px;
     height: 20px;
     top: 20px;
     left: 280px;
   }
+  @media screen and (max-width:400px){
+    top: 15px;
+    left: 255px;
+  }
+  // @media screen and (max-width:1080px){
+  //   top: 15px;
+  //   left: 285px;
+  // }
 }
 .Recpurple2{
   width: 30px;
@@ -240,6 +249,14 @@
     top: 165px;
     left: 15px;
   }
+  @media screen and (max-width:400px){
+    top: 150px;
+    left: 10px;
+  }
+  // @media screen and (max-width:1080px){
+  //   top: 170px;
+  //   left: 10px;
+  // }
 }
 .Circpurple1{
   width: 40px;
@@ -302,4 +319,12 @@
     top: 100px;
     left: 300px;
   }
+  @media screen and (max-width:400px){
+    top: 90px;
+    left: 270px;
+  }
+  // @media screen and (max-width:1080px){
+  //   top: 90px;
+  //   left: 310px;
+  // }
 }
