@@ -10,7 +10,7 @@ function About() {
           className="aboutcontainer__images__spaceship"
           alt="spaceship"
         />
-        {/* <img
+        <img
           src="media/Asset 16@4x.png"
           className="aboutcontainer__images__Recpurplebig animation-particles-rotate"
           alt="rectanglepurple"
@@ -34,7 +34,7 @@ function About() {
           src="media/Asset 15@4x.png"
           className="aboutcontainer__images__Circpurple animation-particles-rotate"
           alt="circpurple"
-        /> */}
+        />
       </div>
       <div className="aboutcontainer__card">
         <div className="aboutcontainer__card__header section-title">
