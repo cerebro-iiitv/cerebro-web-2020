@@ -8,11 +8,11 @@
   }
 
   &__font-awe {
-    position: absolute;
+    position: fixed;
     color: $color-style;
     list-style-type: none;
     right: 30px;
-    bottom: 20px;
+    bottom: 30px;
     z-index: 1;
     @media screen and (max-width: 600px) {
       position: relative;

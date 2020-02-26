@@ -77,10 +77,10 @@
 .sponsor_wrapper {
   padding-top: 48px;
   display: grid;
-  grid-gap: 1rem;
+  //grid-gap: 1rem;
   grid-template-columns: auto auto auto auto;
   @media screen and (max-width: $mobile-view) {
-    padding: 20px;
+    padding: 5px;
     grid-template-columns: auto auto;
   }
 }
@@ -89,7 +89,32 @@
   align-self: center;
   justify-self: center;
   animation: glow 4s linear infinite;
+  @media screen and (max-width: $QHD-screen){
+    height: 112px;
+  }
   @media screen and (max-width: $mobile-view) {
     height: 80px;
+  }
+  @media screen and (max-width: $small-mobile){
+    height: 60px;
+  }
+}
+
+.sponsor_wrapper_second_row {
+  justify-content: center;
+  grid-gap: 8rem;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  // grid-template-areas: 100px;
+  @media screen and (max-width: $mobile-view) {
+    padding-top: 1px;
+    padding-left: 10px;
+    grid-gap: 0.7rem;
+  }
+  @media screen and (max-width: $small-mobile) {
+    padding: 5px;
+    padding-top: 0px;
+    grid-gap: 2.3rem;
   }
 }

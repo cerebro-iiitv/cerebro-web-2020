@@ -71,10 +71,19 @@
         font-weight: bolder;
       }
 
-      &:hover,
-      &.active {
-        color: $color-style;
-        font-size: 22px;
+      &__login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $color-style;
+        background-color: $color-background;
+        border-radius: 50%;
+        border-color: $color-style;
+        height: 70px;
+        width: 70px;
+        line-height: 1;
+        font-size: 36px;
+        position: relative;
         cursor: pointer;
         &::after {
           background-color: $color-style;
