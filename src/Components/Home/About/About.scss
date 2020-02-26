@@ -8,7 +8,6 @@
   overflow: hidden;
    @media screen and (max-width: $mobile-view) {
       flex-flow: column wrap;
-      
     }
 
   &__images {   
@@ -16,96 +15,130 @@
     @media screen and (max-width: $mobile-view) {
       height: 70%;
     }
+    padding-right: 5%;
 
-    &__spaceship {
-      height: auto;
-      width: 90%;
+    &__spaceship1 {
+      width: 30vw;
+      z-index: 1;
+      display: flex;
+      position: relative;
+      top: -2.5vw;
+
+      @media screen and (max-width: $mobile-view) {
+        width: 75%;
+        top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &__spaceship2 {
+      width: 30vw;
+      display: flex;
+      z-index: 2;
+      position: relative;
+      top: -8vw;
+      animation: space-float 3s ease-in-out infinite alternate;
 
       @media screen and (max-width: $mobile-view) {
         width: 70%;
-        height: auto;
-        max-width: 300px;
-        display: block;
+        top: -11vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &__spaceship3 {
+      width: 16vw;
+      position: relative;
+      display: flex;
+      z-index: 1;
+      top: -15vw;
+      left: 10.5vw;
+
+      @media screen and (max-width: $mobile-view) {
+        width: 40%;
+        top: -25vw;
+        left: 9vw;
         margin-left: auto;
         margin-right: auto;
       }
     }
 
     &__Recpurplebig {
-      width: 33.9px;
-      height: 33.9px;
+      width: 3vw;
+      height: 3vw;
       position: relative;
-      top: -535px;
-      left: -382px;
+      left: 5.5vw;
+      z-index: 3;
 
       @media screen and (max-width: $mobile-view) {
-
-        width: 30px;
-        height: 30px;
-        top: -330px;
-        left: 120px;
+        width: 8vw;
+        height: 8vw;
+        top: 8vw;
+        left: 24vw;
       }
     }
 
     &__Recpurplesmall {
-      width: 13.9px;
-      height: 13.9px;
+      width: 1.2vw;
+      height: 1.2vw;
       position: relative;
-      top: -530px;
-      left: -371px;
-
+      top: 0.5vw;
+      left: 6vw;
+      z-index: 3;
+      
       @media screen and (max-width: $mobile-view) {
-        width: 10px;
-        height: 10px;
-        top: -320px;
-        left: 125px;
+        width: 3vw;
+        height: 3vw;
+        top: 9vw;
+        left: 25vw;
       }
     }
 
     &__Recpink {
-      width: 33.9px;
-      height: 33.9px;
+      width: 2.5vw;
+      height: 2.5vw;
       position: relative;
-      top: -99px;
-      left: 384px;
-      @media screen and (max-width: $mobile-view) {
+      top: 31vw;
+      left: 21.5vw;
+      z-index: 3;
 
-        width: 22px;
-        height: 22px;
-        top: -55px;
-        left: 230px;
+      @media screen and (max-width: $mobile-view) {
+        width: 6vw;
+        height: 6vw;
+        top: 73vw;
+        left: 57vw;
       }
     }
 
     &__Circpin {
-      width: 33.9px;
-      height: 33.9px;
+      width: 2.5vw;
+      height: 2.5vw;
       position: relative;
-      top: -53px;
-      left: 149px;
-
-
+      top: 34vw;
+      left: 4vw;
+      z-index: 3;
+    
       @media screen and (max-width: $mobile-view) {
-        width: 22px;
-        height: 22px;
-        top: -35px;
-        left: 100px;
+        width: 6vw;
+        height: 6vw;
+        top: 81vw;
+        left: 20vw;
       }
     }
 
     &__Circpurple {
-      width: 33.9px;
-      height: 33.9px;
+      width: 3vw;
+      height: 3vw;
       position: relative;
-      top: -495px;
-      left: 348px;
-
+      top: 5vw;
+      left: 19vw;
+      z-index: 3;
+    
       @media screen and (max-width: $mobile-view) {
-
-        width: 25px;
-        height: 25px;
-        top: -280px;
-        left: 205px;
+        width: 7vw;
+        height: 7vw;
+        top: 19vw;
+        left: 50vw;
       }
     }
   }
