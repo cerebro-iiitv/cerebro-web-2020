@@ -7,12 +7,11 @@
 
   @media screen and (max-width: $mobile-view) {
     width: 100vw;
-    min-width: 100vw;
     position: fixed;
+    bottom: 0%;
     left: 0px;
-    display: initial;
+    justify-content: center;
     padding: 0px 10px;
-    box-sizing: border-box;
     overflow-x: auto;
     height: -moz-fit-content;
     height: fit-content;
@@ -21,6 +20,8 @@
   &__links {
     display: flex;
     flex-direction: column;
+    width: 160px;
+
     @media screen and (max-width: $mobile-view) {
       width: max-content;
       // min-width: 100vw;

@@ -21,32 +21,7 @@
     }
 
     @media screen and (max-width: $mobile-view) {
-      width: 400px;
-      position: fixed;
-      top: 80%;
-      left: 24%;
-    }
-
-    @media screen and (max-width: 800px) {
-      width: 400px;
-      position: fixed;
-      bottom: -150px;
-      top: 75%;
-      left: 24%;
-    }
-
-    @media screen and (max-width: 550px) {
-      position: fixed;
-      top: 72%;
-      left: 15%;
-      width: 375px;
-    }
-
-    @media screen and (max-width: 475px) {
-      width: 285px;
-      position: fixed;
-      top: 76%;
-      left: 15%;
+      display: none;
     }
 
     transition: all 0.25s linear;
@@ -55,12 +30,12 @@
   &__dial3 {
     width: 375px;
     position: absolute;
-    left: -1.5%;
+    left: -1%;
     top: 220px;
     transition: all 0.25s linear;
 
     @media screen and (max-width: 1920px) {
-      left: -2.5%;
+      left: -2%;
     }
 
     @media screen and (max-width: $QHD-screen) {
@@ -69,41 +44,19 @@
     }
 
     @media screen and (max-width: $mobile-view) {
-      top: 84%;
-      position: fixed;
-      left: 28%;
+      display: none;
     }
 
-    @media screen and (max-width: 800px) {
-      width: 325px;
-      top: 80%;
-      position: fixed;
-      left: 29%;
-    }
-
-    @media screen and (max-width: 550px) {
-      width: 310px;
-      top: 75%;
-      position: fixed;
-      left: 21%
-    }
-
-    @media screen and (max-width: 475px) {
-      width: 245px;
-      position: fixed;
-      top: 80%;
-      left: 20%;
-    }
   }
 
   &__dial4 {
     width: 225px;
     position: absolute;
-    left: 1.5%;
+    left: 3%;
     top: 300px;
 
     @media screen and (max-width: 1920px) {
-      left: 1.5%;
+      left: 2.5%;
     }
 
     @media screen and (max-width: $QHD-screen) {
@@ -111,29 +64,7 @@
     }
 
     @media screen and (max-width: $mobile-view) {
-      position: fixed;
-      top: 90%;
-      left: 36%;
-    }
-
-    @media screen and (max-width: 800px) {
-      position: fixed;
-      top: 88%;
-      left: 36%;
-    }
-
-    @media screen and (max-width: 550px) {
-      width: 185px;
-      position: fixed;
-      top: 86%;
-      left: 33%;
-    }
-
-    @media screen and (max-width: 475px) {
-      width: 135px;
-      position: fixed;
-      top: 88%;
-      left: 35%;
+      display: none;
     }
   }
 }

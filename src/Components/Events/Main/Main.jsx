@@ -16,9 +16,6 @@ export class Main extends Component {
     }
   }
   render() {
-    const rule = this.state.event.rules.map((rule, index) => {
-      return <li key={index}>{rule}<br /><br /></li>;
-    });
     return (
       <div className="main">
         <div className="main__container">
@@ -60,17 +57,32 @@ export class Main extends Component {
             <span className="main__container__content__vl"></span>
 
             <div className="main__container__content__right">
-              <div className="main__container__content__right__rules">
-                {rule}
+              <div className="main__container__content__right__main">
+                <p className="main__container__content__right__colorchange">
+                  covenors name :
+                </p>
+                {this.state.event.covenors.name}
               </div>
-
-              <div className="main__container__content__right__reg">
-                Rules and Regulations
+              <div className="main__container__content__right__main">
+                <p className="main__container__content__right__colorchange">
+                  phone no :
+                </p>
+                {this.state.event.covenors.phone}
+              </div>
+              <div className="main__container__content__right__main">
+                <p className="main__container__content__right__colorchange">
+                  co-covenors name :
+                </p>
+                {this.state.event.co_convenors.name}
               </div>
             </div>
           </div>
+
+          <div className="main__container__content__right__reg">
+            Rules and Regulations
+          </div>
           <div className="main__container__content__right__reg__but">
-            <button className="main__container__button">Register</button>
+            <a className="main__container__button">Register</a>
           </div>
         </div>
       </div>

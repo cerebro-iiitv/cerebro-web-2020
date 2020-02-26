@@ -32,7 +32,6 @@
 
     &__content {
       display: flex;
-      justify-content: space-around;
       @media screen and (max-width: $mobile-view) {
         height: 275px;
         flex-flow: row;
@@ -64,8 +63,11 @@
         }
 
 
-      }
 
+      }
+        @media screen and (max-height: 600px) {
+          height: 250px;
+        }
       &__vl {
         margin: 30px auto;
         border-left: 2px solid #1bbcf1;
@@ -80,8 +82,7 @@
         width: 250px;
         display: flex;
         flex-flow: column;
-        margin: 40px auto;
-        justify-content: space-between;
+        margin: 40px auto 0px;
 
         @media screen and (max-width: $mobile-view) {
           width: 145px;
@@ -146,10 +147,13 @@
 
       &__right {
         display: flex;
-        flex-flow: column;
-        margin: 40px auto;
+        margin: 40px auto 0;
         padding: 20px;
-        justify-content: space-between;
+        flex-flow: column;
+
+        &__main{
+          flex-flow: row;
+        }
 
         @media screen and (max-width: $mobile-view) {
           width: 182px;
@@ -161,31 +165,11 @@
           padding: 0px;
         }
 
-        &__rules {
-          width: 300px;
-          padding: 10px;
-          border: solid 1px #29abe2;
-          border-radius: 10px;
-          font-family: "Gilroy-Light";
-          font-size: 20px;
-          font-weight: 200;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.14;
-          letter-spacing: normal;
-          @media screen and (max-width: $mobile-view) {
-            width: 180px;
-            border: none;
-          }
 
-          @media screen and (max-height: 600px) {
-            list-style: none;
-            padding: 0px;
-            font-size: 15px;
-            line-height: 1;
-          }
+        &__colorchange {
+          color: #03b0ef;
+          text-transform: uppercase;
         }
-
         &__reg {
           padding-top: 10px;
           text-align: left;
@@ -203,16 +187,18 @@
     &__button {
       font-family: Gilroy;
       font-size: 20px;
-      width: 180px;
-      height: 56px;
       border-radius: 33px;
+      text-align: center;
+      display: inline-block;
+      padding: 14px 50px;
+      font-weight: 1000;
+      text-transform: uppercase;
       box-shadow: 0 3px 6px 0 rgba(105, 224, 216, 0.16);
       background-color: #1bbcf1;
 
       @media screen and (max-height: 600px) {
-        height: 40px;
-        width: 115px;
         font-size: 16px;
+        padding: 10px 30px;
       }
     }
   }
