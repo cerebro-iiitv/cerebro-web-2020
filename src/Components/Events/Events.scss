@@ -6,7 +6,7 @@
   flex-flow: row;
   justify-content: space-between;
   margin: 100px auto 0 auto;
-
+  overflow: hidden;
   @media screen and (max-width: $mobile-view) {
     flex-flow: column;
     align-items: center;

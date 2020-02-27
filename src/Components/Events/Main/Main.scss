@@ -2,7 +2,7 @@
 @import "../../../scss/base";
 
 .main {
-  width: 100%;
+  width: 600px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -11,6 +11,7 @@
     height: max-content;
     justify-content: center;
     align-items: center;
+    display: grid;
 
     &__title {
       width: max-content;
@@ -31,60 +32,67 @@
 
     &__content {
       display: flex;
-      justify-content: center;
+      &::-webkit-scrollbar {
+        width: 10px;
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgba($color-style, 0.8);
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: $color-background;
+      }
+
+      & {
+        scrollbar-face-color: $color-style;
+        scrollbar-track-color: $color-background;
+      }
 
       // Width Media Query
       @media screen and (max-width: $mobile-view) {
-        height: 400px;
-        flex-flow: row;
+        flex-flow: column;
         width: 475px;
-        margin: 0 auto;
+        margin: 10px auto;
         padding-left: 10px;
         overflow: visible auto;
 
-        &::-webkit-scrollbar {
-          width: 10px;
-          background-color: rgba(0, 0, 0, 0);
-        }
-        &::-webkit-scrollbar-thumb {
-          border-radius: 10px;
-          background-color: rgba($color-style, 0.8);
-        }
-        &::-webkit-scrollbar-track {
-          background-color: $color-background;
-        }
-        & {
-          scrollbar-face-color: $color-style;
-          scrollbar-track-color: $color-background;
-        }
+        
       }
+
       @media screen and (max-width: 700px) {
         width: 500px;
       }
+
       @media screen and (max-width: 500px) {
         width: 360px;
         padding-left: 20px;
       }
+
       @media screen and (max-width: 380px) {
         width: 350px;
         padding-left: 20px;
       }
+
       @media screen and (max-width: 360px) {
         width: 310px;
       }
 
       // Height Media Query
-      @media screen and (max-height: 800px) {
-        height: calc(100vh - 300px);
+      @media screen and (max-height: 720px) {
+        height: calc(100vh - 400px);
+            overflow-y: scroll;
       }
 
       &__vl {
-        margin: 30px auto;
+        margin: 20px auto 0px;
         border-left: 2px solid #1bbcf1;
         font-size: 2.5rem;
 
         @media screen and (max-width: $mobile-view) {
-          margin: 25px 10px;
+          display: none;
         }
       }
 
@@ -92,12 +100,13 @@
         width: 250px;
         display: flex;
         flex-flow: column;
-        margin: 40px auto 0px;
+        margin: 20px auto 0px;
 
         // Width Media Query
         @media screen and (max-width: $mobile-view) {
           width: 145px;
         }
+
         @media screen and (max-height: 600px) {
           margin: auto;
         }
@@ -155,24 +164,24 @@
       }
 
       &__right {
-        width: 200px;
-        display: flex;
-        margin: 40px auto;
+        width: max-content;
+        margin: 20px auto;
         padding: 20px;
         padding-top: 0;
-        flex-flow: column;
 
         &__main {
-          flex-flow: row;
+          display: flex;
+          align-items: center;
         }
 
         @media screen and (max-width: $mobile-view) {
-          margin-left: 0px;
+          // margin-left: 0px;
           padding: 5px;
         }
+
         @media screen and (max-width: 360px) {
           // width: 182px;
-          margin: auto;
+          margin: 0 auto;
           padding: 0px;
         }
 
@@ -181,11 +190,16 @@
           text-transform: uppercase;
           margin-top: 5px;
         }
+
         &__reg {
-          padding-top: 10px;
+          padding-top: 20px;
           text-align: left;
           color: #1d9fc9;
 
+          @media screen and (max-width: $mobile-view) {
+            position: fixed;
+            bottom: 140px;
+          }
           @media screen and (max-width: 360px) {
             font-size: 10px;
             padding-left: 10px;
