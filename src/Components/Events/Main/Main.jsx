@@ -75,6 +75,24 @@ export class Main extends Component {
                 </p>
                 {this.state.event.co_convenors.name}
               </div>
+              <div className="main__container__content__right__main">
+                <p className="main__container__content__right__colorchange">
+                  co-covenors number :
+                </p>
+                {this.state.event.co_convenors.phone}
+              </div>
+              <div className="main__container__content__right__main">
+                <p className="main__container__content__right__colorchange">
+                  Member 1 :
+                </p>
+                {this.state.event.members[0]}
+              </div>
+              <div className="main__container__content__right__main">
+                <p className="main__container__content__right__colorchange">
+                  Member 2 :
+                </p>
+                {this.state.event.members[1]}
+              </div>
             </div>
           </div>
 

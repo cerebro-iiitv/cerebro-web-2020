@@ -162,6 +162,7 @@
         display: flex;
         margin: 40px auto;
         padding: 20px;
+        padding-top: 0;
         flex-flow: column;
 
         &__main {
@@ -181,6 +182,7 @@
         &__colorchange {
           color: #03b0ef;
           text-transform: uppercase;
+          margin-top: 5px;
         }
         &__reg {
           padding-top: 10px;
@@ -202,7 +204,8 @@
     }
 
     &__button {
-      font-family: Gilroy;
+      font-family: "Gilroy-Light", Arial, Helvetica, sans-serif;
+      letter-spacing: 2px;
       font-size: 20px;
       border-radius: 33px;
       text-align: center;
