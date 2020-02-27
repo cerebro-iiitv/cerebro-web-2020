@@ -9,8 +9,7 @@
 
   &__dial2 {
     width: 450px;
-    position: fixed;
-    top: 700px;
+    position: absolute;
     left: -3%;
 
     @media screen and (max-width: 1920px) {
@@ -47,6 +46,7 @@
     @media screen and (max-width: $mobile-view) {
       display: none;
     }
+
   }
 
   &__dial4 {
@@ -72,6 +72,7 @@
 .rotate {
   transform: rotate(30deg);
 }
+
 .rotate-rev {
   transform: rotate(-30deg);
 }
