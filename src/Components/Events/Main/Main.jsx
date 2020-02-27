@@ -59,25 +59,25 @@ export class Main extends Component {
             <div className="main__container__content__right">
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
-                  covenors name :
+                  Covenor :
                 </p>
                 {this.state.event.covenors.name}
               </div>
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
-                  phone no :
+                  Phone :
                 </p>
                 {this.state.event.covenors.phone}
               </div>
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
-                  co-covenors name :
+                  Co-Covenor :
                 </p>
                 {this.state.event.co_convenors.name}
               </div>
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
-                  co-covenors number :
+                  Phone :
                 </p>
                 {this.state.event.co_convenors.phone}
               </div>

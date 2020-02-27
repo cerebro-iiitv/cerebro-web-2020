@@ -10,11 +10,6 @@ class Circle extends Component {
     var dial2 = document.querySelector(".circle__dial2");
     var dial3 = document.querySelector(".circle__dial3");
     if (nextprops !== this.props) {
-      console.log(
-        nextprops.index,
-        this.props.index,
-        nextprops.index - this.props.index
-      );
       dial2.style.webkitTransform = "rotate(" + nextprops.index * 30 + "deg)";
       dial3.style.webkitTransform = "rotate(" + -nextprops.index * 30 + "deg)";
     }
