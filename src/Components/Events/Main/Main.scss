@@ -75,11 +75,8 @@
 
       // Height Media Query
       @media screen and (max-height: 800px) {
-        height: calc(100vh - 310px);
+        height: calc(100vh - 300px);
       }
-      // @media screen and (max-height: 640px) {
-      //   height: calc(100vh - 370px);
-      // }
 
       &__vl {
         margin: 30px auto;
@@ -217,6 +214,8 @@
       background-color: #1bbcf1;
 
       @media screen and (max-width: $mobile-view) {
+        position: fixed;
+        bottom: 75px;
         width: 130px;
         height: 35px;
         font-size: 19px;
