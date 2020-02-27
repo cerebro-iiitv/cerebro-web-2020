@@ -22,22 +22,7 @@
     }
 
     @media screen and (max-width: $mobile-view) {
-      position: relative;
-      left: -85%;
-      top: 700px;
-    }
-
-    @media screen and (max-width: 800px) {
-      position: fixed;
-      top: 80%;
-      left: 14%;
-    }
-
-    @media screen and (max-width: 550px) {
-      left: -76%;
-      position: fixed;
-      top: 80%;
-      left: -5%;
+      display: none;
     }
 
     transition: all 0.25s linear;
@@ -46,12 +31,12 @@
   &__dial3 {
     width: 375px;
     position: absolute;
-    left: -1.5%;
+    left: -1%;
     top: 220px;
     transition: all 0.25s linear;
 
     @media screen and (max-width: 1920px) {
-      left: -2.5%;
+      left: -2%;
     }
 
     @media screen and (max-width: $QHD-screen) {
@@ -60,32 +45,18 @@
     }
 
     @media screen and (max-width: $mobile-view) {
-      top: 84%;
-      position: fixed;
-      left: 28%;
-    }
-
-    @media screen and (max-width: 800px) {
-      top: 84%;
-      position: fixed;
-      left: 20%;
-    }
-
-    @media screen and (max-width: 550px) {
-      top: 86%;
-      position: fixed;
-      left: 4%;
+      display: none;
     }
   }
 
   &__dial4 {
     width: 225px;
     position: absolute;
-    left: 1.5%;
+    left: 3%;
     top: 300px;
 
     @media screen and (max-width: 1920px) {
-      left: 1.5%;
+      left: 2.5%;
     }
 
     @media screen and (max-width: $QHD-screen) {
@@ -93,23 +64,7 @@
     }
 
     @media screen and (max-width: $mobile-view) {
-      position: fixed;
-      top: 90%;
-      left: 36%;
-    }
-
-    @media screen and (max-width: 800px) {
-      left: -76%;
-      position: fixed;
-      top: 90%;
-      left: 32%;
-    }
-
-    @media screen and (max-width: 550px) {
-      left: -42%;
-      position: fixed;
-      top: 94%;
-      left: 22%;
+      display: none;
     }
   }
 }
