@@ -27,54 +27,67 @@
         font-size: 40px;
         line-height: 1;
       }
-
     }
 
     &__content {
       display: flex;
+      justify-content: center;
+
+      // Width Media Query
       @media screen and (max-width: $mobile-view) {
-        height: 275px;
+        height: 400px;
         flex-flow: row;
         width: 475px;
         margin: 0 auto;
         padding-left: 10px;
         overflow: visible auto;
 
-        // Custom Scrollbar styling
         &::-webkit-scrollbar {
           width: 10px;
           background-color: rgba(0, 0, 0, 0);
         }
-
         &::-webkit-scrollbar-thumb {
           border-radius: 10px;
           background-color: rgba($color-style, 0.8);
         }
-
         &::-webkit-scrollbar-track {
-          // border: 1px solid $color-style;
           background-color: $color-background;
         }
-
-        // For Internet Explorer
         & {
           scrollbar-face-color: $color-style;
           scrollbar-track-color: $color-background;
         }
-
-
-
       }
-        @media screen and (max-height: 600px) {
-          height: 250px;
-        }
+      @media screen and (max-width: 700px) {
+        width: 500px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 360px;
+        padding-left: 20px;
+      }
+      @media screen and (max-width: 380px) {
+        width: 350px;
+        padding-left: 20px;
+      }
+      @media screen and (max-width: 360px) {
+        width: 310px;
+      }
+
+      // Height Media Query
+      @media screen and (max-height: 800px) {
+        height: calc(100vh - 310px);
+      }
+      // @media screen and (max-height: 640px) {
+      //   height: calc(100vh - 370px);
+      // }
+
       &__vl {
         margin: 30px auto;
         border-left: 2px solid #1bbcf1;
         font-size: 2.5rem;
 
-        @media screen and (max-width:430px) {
-          margin: 10px 0px;
+        @media screen and (max-width: $mobile-view) {
+          margin: 25px 10px;
         }
       }
 
@@ -84,13 +97,12 @@
         flex-flow: column;
         margin: 40px auto 0px;
 
+        // Width Media Query
         @media screen and (max-width: $mobile-view) {
           width: 145px;
         }
-
         @media screen and (max-height: 600px) {
-          margin: 15px;
-          margin-right: 0px;
+          margin: auto;
         }
 
         &__details {
@@ -118,7 +130,7 @@
           }
 
           @media screen and (max-height: 600px) {
-            font-size: 16px;
+            font-size: 12px;
           }
         }
 
@@ -146,25 +158,25 @@
       }
 
       &__right {
+        width: 200px;
         display: flex;
-        margin: 40px auto 0;
+        margin: 40px auto;
         padding: 20px;
         flex-flow: column;
 
-        &__main{
+        &__main {
           flex-flow: row;
         }
 
         @media screen and (max-width: $mobile-view) {
-          width: 182px;
-        }
-
-        @media screen and (max-height: 600px) {
-          margin: 15px;
           margin-left: 0px;
+          padding: 5px;
+        }
+        @media screen and (max-width: 360px) {
+          // width: 182px;
+          margin: auto;
           padding: 0px;
         }
-
 
         &__colorchange {
           color: #03b0ef;
@@ -174,6 +186,11 @@
           padding-top: 10px;
           text-align: left;
           color: #1d9fc9;
+
+          @media screen and (max-width: 360px) {
+            font-size: 10px;
+            padding-left: 10px;
+          }
 
           &__but {
             display: flex;
@@ -196,9 +213,13 @@
       box-shadow: 0 3px 6px 0 rgba(105, 224, 216, 0.16);
       background-color: #1bbcf1;
 
-      @media screen and (max-height: 600px) {
-        font-size: 16px;
-        padding: 10px 30px;
+      @media screen and (max-width: $mobile-view) {
+        width: 130px;
+        height: 35px;
+        font-size: 19px;
+        text-align: center;
+        padding: 0px;
+        padding-top: 10px;
       }
     }
   }
