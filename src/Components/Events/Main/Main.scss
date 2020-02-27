@@ -32,6 +32,7 @@
 
     &__content {
       display: flex;
+
       &::-webkit-scrollbar {
         width: 10px;
         background-color: rgba(0, 0, 0, 0);
@@ -59,7 +60,7 @@
         padding-left: 10px;
         overflow: visible auto;
 
-        
+
       }
 
       @media screen and (max-width: 700px) {
@@ -81,9 +82,9 @@
       }
 
       // Height Media Query
-      @media screen and (max-height: 720px) {
+      @media screen and (max-height: 830px) {
         height: calc(100vh - 400px);
-            overflow-y: scroll;
+        overflow-y: scroll;
       }
 
       &__vl {
@@ -192,14 +193,15 @@
         }
 
         &__reg {
-          padding-top: 20px;
+          padding-top: 10px;
           text-align: left;
           color: #1d9fc9;
 
           @media screen and (max-width: $mobile-view) {
-            position: fixed;
-            bottom: 140px;
+            margin: 0 auto;
           }
+
+
           @media screen and (max-width: 360px) {
             font-size: 10px;
             padding-left: 10px;
