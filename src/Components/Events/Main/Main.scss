@@ -2,11 +2,10 @@
 @import "../../../scss/base";
 
 .main {
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-
 
   &__container {
     height: max-content;
@@ -56,35 +55,14 @@
       // Width Media Query
       @media screen and (max-width: $mobile-view) {
         flex-flow: column;
-        width: 475px;
+        width: 100%;
         margin: 10px auto;
-        padding-left: 10px;
         overflow: visible auto;
-
-
-      }
-
-      @media screen and (max-width: 700px) {
-        width: 500px;
-      }
-
-      @media screen and (max-width: 500px) {
-        width: 360px;
-        padding-left: 20px;
-      }
-
-      @media screen and (max-width: 380px) {
-        width: 350px;
-        padding-left: 20px;
-      }
-
-      @media screen and (max-width: 360px) {
-        width: 310px;
       }
 
       // Height Media Query
-      @media screen and (max-height: 830px) {
-        height: calc(100vh - 350px);
+      @media screen and (max-height: 830px) and (max-width: $mobile-view) {
+        height: calc(100vh - 400px);
         overflow-y: scroll;
       }
 
@@ -106,7 +84,7 @@
 
         // Width Media Query
         @media screen and (max-width: $mobile-view) {
-          width: 145px;
+          width: 100%;
         }
 
         @media screen and (max-height: 600px) {
@@ -152,7 +130,10 @@
           letter-spacing: normal;
 
           @media screen and (max-width: $mobile-view) {
-            font-size: 15px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0px;
+            font-size: 17px;
           }
 
           @media screen and (max-height: 600px) {
@@ -177,14 +158,10 @@
         }
 
         @media screen and (max-width: $mobile-view) {
-          // margin-left: 0px;
-          padding: 5px;
-        }
-
-        @media screen and (max-width: 360px) {
-          // width: 182px;
+          width: 100%;
           margin: 0 auto;
           padding: 0px;
+          font-size: 16px;
         }
 
         &__colorchange {
@@ -200,12 +177,6 @@
 
           @media screen and (max-width: $mobile-view) {
             margin: 0 auto;
-          }
-
-
-          @media screen and (max-width: 360px) {
-            font-size: 10px;
-            padding-left: 10px;
           }
 
           &__but {
