@@ -36,25 +36,27 @@ export class Main extends Component {
                   <p className="main__container__content__left__info__colorchange">
                     Prize Worth:{" "}
                   </p>{" "}
-                  {this.state.event.prize}
+                  <p className="main__container__content__left__info__nochange">{this.state.event.prize}</p>
                 </div>
                 <div className="main__container__content__left__details">
                   <p className="main__container__content__left__info__colorchange">
                     Team Size:{" "}
                   </p>{" "}
-                  {this.state.event.teamSize}
+                  <p className="main__container__content__left__info__nochange">{this.state.event.teamSize}</p>
+
                 </div>
                 <div className="main__container__content__left__details">
                   <p className="main__container__content__left__info__colorchange">
                     Venue:{" "}
                   </p>{" "}
-                  {this.state.event.venue}
+                  <p className="main__container__content__left__info__nochange">{this.state.event.venue}</p>
                 </div>
                 <div className="main__container__content__left__details">
                   <p className="main__container__content__left__info__colorchange">
                     Time:{" "}
-                  </p>{" "}
-                  {this.state.event.startTime} to
+                  </p>{ }
+                  <p className="main__container__content__left__info__nochange">{ }</p>
+                  {this.state.event.startTime} to { }
                   {this.state.event.endTime}
                 </div>
               </div>
@@ -67,37 +69,37 @@ export class Main extends Component {
                 <p className="main__container__content__right__colorchange">
                   Covenor :
                 </p>
-                {this.state.event.covenors.name}
+                <p className="main__container__content__left__info__nochange">{this.state.event.covenors.name}</p>
               </div>
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
                   Phone :
                 </p>
-                {this.state.event.covenors.phone}
+                <p className="main__container__content__left__info__nochange">{this.state.event.covenors.phone}</p>
               </div>
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
                   Co-Covenor :
                 </p>
-                {this.state.event.co_convenors.name}
+                <p className="main__container__content__left__info__nochange">{this.state.event.co_convenors.name}</p>
               </div>
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
                   Phone :
                 </p>
-                {this.state.event.co_convenors.phone}
+                <p className="main__container__content__left__info__nochange">{this.state.event.co_convenors.phone}</p>
               </div>
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
                   Member 1 :
                 </p>
-                {this.state.event.members[0]}
+                <p className="main__container__content__left__info__nochange">{this.state.event.members[0]}</p>
               </div>
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
                   Member 2 :
                 </p>
-                {this.state.event.members[1]}
+                <p className="main__container__content__left__info__nochange">{this.state.event.members[1]}</p>
               </div>
             </div>
           </div>
