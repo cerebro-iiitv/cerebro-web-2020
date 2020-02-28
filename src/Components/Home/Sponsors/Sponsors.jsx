@@ -44,8 +44,20 @@ function Sponsors() {
           className="sponsor_img"
           alt="sponsor Four"
         />
-
       </div>
+      <div class="sponsor_wrapper_second_row"> 
+        <img
+          src="media/stickermuletransparent.png"
+          className="sponsor_img"
+          alt="sponsor Five"
+        />
+         <img
+          src="media/souledstoretransparent.png"
+          className="sponsor_img"
+          alt="sponsor Six"
+        />
+      </div>
+ 
     </div>
   );
 }
