@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 import "./Main.scss";
 
 export class Main extends Component {
   constructor(props) {
     super(props);
-
+    this.container = React.createRef();
     this.state = {
       event: props.event
     };
@@ -13,12 +13,18 @@ export class Main extends Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.event !== this.props.event) {
       this.setState({ event: nextProps.event });
+
+      this.container.current.className =
+        "main__container animation-fade-in";
+      setTimeout(() => {
+        this.container.current.className = "main__container";
+      }, 500);
     }
   }
   render() {
     return (
       <div className="main">
-        <div className="main__container">
+        <div className="main__container" ref={this.container}>
           <h1 className="main__container__title">{this.state.event.Title}</h1>
           <div className="main__container__content">
             <div className="main__container__content__left">
