@@ -67,8 +67,9 @@
 
       &:hover {
         cursor: pointer;
-        color: $color-style;
+        color: White;
         opacity: 1;
+        font-weight: 800;
       }
       &:not(:last-of-type) {
         margin-bottom: 25px;
