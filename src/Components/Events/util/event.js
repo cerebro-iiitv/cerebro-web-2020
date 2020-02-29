@@ -2,8 +2,13 @@ export const events = [
   {
     Title: "Typeracer",
     description: "Let the programming juice flow in your brain!",
+<<<<<<< HEAD
     covenors: {name:"Pushkar",phone:9876543210},
     co_convenors: {name:"Patel",phone:9876543210},
+=======
+    covenors: { name: "Pushkar", phone: 9876543210 },
+    co_convenors: { name: "Patel", phone: 9876543210 },
+>>>>>>> fa90f0658f9bc93edeeb954f9f23ea9b60a352db
     members: ["anuj", "puri"],
     prize: 6000,
     teamSize: 1,
@@ -14,8 +19,13 @@ export const events = [
   {
     Title: "Vision",
     description: "Both the rounds online as well as",
+<<<<<<< HEAD
     covenors: {name:"Anuj",phone:9876543210},
     co_convenors: {name:"Puri",phone:9876543210},
+=======
+    covenors: { name: "Anuj", phone: 9876543210 },
+    co_convenors: { name: "Puri", phone: 9876543210 },
+>>>>>>> fa90f0658f9bc93edeeb954f9f23ea9b60a352db
     members: ["Pushkar", "Patel"],
     prize: 3000,
     teamSize: 3,
@@ -26,8 +36,13 @@ export const events = [
   {
     Title: "Cook-A-Code",
     description: "Let the programming juice flow in your brain!",
+<<<<<<< HEAD
     covenors: {name:"Aditya",phone:9876543210},
     co_convenors: {name:"Prakash",phone:9876543210},
+=======
+    covenors: { name: "Aditya", phone: 9876543210 },
+    co_convenors: { name: "Prakash", phone: 9876543210 },
+>>>>>>> fa90f0658f9bc93edeeb954f9f23ea9b60a352db
     members: ["Yash", "Shah"],
     prize: 5000,
     teamSize: 3,
@@ -38,8 +53,13 @@ export const events = [
   {
     Title: "Ideathon",
     description: "Let the programming juice flow in your brain!",
+<<<<<<< HEAD
     covenors: {name:"Yash",phone:9876543210},
     co_convenors: {name:"Shah",phone:9876543210},
+=======
+    covenors: { name: "Yash", phone: 9876543210 },
+    co_convenors: { name: "Shah", phone: 9876543210 },
+>>>>>>> fa90f0658f9bc93edeeb954f9f23ea9b60a352db
     members: ["Aditya", "Prakash"],
     prize: 5000,
     teamSize: 3,
@@ -50,8 +70,13 @@ export const events = [
   {
     Title: "Hired",
     description: "Let the programming juice flow in your brain!",
+<<<<<<< HEAD
     covenors: {name:"Puri",phone:9876543210},
     co_convenors: {name:"Patel",phone:9876543210},
+=======
+    covenors: { name: "Puri", phone: 9876543210 },
+    co_convenors: { name: "Patel", phone: 9876543210 },
+>>>>>>> fa90f0658f9bc93edeeb954f9f23ea9b60a352db
     members: ["Prakash", "Shah"],
     prize: 5000,
     teamSize: 3,

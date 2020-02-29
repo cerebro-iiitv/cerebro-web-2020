@@ -9,6 +9,7 @@ import Team from "./Components/Team/Team";
 import Events from "./Components/Events/Events";
 class App extends React.Component {
   componentDidMount() {
+
     document.getElementById("root-loader").style.display = "none";
   }
 
@@ -16,7 +17,7 @@ class App extends React.Component {
     return (
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/events" component={Events} />
+        <Route path="/events" render={props => <Events {...props} events={this.state.events} />} />
         <Route path="/team" component={Team} />
         <Route path="/timeline" component={Timeline} />
       </Switch>
