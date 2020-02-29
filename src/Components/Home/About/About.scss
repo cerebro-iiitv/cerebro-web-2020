@@ -6,11 +6,11 @@
   flex-direction: row;
   margin: 7% 0;
   overflow: hidden;
-   @media screen and (max-width: $mobile-view) {
-      flex-flow: column wrap;
-    }
+  @media screen and (max-width: $mobile-view) {
+    flex-flow: column wrap;
+  }
 
-  &__images {   
+  &__images {
     margin: 3%;
     @media screen and (max-width: $mobile-view) {
       height: 70%;
@@ -85,7 +85,7 @@
       top: 0.5vw;
       left: 6vw;
       z-index: 3;
-      
+
       @media screen and (max-width: $mobile-view) {
         width: 3vw;
         height: 3vw;
@@ -117,7 +117,7 @@
       top: 34vw;
       left: 4vw;
       z-index: 3;
-    
+
       @media screen and (max-width: $mobile-view) {
         width: 6vw;
         height: 6vw;
@@ -133,7 +133,7 @@
       top: 5vw;
       left: 19vw;
       z-index: 3;
-    
+
       @media screen and (max-width: $mobile-view) {
         width: 7vw;
         height: 7vw;
@@ -182,9 +182,8 @@
       }
     }
   }
-  
-  @media screen and(max-width:$mobile-view) {
 
+  @media screen and(max-width:$mobile-view) {
     flex-flow: column;
     margin-left: 0px;
   }
