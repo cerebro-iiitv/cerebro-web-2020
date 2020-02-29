@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 import "./Main.scss";
 
 export class Main extends Component {
   constructor(props) {
     super(props);
-
+    this.container = React.createRef();
     this.state = {
       event: props.event
     };
@@ -13,12 +13,18 @@ export class Main extends Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.event !== this.props.event) {
       this.setState({ event: nextProps.event });
+
+      this.container.current.className =
+        "main__container animation-fade-in";
+      setTimeout(() => {
+        this.container.current.className = "main__container";
+      }, 500);
     }
   }
   render() {
     return (
       <div className="main">
-        <div className="main__container">
+        <div className="main__container" ref={this.container}>
           <h1 className="main__container__title">{this.state.event.Title}</h1>
           <div className="main__container__content">
             <div className="main__container__content__left">
@@ -30,25 +36,27 @@ export class Main extends Component {
                   <p className="main__container__content__left__info__colorchange">
                     Prize Worth:{" "}
                   </p>{" "}
-                  {this.state.event.prize}
+                  <p className="main__container__content__left__info__nochange">{this.state.event.prize}</p>
                 </div>
                 <div className="main__container__content__left__details">
                   <p className="main__container__content__left__info__colorchange">
                     Team Size:{" "}
                   </p>{" "}
-                  {this.state.event.teamSize}
+                  <p className="main__container__content__left__info__nochange">{this.state.event.teamSize}</p>
+
                 </div>
                 <div className="main__container__content__left__details">
                   <p className="main__container__content__left__info__colorchange">
                     Venue:{" "}
                   </p>{" "}
-                  {this.state.event.venue}
+                  <p className="main__container__content__left__info__nochange">{this.state.event.venue}</p>
                 </div>
                 <div className="main__container__content__left__details">
                   <p className="main__container__content__left__info__colorchange">
                     Time:{" "}
-                  </p>{" "}
-                  {this.state.event.startTime} to
+                  </p>{ }
+                  <p className="main__container__content__left__info__nochange">{ }</p>
+                  {this.state.event.startTime} to { }
                   {this.state.event.endTime}
                 </div>
               </div>
@@ -59,39 +67,39 @@ export class Main extends Component {
             <div className="main__container__content__right">
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
-                  covenors name :
+                  Covenor :
                 </p>
-                {this.state.event.covenors.name}
+                <p className="main__container__content__left__info__nochange">{this.state.event.covenors.name}</p>
               </div>
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
-                  phone no :
+                  Phone :
                 </p>
-                {this.state.event.covenors.phone}
+                <p className="main__container__content__left__info__nochange">{this.state.event.covenors.phone}</p>
               </div>
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
-                  co-covenors name :
+                  Co-Covenor :
                 </p>
-                {this.state.event.co_convenors.name}
+                <p className="main__container__content__left__info__nochange">{this.state.event.co_convenors.name}</p>
               </div>
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
-                  co-covenors number :
+                  Phone :
                 </p>
-                {this.state.event.co_convenors.phone}
+                <p className="main__container__content__left__info__nochange">{this.state.event.co_convenors.phone}</p>
               </div>
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
                   Member 1 :
                 </p>
-                {this.state.event.members[0]}
+                <p className="main__container__content__left__info__nochange">{this.state.event.members[0]}</p>
               </div>
               <div className="main__container__content__right__main">
                 <p className="main__container__content__right__colorchange">
                   Member 2 :
                 </p>
-                {this.state.event.members[1]}
+                <p className="main__container__content__left__info__nochange">{this.state.event.members[1]}</p>
               </div>
             </div>
           </div>

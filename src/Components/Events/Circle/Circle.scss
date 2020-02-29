@@ -2,25 +2,26 @@
 
 .circle {
   width: 250px;
-
+  height: max-content;
   @media screen and (max-width: $QHD-screen) {
     width: 180px;
   }
 
   &__dial2 {
     width: 450px;
-    position: fixed;
-    top: 700px;
+    position: absolute;
     left: -3%;
 
     @media screen and (max-width: 1920px) {
       left: -4%;
     }
-
+    @media screen and (min-width: 1441px) {
+      left: -10%;
+      top: 180px;
+    }
     @media screen and (max-width: $QHD-screen) {
       left: -18%;
     }
-
     @media screen and (max-width: $mobile-view) {
       display: none;
     }
@@ -39,6 +40,10 @@
       left: -2%;
     }
 
+    @media screen and (min-width: 1441px) {
+      left: -7.5%;
+      top: 218px;
+    }
     @media screen and (max-width: $QHD-screen) {
       left: -14.5%;
       top: 222.5px;
@@ -47,6 +52,7 @@
     @media screen and (max-width: $mobile-view) {
       display: none;
     }
+
   }
 
   &__dial4 {
@@ -56,8 +62,12 @@
     top: 300px;
 
     @media screen and (max-width: 1920px) {
-      left: 2.5%;
+      left: 1.75%;
     }
+    @media screen and (min-width: 1441px) {
+        left: -2.5%;
+    }
+
 
     @media screen and (max-width: $QHD-screen) {
       left: -8%;
@@ -72,6 +82,7 @@
 .rotate {
   transform: rotate(30deg);
 }
+
 .rotate-rev {
   transform: rotate(-30deg);
 }
