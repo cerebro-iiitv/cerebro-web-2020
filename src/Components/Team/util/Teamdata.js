@@ -1,5 +1,4 @@
 export const teamdata = {
-
   'Core Team': [
     { id: 1, 'name': 'Keshav Purohit', 'role': 'Student Convenor', 'img': 'https://user-images.githubusercontent.com/42682370/75472030-f0618980-59b8-11ea-8401-0bad421c24fc.jpg', 'links': { 'github': 'https://github.com/Keshavpp', 'linkedin': 'https://www.linkedin.com/in/keshavpurohit21/', 'twitter': 'https://twitter.com/KeshavPurohit17'}},
     { id: 2, 'name': 'Ananya Tewari', 'role': 'Technical Lead', 'img': 'https://user-images.githubusercontent.com/42682370/75531036-f2b7f800-5a39-11ea-98a6-df6dff001951.jpg', 'links': { 'github': 'https://github.com/antew7', 'linkedin': 'https://www.linkedin.com/in/antew/', 'twitter': 'https://twitter.com/antew_' }}
@@ -63,4 +62,5 @@ export const teamdata = {
     { id: 5, 'name': 'Saksham Jain', 'role': 'Member', 'img': 'https://user-images.githubusercontent.com/42682370/75524726-7a9b0380-5a34-11ea-8a2b-9b5d22d52e12.jpg', 'links': { 'github': 'https://github.com/Sakku9009', 'linkedin': 'https://www.linkedin.com/in/saksham-jain-08a3204a', 'twitter': 'https://twitter.com/Saksham27467495' }},
     { id: 6, 'name': 'Varun Gupta', 'role': 'Member', 'img': 'https://user-images.githubusercontent.com/42682370/75524996-09a81b80-5a35-11ea-994e-fdf983727d98.png', 'links': { 'github': 'https://github.com/GvarunG', 'twitter': 'https://twitter.com/VarunGu09359074' }}
   ]
+
 }
