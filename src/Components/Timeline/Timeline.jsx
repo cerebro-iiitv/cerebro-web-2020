@@ -6,6 +6,9 @@ import Header from '../Header/Header'
 import './Timeline.scss'
 
 class Timeline extends React.Component {
+    componentWillMount() {
+        window.scroll(0, 0)
+    }
 
     render() {
         return (
