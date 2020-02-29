@@ -25,13 +25,13 @@ function Sponsors() {
       </div>
       <div class="sponsor_wrapper">
         <img
-          src="media/stickermuletransparent.png"
+          src="media/portronics.png"
           className="sponsor_img"
           alt="sponsor One"
         />
         <img
-          src="media/souledstoretransparent.png"
-          className="sponsor_img"
+          src="media/career-launcher.png"
+          className="sponsor_img__img2"
           alt="sponsor Two"
         />
         <img
@@ -40,24 +40,23 @@ function Sponsors() {
           alt="sponsor Three"
         />
         <img
-          src="media/souledstoretransparent.png"
-          className="sponsor_img"
+          src="media/codechef.png"
+          className="sponsor_img__img2"
           alt="sponsor Four"
         />
-      </div>
-      <div class="sponsor_wrapper_second_row"> 
+        <img className="sponsor_none" />
         <img
-          src="media/stickermuletransparent.png"
+          src="media/HE_logo.png"
           className="sponsor_img"
           alt="sponsor Five"
         />
-         <img
+        <img
           src="media/souledstoretransparent.png"
-          className="sponsor_img"
+          className="sponsor_img__img2"
           alt="sponsor Six"
         />
       </div>
- 
+
     </div>
   );
 }
