@@ -21,7 +21,7 @@
 .sponsor_container {
   padding: 100px 0px 120px;
   @media screen and (max-width: $mobile-view) {
-    padding: 100px 0px 0px;
+    padding: 65px 0px 50px;
   }
   overflow: hidden auto;
 }
@@ -75,46 +75,45 @@
   }
 }
 .sponsor_wrapper {
-  padding-top: 48px;
+  padding-top: 45px;
   display: grid;
-  //grid-gap: 1rem;
+  grid-row-gap: 2rem;
   grid-template-columns: auto auto auto auto;
   @media screen and (max-width: $mobile-view) {
-    padding: 5px;
+    padding: 30px 5px;
     grid-template-columns: auto auto;
   }
 }
 .sponsor_img {
-  height: 128px;
+  height: 60px;
   align-self: center;
   justify-self: center;
   animation: glow 4s linear infinite;
   @media screen and (max-width: $QHD-screen){
-    height: 112px;
+    height: 45px;
   }
   @media screen and (max-width: $mobile-view) {
-    height: 80px;
+    height: 30px;
   }
-  @media screen and (max-width: $small-mobile){
-    height: 60px;
+  &__img2{
+    height: 90px;
+    align-self: center;
+    justify-self: center;
+    animation: glow 4s linear infinite;
+    @media screen and (max-width: $QHD-screen){
+      height: 70px;
+    }
+    @media screen and (max-width: $mobile-view) {
+      height: 50px;
+    }
+    @media screen and (max-width: $small-mobile){
+      height: 40px;
+    }
   }
 }
 
-.sponsor_wrapper_second_row {
-  justify-content: center;
-  grid-gap: 8rem;
-  padding-top: 20px;
-  display: grid;
-  grid-template-columns: auto auto;
-  // grid-template-areas: 100px;
-  @media screen and (max-width: $mobile-view) {
-    padding-top: 1px;
-    padding-left: 10px;
-    grid-gap: 0.7rem;
-  }
-  @media screen and (max-width: $small-mobile) {
-    padding: 5px;
-    padding-top: 0px;
-    grid-gap: 2.3rem;
+.sponsor_none{
+  @media screen and (max-width: $mobile-view){
+    display: none;
   }
 }
