@@ -1,13 +1,26 @@
 import React, { Component, createRef } from "react";
 import "./Main.scss";
+import Modal from "react-responsive-modal";
 
 export class Main extends Component {
   constructor(props) {
     super(props);
-    this.container = React.createRef();
+    this.state = {
+      drawerOut: false,
+      open: false
+    };
   }
+  onOpenModal = () => {
+    this.setState({ open: true });
+  };
 
+  onCloseModal = () => {
+    this.setState({
+      open: false
+    });
+  };
   render() {
+    const { open } = this.state;
     const eventList = this.props.events.map((event, index) => {
       if (index == this.props.index) {
         return (
@@ -68,14 +81,18 @@ export class Main extends Component {
                 {contact.convenor}
               </p>
             </div>
-            {(contact.phone_number1!=="")?<div className="main__container__content__right__main">
-              <p className="main__container__content__right__colorchange">
-                Contact :
-              </p>
-              <p className="main__container__content__left__info__nochange">
-                {contact.phone_number1}
-              </p>
-            </div>:<></>}
+            {contact.phone_number1 !== "" ? (
+              <div className="main__container__content__right__main">
+                <p className="main__container__content__right__colorchange">
+                  Contact :
+                </p>
+                <p className="main__container__content__left__info__nochange">
+                  {contact.phone_number1}
+                </p>
+              </div>
+            ) : (
+              <></>
+            )}
             <div className="main__container__content__right__main">
               <p className="main__container__content__right__colorchange">
                 Co-Convenor :
@@ -84,14 +101,18 @@ export class Main extends Component {
                 {contact.co_convenor1}
               </p>
             </div>
-            {(contact.phone_number2!=="")?<div className="main__container__content__right__main">
-              <p className="main__container__content__right__colorchange">
-                Contact :
-              </p>
-              <p className="main__container__content__left__info__nochange">
-                {contact.phone_number2}
-              </p>
-            </div>:<></>}
+            {contact.phone_number2 !== "" ? (
+              <div className="main__container__content__right__main">
+                <p className="main__container__content__right__colorchange">
+                  Contact :
+                </p>
+                <p className="main__container__content__left__info__nochange">
+                  {contact.phone_number2}
+                </p>
+              </div>
+            ) : (
+              <></>
+            )}
             <div className="main__container__content__right__main">
               <p className="main__container__content__right__colorchange">
                 Member :
@@ -107,8 +128,8 @@ export class Main extends Component {
     return (
       <div>
         <div className="main">
-          <div className="main__container" ref={this.container}>
-										<h1 className="main__container__title">{this.props.title}</h1>
+          <div className="main__container">
+            <h1 className="main__container__title">{this.props.title}</h1>
             <div className="main__container__content">
               <div className="main__container__content__left">{eventList}</div>
               <span className="main__container__content__vl"></span>
@@ -116,11 +137,18 @@ export class Main extends Component {
             </div>
           </div>
           <div className="main__container__content__right__reg">
-            Rules and Regulations
+            <span onClick={this.onOpenModal}>Rules and Regulations</span>
           </div>
           <div className="main__container__content__right__reg__but">
             <a className="main__container__button">Register</a>
           </div>
+          <Modal open={open} onClose={this.onCloseModal} center>
+            <embed
+              src={this.props.pdf}
+              width="700"
+              height="750"
+            />
+          </Modal>
         </div>
       </div>
     );

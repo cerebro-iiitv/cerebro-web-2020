@@ -11,13 +11,15 @@ class Events extends Component {
 
     this.state = {
       eventIndex: 0,
-      selectedEvent: "Tech Hunt"
+      selectedEvent: "Tech Hunt",
+      pdf:"https://yashshah2820.pythonanywhere.com/media/pdf/Tech_Hunt.pdf"
     };
   }
-  updateEvent = (index, event) => {
+  updateEvent = (index, event,pdf) => {
     this.setState({
       eventIndex: index,
-      selectedEvent: event
+      selectedEvent: event,
+      pdf:pdf
     });
   };
 
@@ -36,6 +38,7 @@ class Events extends Component {
               index={this.state.eventIndex}
               title={this.state.selectedEvent}
               contacts={contacts}
+              pdf={this.state.pdf}
             />
           </div>
           <div>
