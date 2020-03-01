@@ -5,7 +5,6 @@ import Sidelist from "./Sidelist/Sidelist";
 import Main from "./Main/Main";
 import "./Events.scss";
 import Circle from "./Circle/Circle";
-import Demo from "./Demo";
 class Events extends Component {
   constructor(props) {
     super(props);

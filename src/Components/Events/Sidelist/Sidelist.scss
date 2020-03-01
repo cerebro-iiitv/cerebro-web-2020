@@ -3,8 +3,8 @@
 .sidebarmenu {
   display: flex;
   margin-right: -30px;
-  height: 100%;
-
+  overflow:auto;
+  
   @media screen and (max-width: $mobile-view) {
     width: 100vw;
     min-width: 100vw;
@@ -24,11 +24,11 @@
     display: flex;
     flex-direction: column;
     width: 190px;
-    height: 400px;
-    overflow-x: auto;
+    height: 410px;
     cursor: pointer;
-
+    
     @media screen and (max-width: $mobile-view) {
+      height:45px;
       width: max-content;
       // min-width: 100vw;
       flex-direction: row;

@@ -10,10 +10,6 @@ export class Main extends Component {
   render() {
     const eventList = this.props.events.map((event, index) => {
       if (index == this.props.index) {
-        this.container.current.className = "main__container animation-fade-in";
-        setTimeout(() => {
-          this.container.current.className = "main__container";
-        }, 500);
         return (
           <>
             <div className="main__container__content__left__description">
@@ -72,14 +68,14 @@ export class Main extends Component {
                 {contact.convenor}
               </p>
             </div>
-            <div className="main__container__content__right__main">
+            {(contact.phone_number1!=="")?<div className="main__container__content__right__main">
               <p className="main__container__content__right__colorchange">
                 Contact :
               </p>
               <p className="main__container__content__left__info__nochange">
                 {contact.phone_number1}
               </p>
-            </div>
+            </div>:<></>}
             <div className="main__container__content__right__main">
               <p className="main__container__content__right__colorchange">
                 Co-Convenor :
@@ -88,14 +84,14 @@ export class Main extends Component {
                 {contact.co_convenor1}
               </p>
             </div>
-            <div className="main__container__content__right__main">
+            {(contact.phone_number2!=="")?<div className="main__container__content__right__main">
               <p className="main__container__content__right__colorchange">
                 Contact :
               </p>
               <p className="main__container__content__left__info__nochange">
                 {contact.phone_number2}
               </p>
-            </div>
+            </div>:<></>}
             <div className="main__container__content__right__main">
               <p className="main__container__content__right__colorchange">
                 Member :
