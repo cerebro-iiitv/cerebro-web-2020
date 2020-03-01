@@ -22,7 +22,7 @@ function Cover() {
                 <p className="cover__titles__date"><span>27<sup>th</sup> - 29<sup>th</sup> March 2020</span></p>
                 <div className="cover__titles__timer">
                     <p className="t">T - </p>
-                    <Countdown date={`${year}-03-06T00:00:00`} />
+                    <Countdown date={`2020-03-27T00:00:00`} />
                     <p className="t">For the launch</p>
                 </div>
             </div>

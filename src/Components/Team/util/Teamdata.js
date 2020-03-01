@@ -13,7 +13,7 @@ export const teamdata = {
   ],
 
   'Web Dev': [
-    { id: 1, 'name': 'Jay Mistry', 'role': 'Head', 'img': 'https://user-images.githubusercontent.com/42682370/75562776-26614500-5a6f-11ea-869c-1b8479160464.jpeg', 'links': { 'github': 'https://github.com/rossoskull', 'linkedin': 'https://www.linkedin.com/in/rossoskull/', 'twitter': 'https://twitter.com/RossoSkull' } },
+    { id: 1, 'name': 'Jay Mistry', 'role': 'Head', 'img': 'https://user-images.githubusercontent.com/42682370/75562776-26614500-5a6f-11ea-869c-1b8479160464.jpeg', 'links': { 'link': 'https://technokami.in', 'github': 'https://github.com/rossoskull', 'linkedin': 'https://www.linkedin.com/in/rossoskull/', 'twitter': 'https://twitter.com/RossoSkull' } },
     { id: 2, 'name': 'Samagra Gupta', 'role': 'Head', 'img': 'https://user-images.githubusercontent.com/42682370/75472416-78479380-59b9-11ea-8cae-8e92dccd74ff.jpeg', 'links': { 'github': 'https://github.com/samagragupta', 'linkedin': 'https://in.linkedin.com/in/samagragupta', 'twitter': 'https://twitter.com/samagra14' } },
     { id: 3, 'name': 'Yash Shah', 'role': 'Co-Head', 'img': 'https://user-images.githubusercontent.com/42682370/75530019-a7054e80-5a39-11ea-8234-22e3ffb8d184.jpg', 'links': { 'github': 'https://github.com/yashshah2820', 'linkedin': 'https://www.linkedin.com/in/yash-shah-a4368a177/', 'twitter': 'https://twitter.com/yashshah2820' } },
     { id: 4, 'name': 'Aditya Prakash', 'role': 'Member', 'img': 'https://avatars3.githubusercontent.com/u/42460356?s=400&v=4', 'links': { 'github': 'https://github.com/pAditya198', 'linkedin': 'https://www.linkedin.com/in/aditya-prakash-2a354b170/', 'twitter': 'https://twitter.com/paditya198' } },
