@@ -58,7 +58,7 @@
 
       &.active {
         opacity: 1;
-        color: $color-style;
+        color: $color-style !important;
         padding-left: 10px;
         @media screen and (max-width: $mobile-view) {
           padding: 0;

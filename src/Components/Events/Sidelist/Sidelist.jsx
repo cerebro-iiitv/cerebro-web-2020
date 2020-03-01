@@ -1,19 +1,18 @@
 import React from "react";
 import "./Sidelist.scss";
 const Sidelist = props => {
-  // console.log(props.events.indexof(props.event));
-  const eventList = props.events.map((event, index) => {
+  const eventList = props.events.map((event, curr_index) => {
     return (
       <li
-        key={index}
+        key={curr_index}
         className={`sidebarmenu__links__link ${
-          index === props.index ? "active" : ""
+          curr_index === props.index ? "active" : ""
         }`}
         onClick={() => {
-          return props.updateEvent(index);
+          return props.updateEvent(curr_index);
         }}
       >
-        <a>{event.Title}</a>
+        <div>{event.Title}</div>
       </li>
     );
   });

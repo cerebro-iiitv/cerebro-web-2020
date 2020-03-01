@@ -1,10 +1,10 @@
 export const teamdata = {
-  'Core Team': [
+  'Core': [
     { id: 1, 'name': 'Keshav Purohit', 'role': 'Student Convenor', 'img': 'https://user-images.githubusercontent.com/42682370/75472030-f0618980-59b8-11ea-8401-0bad421c24fc.jpg', 'links': { 'github': 'https://github.com/Keshavpp', 'linkedin': 'https://www.linkedin.com/in/keshavpurohit21/', 'twitter': 'https://twitter.com/KeshavPurohit17'}},
     { id: 2, 'name': 'Ananya Tewari', 'role': 'Technical Lead', 'img': 'https://user-images.githubusercontent.com/42682370/75531036-f2b7f800-5a39-11ea-98a6-df6dff001951.jpg', 'links': { 'github': 'https://github.com/antew7', 'linkedin': 'https://www.linkedin.com/in/antew/', 'twitter': 'https://twitter.com/antew_' }}
   ],
 
-  'Core Support Team': [
+  'Core Support': [
     { id: 1, 'name': 'Dipti Solanki', 'role': 'Head', 'img': 'https://user-images.githubusercontent.com/42682370/75472097-ffe0d280-59b8-11ea-8af4-be1663b0e0e9.JPG', 'links': { 'github': 'https://github.com/purpledip', 'linkedin': 'https://www.linkedin.com/in/dipti-solanki-b95571158/', 'twitter': 'https://twitter.com/purpledip5' } },
     { id: 2, 'name': 'Harsh Kakani', 'role': 'Co-Head', 'img': 'https://user-images.githubusercontent.com/42682370/75472285-3f0f2380-59b9-11ea-8b13-5c9f46628d5b.jpg', 'links': { 'github': 'https://github.com/Harshkakani', 'linkedin': 'https://www.linkedin.com/in/harsh-kakani-3127a916a/', 'twitter': 'https://twitter.com/Harsh44286487' } },
     { id: 3, 'name': 'Vraj Mistry', 'role': 'Co-Head', 'img': 'https://user-images.githubusercontent.com/42682370/75472309-4b937c00-59b9-11ea-8f9e-00cb986a136c.jpg', 'links': { 'github': 'https://github.com/vrajparesh', 'linkedin': 'https://www.linkedin.com/in/vraj-mistry-746802135', 'twitter': 'https://twitter.com/VrajMistry13' } },
@@ -12,7 +12,7 @@ export const teamdata = {
     { id: 5, 'name': 'Prateek Chouhan', 'role': 'Member', 'img': 'https://user-images.githubusercontent.com/42682370/75472329-54844d80-59b9-11ea-9461-68f2af1a3431.jpg', 'links': { 'github': 'https://github.com/Prateek9144/', 'linkedin': 'https://www.linkedin.com/in/prateek9144', 'twitter': 'https://twitter.com/prateekchouha00' } }
   ],
 
-  'Web Dev Team': [
+  'Web Dev': [
     { id: 1, 'name': 'Jay Mistry', 'role': 'Head', 'img': 'https://user-images.githubusercontent.com/42682370/75562776-26614500-5a6f-11ea-869c-1b8479160464.jpeg', 'links': { 'github': 'https://github.com/rossoskull', 'linkedin': 'https://www.linkedin.com/in/rossoskull/', 'twitter': 'https://twitter.com/RossoSkull' } },
     { id: 2, 'name': 'Samagra Gupta', 'role': 'Head', 'img': 'https://user-images.githubusercontent.com/42682370/75472416-78479380-59b9-11ea-8cae-8e92dccd74ff.jpeg', 'links': { 'github': 'https://github.com/samagragupta', 'linkedin': 'https://in.linkedin.com/in/samagragupta', 'twitter': 'https://twitter.com/samagra14' } },
     { id: 3, 'name': 'Yash Shah', 'role': 'Co-Head', 'img': 'https://user-images.githubusercontent.com/42682370/75530019-a7054e80-5a39-11ea-8234-22e3ffb8d184.jpg', 'links': { 'github': 'https://github.com/yashshah2820', 'linkedin': 'https://www.linkedin.com/in/yash-shah-a4368a177/', 'twitter': 'https://twitter.com/yashshah2820' } },
@@ -24,7 +24,7 @@ export const teamdata = {
     { id: 8, 'name': 'Prathmesh Khandelwal', 'role': 'Member', 'img': 'https://avatars2.githubusercontent.com/u/56167998?s=400&v=4', 'links': { 'github': 'https://github.com/prathmeshkhandelwal1', 'linkedin': 'https://www.linkedin.com/in/prathmesh-khandelwal-337b651a2/' } }
   ],
 
-  'Design & Video Team': [
+  'Design & Video': [
     { id: 1, 'name': 'Pranay Agarwal ', 'role': 'Design Head', 'img': 'https://user-images.githubusercontent.com/42682370/75472711-eab87380-59b9-11ea-85b5-76578c758176.jpg', 'links': { 'dribbble': 'https://dribbble.com/PranayAgarwal', 'linkedin': 'https://www.linkedin.com/in/py-ag/', 'twitter': 'https://twitter.com/py_agarwal' } },
     { id: 2, 'name': 'Vikash Kashyap', 'role': 'Video Head', 'img': 'https://user-images.githubusercontent.com/42682370/75472739-f6a43580-59b9-11ea-8bff-10f300a7f305.jpg', 'links': { 'dribbble': 'https://dribbble.com/vikashyap99', 'linkedin': 'https://www.linkedin.com/in/vikashyap99/', 'twitter': 'https://twitter.com/vikashyap99' } },
     { id: 3, 'name': 'Kavya Tripathi', 'role': 'Co-Head', 'img': 'https://user-images.githubusercontent.com/42682370/75527941-0dd63800-5a39-11ea-8ade-5460116a88f9.jpg', 'links': { 'dribbble': '', 'linkedin': '', 'twitter': '' }},
@@ -38,23 +38,23 @@ export const teamdata = {
     { id: 11, 'name': 'Deepanshu Singh', 'role': 'Member', 'img': 'https://user-images.githubusercontent.com/42682370/75528702-470ea800-5a39-11ea-9295-90856cb8f801.jpg', 'links': { 'linkedin': 'https://www.linkedin.com/in/deepanshu-singh-1515b71a3', 'twitter': 'https://twitter.com/Deepans75424886' }}
   ],
 
-  'Sponsorship Team': [
+  'Sponsorship': [
     { id: 1, 'name': 'Abhijeet Singh Rathore', 'role': 'Head', 'img': 'https://user-images.githubusercontent.com/42682370/75374854-03aa2180-58f3-11ea-871c-3447e3a14442.jpg', 'links': {'linkedin': 'https://www.linkedin.com/in/sabhijeetr/', 'twitter': 'https://twitter.com/Abh1jeetRathore' }},
     { id: 2, 'name': 'Tanmay Ambadkar', 'role': 'Co-Head', 'img': 'https://user-images.githubusercontent.com/42682370/75517524-ed03e780-5a24-11ea-8eb7-94ab3821a0d7.jpg', 'links': { 'github': 'https://www.github.com/TanmayAmbadkar', 'linkedin': 'https://www.linkedin.com/in/tanmay-ambadkar', 'twitter': 'https://twitter.com/TanmayAmbadkar' }}
   ],
 
-  'Publicity & Marketing Team': [
+  'Publicity & Marketing': [
     { id: 1, 'name': 'Aayush Dheemar', 'role': 'Head', 'img': 'https://user-images.githubusercontent.com/42682370/75517534-f3925f00-5a24-11ea-99e0-874b41b2b95f.jpg', 'links': { 'github': 'https://github.com/Aayushdh99', 'linkedin': 'https://in.linkedin.com/in/aayushdheemar', 'twitter': 'https://twitter.com/aayushdh99' }},
     { id: 2, 'name': 'Anubhav Madhav', 'role': 'Co-Head', 'img': 'https://user-images.githubusercontent.com/42682370/75517546-f7be7c80-5a24-11ea-9c56-a88b8c3e9e0c.jpg', 'links': { 'github': 'https://github.com/AnubhavMadhav', 'linkedin': 'https://www.linkedin.com/in/anubhav-madhav/', 'twitter': 'https://twitter.com/Anubhav_Madhav' }},
     { id: 3, 'name': 'Anagha Mittal', 'role': 'Co-Head', 'img': 'https://user-images.githubusercontent.com/42682370/75532741-6d811300-5a3a-11ea-91ca-f6958ce3e75e.jpg', 'links': { 'github': 'https://github.com/anaghamittal', 'linkedin': 'https://www.linkedin.com/in/anagha-mittal-838382176', 'twitter': 'https://twitter.com/Anagha_Mittal' }}
   ],
 
-  'Gaming Team': [
+  'Gaming': [
     { id: 1, 'name': 'Shivam Nigam', 'role': 'Head', 'img': 'https://user-images.githubusercontent.com/42682370/75524629-4cb5bf00-5a34-11ea-9db1-2ab06bb7c7ee.jpg', 'links': {'linkedin': 'https://www.linkedin.com/in/shivam-nigam-28313b147', 'twitter': 'https://twitter.com/nigamShivam4444' }},
     { id: 2, 'name': 'Ravi Varshney', 'role': 'Co-Head', 'img': 'https://user-images.githubusercontent.com/42682370/75374763-da899100-58f2-11ea-8ece-cc714e2f5d6f.jpg', 'links': { 'github': 'https://github.com/ravivarshney01', 'linkedin': 'https://www.linkedin.com/in/ravivarshney01/', 'twitter': 'https://twitter.com/ravivarshney01' }}
   ],
 
-  'Art & Infrastructure Team': [
+  'Art & Infrastructure': [
     { id: 1, 'name': 'Srishti Chaudhary', 'role': 'Head', 'img': 'https://user-images.githubusercontent.com/42682370/75374755-d78ea080-58f2-11ea-9070-0cc853ca0942.jpg', 'links': { 'github': 'https://github.com/srishti-chaudhary', 'linkedin': 'https://www.linkedin.com/in/srishti-chaudhary-43b6a916b/', 'twitter': 'https://twitter.com/shrishc99' }},
     { id: 2, 'name': 'Shilp Khatri', 'role': 'Co-Head', 'img': 'https://user-images.githubusercontent.com/42682370/75526097-21809f00-5a37-11ea-9927-f2851702ee8f.jpg', 'links': { 'github': 'https://github.com/Deadalus2920', 'linkedin': 'https://www.linkedin.com/in/shilp-k-6706a2a3', 'twitter': 'https://twitter.com/KhatriShilp' }},
     { id: 3, 'name': 'Jinal Adhyaru', 'role': 'Co-Head', 'img': 'https://user-images.githubusercontent.com/42682370/75526023-f433f100-5a36-11ea-8708-fe9b3b0d2556.jpg', 'links': { 'github': 'https://github.com/JinalAdhyaru', 'linkedin': 'https://www.linkedin.com/in/jinal-adhyaru-b09784191/', 'twitter': 'https://twitter.com/AdhyaruJinal' }},
