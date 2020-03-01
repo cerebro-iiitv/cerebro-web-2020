@@ -6,6 +6,9 @@ import Main from "./Main/Main";
 import "./Events.scss";
 import Circle from "./Circle/Circle";
 class Events extends Component {
+  componentWillMount() {
+    window.scroll(0, 0)
+  }
   constructor(props) {
     super(props);
 
