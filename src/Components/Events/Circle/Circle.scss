@@ -9,7 +9,7 @@
 
   &__dial2 {
     width: 450px;
-    position: absolute;
+    position: fixed;
     left: -3%;
 
     @media screen and (max-width: 1920px) {
@@ -31,7 +31,7 @@
 
   &__dial3 {
     width: 375px;
-    position: absolute;
+    position: fixed;
     left: -1%;
     top: 220px;
     transition: all 0.25s linear;
@@ -57,7 +57,7 @@
 
   &__dial4 {
     width: 225px;
-    position: absolute;
+    position: fixed;
     left: 3%;
     top: 300px;
 

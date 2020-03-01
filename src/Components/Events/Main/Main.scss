@@ -2,19 +2,11 @@
 @import "../../../scss/base";
 
 .main {
-<<<<<<< HEAD
-  width: 600px;
-=======
   width: 100%;
->>>>>>> fa90f0658f9bc93edeeb954f9f23ea9b60a352db
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> fa90f0658f9bc93edeeb954f9f23ea9b60a352db
   &__container {
     height: max-content;
     justify-content: center;
@@ -109,7 +101,7 @@
         }
 
         &__description {
-          font-size: 21px;
+          font-size: 18px;
           font-weight: 300;
           font-stretch: normal;
           font-family: "Gilroy-Light";
@@ -131,11 +123,11 @@
 
         &__info {
           font-family: "Gilroy-Light";
-          font-size: 21px;
+          font-size: 20px;
           font-weight: 300;
           font-stretch: normal;
           font-style: normal;
-          line-height: 1.14;
+          line-height: 1;
           letter-spacing: normal;
           margin-top: 10px;
 
@@ -190,10 +182,7 @@
           padding-top: 10px;
           text-align: left;
           color: #1d9fc9;
-
-          @media screen and (max-width: $mobile-view) {
-            margin: 0 auto;
-          }
+          margin: 0 auto;
 
           &__but {
             display: flex;
