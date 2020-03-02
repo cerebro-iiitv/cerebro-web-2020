@@ -44,7 +44,7 @@ function Sponsors() {
           className="sponsor_img__img2"
           alt="sponsor Four"
         />
-        <img className="sponsor_none" />
+        <img className="sponsor_none" alt="empty" />
         <img
           src="media/HE_logo.png"
           className="sponsor_img"
@@ -56,7 +56,6 @@ function Sponsors() {
           alt="sponsor Six"
         />
       </div>
-
     </div>
   );
 }
