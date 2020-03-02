@@ -11,23 +11,45 @@ body {
   color: $color-body;
   width: 100%;
   overflow: hidden auto;
+
+  // Custom Scrollbar styling
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba($color-style, 0.8);
+  }
+
+  &::-webkit-scrollbar-track {
+    // border: 1px solid $color-style;
+    background-color: $color-background;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $color-style;
+    scrollbar-track-color: $color-background;
+  }
 }
 
-#root{
+#root {
   margin: 0 10%;
   min-height: 100vh;
-  
-  @media screen and (max-width:$mobile-view) {
-    margin:0;
+
+  @media screen and (max-width: $mobile-view) {
+    margin: 0;
   }
 }
 
 .section-title {
-  font-size: 40px!important;
+  font-size: 40px !important;
   text-transform: uppercase;
-  font-family: 'Galano-Bold';
+  font-family: "Galano-Bold";
 
   @media screen and (max-width: $mobile-view) {
-    font-size: 24px!important;
+    font-size: 24px !important;
   }
 }

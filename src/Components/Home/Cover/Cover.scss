@@ -10,7 +10,7 @@
     color: $color-body;
 
     &__title {
-      font-family: 'Galano-Bold', 'Arial';
+      font-family: "Galano-Bold", "Arial";
       font-size: 89px;
       text-transform: uppercase;
       font-weight: 600;
@@ -22,7 +22,7 @@
     }
 
     &__date {
-      font-family: 'Gilroy-Light', 'Arial';
+      font-family: "Gilroy-Light", "Arial";
       font-size: 37px;
       font-weight: 300;
       font-stretch: normal;
@@ -49,7 +49,7 @@
       display: flex;
       align-items: center;
       margin-top: 100px;
-      font-family: 'Gilroy-Light', 'Arial';
+      font-family: "Gilroy-Light", "Arial";
       font-size: 22px;
     }
 
@@ -133,7 +133,8 @@
 
       i {
         font-size: 28px;
-        color: $color-style;   
+        width: 28px;
+        color: $color-style;
       }
 
       &:hover {
