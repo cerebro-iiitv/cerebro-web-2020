@@ -6,11 +6,40 @@ import Header from '../Header/Header'
 import './Timeline.scss'
 
 class Timeline extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+    
     componentWillMount() {
         window.scroll(0, 0)
     }
 
     render() {
+        const timeline=this.props.events.map((event,index)=>{
+            if(index%2==0){
+                var side="left"
+            }else{
+                side="right"
+            }
+            return (
+                <VerticalTimeline>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    date="27-28-29 March"
+                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    position={side}
+                >
+                    <Link className="eventLink" to={`/events`}>
+
+                        <h3 className="vertical-timeline-element-title">{event.event}</h3>
+                        <p>
+                            {event.description}
+                    </p>
+                    </Link>
+                </VerticalTimelineElement>
+            </VerticalTimeline>
+            )
+        })
         return (
             <div>
                 <Header></Header>
@@ -20,125 +49,7 @@ class Timeline extends React.Component {
                     </a>
                 </div>
                 <div className="timeline">
-                    <VerticalTimeline>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            date="2010 - 2011"
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                            position="left"
-                        >
-                            <Link className="eventLink" to={`/events`}>
-
-                                <h3 className="vertical-timeline-element-title">"Perry"</h3>
-                                <h4 className="vertical-timeline-element-subtitle">"Chasma"</h4>
-                                <p>
-                                    "Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-                            </p>
-                            </Link>
-                        </VerticalTimelineElement>
-                    </VerticalTimeline>
-                    <VerticalTimeline>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            date="2010 - 2011"
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                            position="right"
-                        >
-                            <Link className="eventLink" to={`/events`}>
-
-                                <h3 className="vertical-timeline-element-title">"Perry"</h3>
-                                <h4 className="vertical-timeline-element-subtitle">"Chasma"</h4>
-                                <p>
-                                    "Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-                            </p>
-                            </Link>
-                        </VerticalTimelineElement>
-                    </VerticalTimeline>
-                    <VerticalTimeline>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            date="2010 - 2011"
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                            position="left"
-                        >
-                            <Link className="eventLink" to={`/events`}>
-
-                                <h3 className="vertical-timeline-element-title">"Perry"</h3>
-                                <h4 className="vertical-timeline-element-subtitle">"Chasma"</h4>
-                                <p>
-                                    "Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-                            </p>
-                            </Link>
-                        </VerticalTimelineElement>
-                    </VerticalTimeline>
-                    <VerticalTimeline>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            date="2010 - 2011"
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                            position="right"
-                        >
-                            <Link className="eventLink" to={`/events`}>
-
-                                <h3 className="vertical-timeline-element-title">"Perry"</h3>
-                                <h4 className="vertical-timeline-element-subtitle">"Chasma"</h4>
-                                <p>
-                                    "Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-                            </p>
-                            </Link>
-                        </VerticalTimelineElement>
-                    </VerticalTimeline>
-                    <VerticalTimeline>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            date="2010 - 2011"
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                            position="left"
-                        >
-                            <Link className="eventLink" to={`/events`}>
-
-                                <h3 className="vertical-timeline-element-title">"Perry"</h3>
-                                <h4 className="vertical-timeline-element-subtitle">"Chasma"</h4>
-                                <p>
-                                    "Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-                            </p>
-                            </Link>
-                        </VerticalTimelineElement>
-                    </VerticalTimeline>
-                    <VerticalTimeline>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            date="2010 - 2011"
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                            position="right"
-                        >
-                            <Link className="eventLink" to={`/events`}>
-
-                                <h3 className="vertical-timeline-element-title">"Perry"</h3>
-                                <h4 className="vertical-timeline-element-subtitle">"Chasma"</h4>
-                                <p>
-                                    "Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-                            </p>
-                            </Link>
-                        </VerticalTimelineElement>
-                    </VerticalTimeline>
-                    <VerticalTimeline>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            date="2010 - 2011"
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                            position="left"
-                        >
-                            <Link className="eventLink" to={`/events`}>
-
-                                <h3 className="vertical-timeline-element-title">"Perry"</h3>
-                                <h4 className="vertical-timeline-element-subtitle">"Chasma"</h4>
-                                <p>
-                                    "Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
-                            </p>
-                            </Link>
-                        </VerticalTimelineElement>
-                    </VerticalTimeline>
+                {timeline}
                 </div>
                 <div className="shadow-bottom"></div>
             </div>

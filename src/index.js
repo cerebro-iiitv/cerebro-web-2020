@@ -62,7 +62,9 @@ class App extends React.Component {
           )}
         />
         <Route path="/team" component={Team} />
-        <Route path="/timeline" component={Timeline} />
+        <Route path="/timeline" render={props=>(
+          <Timeline events={this.state.events} />
+        )} />
       </Switch>
     );
   }
