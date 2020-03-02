@@ -38,7 +38,7 @@
       z-index: 2;
       position: relative;
       top: -8vw;
-      animation: space-float 3s ease-in-out infinite alternate;
+      animation: space-float 2s ease-in-out infinite alternate;
 
       @media screen and (max-width: $mobile-view) {
         width: 70%;
@@ -149,14 +149,19 @@
     display: flex;
     flex-flow: column;
 
+    @media screen and (max-width: $mobile-view) {
+      margin: 0%;
+      padding: 85px 0px 50px;
+    }
+
     &__header {
       margin: 0 auto 30px;
       width: 100%;
       text-align: center;
+      margin-bottom: 40px;
 
       @media screen and (max-width: $mobile-view) {
         align-items: center;
-        width: 17%;
         margin: 0 auto;
       }
     }
