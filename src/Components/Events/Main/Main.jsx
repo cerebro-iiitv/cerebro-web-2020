@@ -145,9 +145,9 @@ export class Main extends Component {
           <Modal open={open} onClose={this.onCloseModal} center>
             <embed
               src={this.props.pdf}
-              width="700"
-              height="750"
-            />
+            width="700"
+            height="750"
+          />
           </Modal>
         </div>
       </div>
