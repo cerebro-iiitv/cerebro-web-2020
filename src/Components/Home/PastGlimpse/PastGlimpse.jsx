@@ -57,9 +57,7 @@ const PastGlimpse = () => {
           <div
             className=""
             style={{
-              backgroundImage: `url('./media/webhead${
-                width <= 2000 ? "_mobile" : ""
-              }.png')`
+              backgroundImage: `url('./media/webhead.png')`
             }}
           ></div>
         </div>
