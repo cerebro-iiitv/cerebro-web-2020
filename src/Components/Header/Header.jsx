@@ -4,13 +4,17 @@ import './Header.scss'
 import Navbar from './BurgerMenu/Navbar'
 import 'font-awesome/css/font-awesome.min.css';
 import Modal from "react-responsive-modal";
+import { GoogleLogin } from 'react-google-login';
+
 class Header extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
             drawerOut: false,
-            open: false
+            open: false,
+            name: null,
+            email: null
         };
     }
 
@@ -23,6 +27,29 @@ class Header extends Component {
             open: false,
         });
     };
+
+    responseGoogle = async (res) => {
+        // Storing in local storage
+        if (res.Ca) {
+            const userObject = {
+                username: res.Ca,
+                password: res.uc.access_token
+            }
+            await localStorage.setItem("user", JSON.stringify(userObject));
+            await window.location.reload();
+        } 
+        else {
+            console.error("Login Error");
+        }
+        // Updating values in state
+        this.setState({
+            name: res.profileObj.name,
+            email: res.profileObj.email,
+        })
+        console.log(res)
+        console.log(this.state);
+    }
+
     render() {
         const { auth, signOut } = this.props;
         const { open } = this.state;
@@ -41,7 +68,17 @@ class Header extends Component {
                         <span className="navbar__links__li" onClick={this.onOpenModal}>Brochure</span>
                     </ul>
 
-                    <a className="navbar__login"><img class="g_img" src="media/google.png" alt="" /></a>
+                    <GoogleLogin
+                        clientId="646722007534-bn7ekn1cnvl4am4umntss50eardh9bs5.apps.googleusercontent.com"
+                        render={renderProps => (
+                            <button onClick={renderProps.onClick} disabled={renderProps.disabled} className="navbar__login">
+                                <img class="g_img" src="media/google.png" alt="" />
+                            </button>
+                        )}
+                        onSuccess={this.responseGoogle}
+                        onFailure={this.responseGoogle}
+                        cookiePolicy={'single_host_origin'}
+                    />
                 </nav>
 
                 <Modal open={open} onClose={this.onCloseModal} center>
