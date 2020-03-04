@@ -59,7 +59,7 @@ class Main extends Component {
           <>
             <div className="main__container__content__right__main">
               <p className="main__container__content__right__colorchange">
-                Covenor :
+                Convenor :
               </p>
               <p className="main__container__content__left__info__nochange">
                 {contact.convenor}
@@ -116,7 +116,7 @@ class Main extends Component {
                   Contact :
                 </p>
                 <p className="main__container__content__left__info__nochange">
-                  {contact.phone_number2}
+                  {contact.phone_number3}
                 </p>
               </div>
             ) : (
