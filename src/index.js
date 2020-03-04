@@ -27,7 +27,7 @@ class App extends React.Component {
     const url = "https://yashshah2820.pythonanywhere.com/events/events/";
     await fetch(url)
       .then(res => {
-        if (res.status == 200) {
+        if (res.status === 200) {
           return res.json();
         }
       })
@@ -41,7 +41,7 @@ class App extends React.Component {
     const url = "https://yashshah2820.pythonanywhere.com/events/contact/";
     await fetch(url)
       .then(res => {
-        if (res.status == 200) {
+        if (res.status === 200) {
           return res.json();
         }
       })
@@ -62,9 +62,10 @@ class App extends React.Component {
           )}
         />
         <Route path="/team" component={Team} />
-        <Route path="/timeline" render={props=>(
-          <Timeline events={this.state.events} />
-        )} />
+        <Route
+          path="/timeline"
+          render={props => <Timeline events={this.state.events} />}
+        />
       </Switch>
     );
   }

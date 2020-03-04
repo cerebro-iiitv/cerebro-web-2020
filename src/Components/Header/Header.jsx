@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom'
-import './Header.scss'
-import Navbar from './BurgerMenu/Navbar'
-import 'font-awesome/css/font-awesome.min.css';
+import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import "./Header.scss";
+import Navbar from "./BurgerMenu/Navbar";
+import "font-awesome/css/font-awesome.min.css";
 import Modal from "react-responsive-modal";
-import { GoogleLogin } from 'react-google-login';
+import { GoogleLogin } from "react-google-login";
 
 class Header extends Component {
 
@@ -37,7 +37,7 @@ class Header extends Component {
             }
             await localStorage.setItem("user", JSON.stringify(userObject));
             await window.location.reload();
-        } 
+        }
         else {
             console.error("Login Error");
         }
