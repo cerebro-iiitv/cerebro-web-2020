@@ -1,28 +1,10 @@
-import React, { Component, createRef } from "react";
+import React, { Component } from "react";
 import "./Main.scss";
-import Modal from "react-responsive-modal";
 
-export class Main extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      drawerOut: false,
-      open: false
-    };
-  }
-  onOpenModal = () => {
-    this.setState({ open: true });
-  };
-
-  onCloseModal = () => {
-    this.setState({
-      open: false
-    });
-  };
+class Main extends Component {
   render() {
-    const { open } = this.state;
     const eventList = this.props.events.map((event, index) => {
-      if (index == this.props.index) {
+      if (index === this.props.index) {
         return (
           <>
             <div className="main__container__content__left__description">
@@ -67,10 +49,12 @@ export class Main extends Component {
             </div>
           </>
         );
+      } else {
+        return <></>;
       }
     });
     const contact = this.props.contacts.map((contact, index) => {
-      if (index == this.props.index) {
+      if (index === this.props.index) {
         return (
           <>
             <div className="main__container__content__right__main">
@@ -113,6 +97,32 @@ export class Main extends Component {
             ) : (
               <></>
             )}
+
+            {contact.co_convenor2 !== "" ? (
+              <div className="main__container__content__right__main">
+                <p className="main__container__content__right__colorchange">
+                  Co-Convenor :
+                </p>
+                <p className="main__container__content__left__info__nochange">
+                  {contact.co_convenor2}
+                </p>
+              </div>
+            ) : (
+              <></>
+            )}
+            {contact.phone_number3 !== "" ? (
+              <div className="main__container__content__right__main">
+                <p className="main__container__content__right__colorchange">
+                  Contact :
+                </p>
+                <p className="main__container__content__left__info__nochange">
+                  {contact.phone_number2}
+                </p>
+              </div>
+            ) : (
+              <></>
+            )}
+
             <div className="main__container__content__right__main">
               <p className="main__container__content__right__colorchange">
                 Member :
@@ -123,6 +133,8 @@ export class Main extends Component {
             </div>
           </>
         );
+      } else {
+        return <></>;
       }
     });
     return (
@@ -137,18 +149,11 @@ export class Main extends Component {
             </div>
           </div>
           <div className="main__container__content__right__reg">
-            <span onClick={this.onOpenModal}>Rules and Regulations</span>
+            <a href={this.props.pdf}>Rules and Regulations</a>
           </div>
           <div className="main__container__content__right__reg__but">
-            <a className="main__container__button">Register</a>
+            <span className="main__container__button">Register</span>
           </div>
-          <Modal open={open} onClose={this.onCloseModal} center>
-            <embed
-              src={this.props.pdf}
-              width="700"
-              height="750"
-            />
-          </Modal>
         </div>
       </div>
     );
