@@ -2,16 +2,13 @@ import React, { Component } from "react";
 import "./Circle.scss";
 
 class Circle extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentWillReceiveProps(nextprops) {
     var dial2 = document.querySelector(".circle__dial2");
     var dial3 = document.querySelector(".circle__dial3");
     if (nextprops !== this.props) {
-      dial2.style.webkitTransform = "rotate(" + nextprops.index * 30 + "deg)";
-      dial3.style.webkitTransform = "rotate(" + -nextprops.index * 30 + "deg)";
+      dial2.style.webkitTransform = "rotate(" + nextprops.index * 22.5 + "deg)";
+      dial3.style.webkitTransform =
+        "rotate(" + -nextprops.index * 22.5 + "deg)";
     }
   }
 

@@ -32,21 +32,17 @@
     width: 100%;
     height: 150%;
     margin: 0 auto;
-    padding-left: 12px;
 
     @media (min-width: 600px) and (max-width: 823px) {
         width: 70%;
         height: 80%;
     }
 
-    @media (max-width: 600px) {
-        padding-left: 12.5%;
-    }
-
     &__logo {
         display: flex;
         flex-flow: row;
         justify-content: left;
+        width: 100%;
 
         @media (max-width: 823px) {
             justify-content: center;
@@ -54,7 +50,6 @@
 
         @media (max-width: 600px) {
             justify-content: center;
-            padding-top: 75px;
         }
     }
 
@@ -111,7 +106,7 @@
             align-content: flex-start;
             width: 230px;
             height: 96px;
-            font-size: 12px;
+            font-size: 1rem;
         }
     }
 }
@@ -136,9 +131,8 @@
     @media (max-width: 600px) {
         flex-flow: column;
         justify-content: center;
-        margin-left: 2.5vw;
-        margin-right: 2.5vw;
-        padding-bottom: 15%;
+        margin-left: 1.25vw;
+        margin-right: 1.25vw;
     }
 
     &__links {
@@ -166,12 +160,12 @@
 
         @media (max-width: 600px) {
             width: 96%;
-            font-size: 10px;
+            font-size: 87.06%;
             padding-left: 0px;
-            height: 168px;
+            height: 156px;
             justify-content: center;
             text-align: center;
-            padding-bottom: 10px;
+            padding-bottom: 2rem;
         }
 
         &_content {
@@ -205,14 +199,13 @@
         }
 
         @media (max-width: 823px) {
-            height: 122px;
             font-size: 10px;
             padding-left: 3%;
         }
 
         @media (max-width: 600px) {
             width: 96%;
-            font-size: 10px;
+            font-size: 87.06%;
             padding-left: 0px;
             text-align: center;
             justify-content: center;

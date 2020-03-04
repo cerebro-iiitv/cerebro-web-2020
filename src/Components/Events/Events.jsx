@@ -4,27 +4,31 @@ import Header from "../Header/Header";
 import Sidelist from "./Sidelist/Sidelist";
 import Main from "./Main/Main";
 import "./Events.scss";
-import { events } from "../Events/util/event";
 import Circle from "./Circle/Circle";
 class Events extends Component {
-  componentWillMount() {
+  componentDidMount() {
     window.scroll(0, 0);
   }
   constructor(props) {
     super(props);
 
     this.state = {
-      eventIndex: 0
+      eventIndex: 0,
+      selectedEvent: "Tech Hunt",
+      pdf:
+        "https://github.com/cerebro-iiitv/cerebro-web-2020/files/4276790/Tech.Hunt.pdf"
     };
   }
-
-  updateEvent = index => {
+  updateEvent = (index, event, pdf) => {
     this.setState({
-      eventIndex: index
+      eventIndex: index,
+      selectedEvent: event,
+      pdf: pdf
     });
   };
 
   render() {
+    const { events, contacts } = this.props;
     return (
       <div>
         <Header />
@@ -33,7 +37,13 @@ class Events extends Component {
             <Circle index={this.state.eventIndex} />
           </div>
           <div>
-            <Main event={events[this.state.eventIndex]} />
+            <Main
+              events={events}
+              index={this.state.eventIndex}
+              title={this.state.selectedEvent}
+              contacts={contacts}
+              pdf={this.state.pdf}
+            />
           </div>
           <div>
             <Sidelist

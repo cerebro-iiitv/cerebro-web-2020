@@ -101,7 +101,7 @@
         }
 
         &__description {
-          font-size: 21px;
+          font-size: 18px;
           font-weight: 300;
           font-stretch: normal;
           font-family: "Gilroy-Light";
@@ -123,11 +123,11 @@
 
         &__info {
           font-family: "Gilroy-Light";
-          font-size: 21px;
+          font-size: 20px;
           font-weight: 300;
           font-stretch: normal;
           font-style: normal;
-          line-height: 1.14;
+          line-height: 1;
           letter-spacing: normal;
           margin-top: 10px;
 
@@ -181,12 +181,11 @@
         &__reg {
           padding-top: 10px;
           text-align: left;
-          color: #1d9fc9;
-
-          @media screen and (max-width: $mobile-view) {
-            margin: 0 auto;
+          margin: 0 auto;
+          cursor: pointer;
+          a {
+            color: #1d9fc9;
           }
-
           &__but {
             display: flex;
             justify-content: center;

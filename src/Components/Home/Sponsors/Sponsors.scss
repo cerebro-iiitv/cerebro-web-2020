@@ -2,26 +2,26 @@
 
 @keyframes glow {
   0% {
-    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #fff)
-      drop-shadow(0 0 5px rgba(32, 215, 228, 0.81))
-      drop-shadow(0 0 7px rgba(32, 215, 228, 0.81));
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
+      drop-shadow(0 0 3px rgba(32, 215, 228, 0.81))
+      drop-shadow(0 0 4px rgba(32, 215, 228, 0.81));
   }
   50% {
     filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #fff)
-      drop-shadow(0 0 10px rgba(32, 215, 228, 0.81))
-      drop-shadow(0 0 15px rgba(32, 215, 228, 0.81));
+      drop-shadow(0 0 6px rgba(32, 215, 228, 0.81))
+      drop-shadow(0 0 8px rgba(32, 215, 228, 0.81));
   }
   100% {
-    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #fff)
-      drop-shadow(0 0 5px rgba(32, 215, 228, 0.81))
-      drop-shadow(0 0 7px rgba(32, 215, 228, 0.81));
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
+      drop-shadow(0 0 3px rgba(32, 215, 228, 0.81))
+      drop-shadow(0 0 4px rgba(32, 215, 228, 0.81));
   }
 }
 
 .sponsor_container {
   padding: 100px 0px 120px;
   @media screen and (max-width: $mobile-view) {
-    padding: 65px 0px 50px;
+    padding: 85px 0px 50px;
   }
   overflow: hidden auto;
 }

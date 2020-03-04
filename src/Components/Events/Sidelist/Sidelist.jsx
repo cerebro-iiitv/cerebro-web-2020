@@ -9,10 +9,10 @@ const Sidelist = props => {
           curr_index === props.index ? "active" : ""
         }`}
         onClick={() => {
-          return props.updateEvent(curr_index);
+          return props.updateEvent(curr_index, event.event, event.pdf);
         }}
       >
-        <div>{event.Title}</div>
+        <span>{event.event}</span>
       </li>
     );
   });

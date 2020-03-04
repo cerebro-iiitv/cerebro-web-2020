@@ -8,6 +8,7 @@
   overflow: hidden;
   @media screen and (max-width: $mobile-view) {
     flex-flow: column wrap;
+    margin-bottom: 13%;
   }
 
   &__images {
@@ -37,7 +38,7 @@
       z-index: 2;
       position: relative;
       top: -8vw;
-      animation: space-float 3s ease-in-out infinite alternate;
+      animation: space-float 2s ease-in-out infinite alternate;
 
       @media screen and (max-width: $mobile-view) {
         width: 70%;
@@ -148,14 +149,20 @@
     display: flex;
     flex-flow: column;
 
+    @media screen and (max-width: $mobile-view) {
+      margin: 0%;
+    }
+
     &__header {
       margin: 0 auto 30px;
       width: 100%;
       text-align: center;
+      justify-content: center;
+
+      margin-bottom: 40px;
 
       @media screen and (max-width: $mobile-view) {
         align-items: center;
-        width: 17%;
         margin: 0 auto;
       }
     }

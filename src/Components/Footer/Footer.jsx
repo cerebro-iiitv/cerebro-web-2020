@@ -10,7 +10,7 @@ function Footer() {
 				<div>
 					<img src='/media/institute-logo.1fb6100a.svg' className="footer_u__logo_svg" alt="IIIT Vadodara Logo" />
 				</div>
-				<div className="footer_u__logo_span">Indian Institute of Information Technology, Vadodara</div>
+				<div className="footer_u__logo_span">Indian Institute of Information Technology Vadodara</div>
 			</div>
 		</div>
 		<div className="footer_l">
