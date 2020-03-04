@@ -74,8 +74,8 @@
   }
 
   &__image {
-    width: 400px;
-    height: 400px;
+    width: 26vw;
+    height: 26vw;
     position: relative;
 
     img {
@@ -200,17 +200,17 @@
   }
 }
 .Recpurple1{
-  width: 50px;
-  height: 50px;
+  width: 3.3vw;
+  height: 3.3vw;
   position: relative;
-  top: -60px;
-  left: 180px;
+  top: -3.5vw;
+  left: 12vw;
   z-index: 3;
   @media screen and (max-width: $mobile-view){
-    width: 40px;
-    height: 40px;
-    top: -55px;
-    left: 130px;
+    width: 10vw;
+    height: 10vw;
+    top: -12.5vw;
+    left: 32vw;
   }
 }
 .Circpin1{
@@ -231,10 +231,6 @@
     top: 15px;
     left: 255px;
   }
-  // @media screen and (max-width:1080px){
-  //   top: 15px;
-  //   left: 285px;
-  // }
 }
 .Recpurple2{
   width: 30px;
@@ -253,10 +249,6 @@
     top: 150px;
     left: 10px;
   }
-  // @media screen and (max-width:1080px){
-  //   top: 170px;
-  //   left: 10px;
-  // }
 }
 .Circpurple1{
   width: 40px;
@@ -323,8 +315,4 @@
     top: 90px;
     left: 270px;
   }
-  // @media screen and (max-width:1080px){
-  //   top: 90px;
-  //   left: 310px;
-  // }
 }
