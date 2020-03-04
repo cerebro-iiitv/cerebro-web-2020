@@ -1,0 +1,224 @@
+@import "../../../scss/imports";
+@import "../../../scss/base";
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+  &__container {
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+
+    &__title {
+      width: max-content;
+      margin: 0 auto;
+      font-size: 60px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-family: "Gilroy-Light";
+      line-height: 1.22;
+      letter-spacing: normal;
+      color: #ffffff;
+
+      @media screen and (max-width: $mobile-view) {
+        font-size: 40px;
+        line-height: 1;
+      }
+    }
+
+    &__content {
+      display: flex;
+
+      &::-webkit-scrollbar {
+        width: 10px;
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgba($color-style, 0.8);
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: $color-background;
+      }
+
+      & {
+        scrollbar-face-color: $color-style;
+        scrollbar-track-color: $color-background;
+      }
+
+      // Width Media Query
+      @media screen and (max-width: $mobile-view) {
+        flex-flow: column;
+        width: 100%;
+        margin: 10px auto;
+        overflow: visible auto;
+      }
+
+      // Height Media Query
+      @media screen and (max-height: 830px) and (max-width: $mobile-view) {
+        height: calc(100vh - 400px);
+        overflow-y: scroll;
+      }
+
+      &__vl {
+        margin: 20px auto 0px;
+        border-left: 2px solid #1bbcf1;
+        font-size: 2.5rem;
+
+        @media screen and (max-width: $mobile-view) {
+          display: none;
+        }
+      }
+
+      &__left {
+        width: 250px;
+        display: flex;
+        flex-flow: column;
+        margin: 20px auto 0px;
+
+        // Width Media Query
+        @media screen and (max-width: $mobile-view) {
+          width: 100%;
+        }
+
+        @media screen and (max-height: 600px) {
+          margin: auto;
+        }
+
+        &__details {
+          display: flex;
+          padding: 4px;
+
+          @media screen and (max-height: 600px) {
+            padding: 4px;
+          }
+        }
+
+        &__description {
+          font-size: 18px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-family: "Gilroy-Light";
+          line-height: 1.14;
+          letter-spacing: normal;
+          width: 90%;
+          padding-left: 5px;
+
+          @media screen and (max-width: $mobile-view) {
+            padding-bottom: 10px;
+            font-size: 20px;
+            height: max-content;
+          }
+
+          @media screen and (max-height: 600px) {
+            font-size: 12px;
+          }
+        }
+
+        &__info {
+          font-family: "Gilroy-Light";
+          font-size: 20px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1;
+          letter-spacing: normal;
+          margin-top: 10px;
+
+          @media screen and (max-width: $mobile-view) {
+            width: 100%;
+            margin: 0px auto;
+            padding: 0px;
+            font-size: 17px;
+          }
+
+          @media screen and (max-height: 600px) {
+            line-height: 1;
+          }
+
+          &__colorchange {
+            color: #03b0ef;
+          }
+
+          &__nochange {
+            margin-left: 4px;
+            margin-top: 1px;
+          }
+        }
+      }
+
+      &__right {
+        width: max-content;
+        margin: 20px auto;
+        padding: 20px;
+        padding-top: 0;
+
+        &__main {
+          display: flex;
+          align-items: center;
+          padding: 4px;
+        }
+
+        @media screen and (max-width: $mobile-view) {
+          width: 100%;
+          margin: 0 auto;
+          padding: 0px;
+          font-size: 16px;
+        }
+
+        &__colorchange {
+          color: #03b0ef;
+          text-transform: uppercase;
+          // margin-top: 5px;
+        }
+
+        &__reg {
+          padding-top: 10px;
+          text-align: left;
+          margin: 0 auto;
+          cursor: pointer;
+          a {
+            color: #1d9fc9;
+          }
+          &__but {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+
+    &__button {
+      font-family: "Gilroy-Light", Arial, Helvetica, sans-serif;
+      letter-spacing: 2px;
+      font-size: 20px;
+      border-radius: 33px;
+      text-align: center;
+      display: inline-block;
+      padding: 14px 50px;
+      font-weight: 1000;
+      text-transform: uppercase;
+      box-shadow: 0 3px 6px 0 rgba(105, 224, 216, 0.16);
+      background-color: #1bbcf1;
+      cursor: pointer;
+
+      @media screen and (max-width: $mobile-view) {
+        position: fixed;
+        bottom: 75px;
+        width: 130px;
+        height: 35px;
+        font-size: 19px;
+        text-align: center;
+        padding: 0px;
+        padding-top: 10px;
+      }
+    }
+  }
+}

@@ -6,11 +6,12 @@
   flex-direction: row;
   margin: 7% 0;
   overflow: hidden;
-   @media screen and (max-width: $mobile-view) {
-      flex-flow: column wrap;
-    }
+  @media screen and (max-width: $mobile-view) {
+    flex-flow: column wrap;
+    margin-bottom: 13%;
+  }
 
-  &__images {   
+  &__images {
     margin: 3%;
     @media screen and (max-width: $mobile-view) {
       height: 70%;
@@ -37,7 +38,7 @@
       z-index: 2;
       position: relative;
       top: -8vw;
-      animation: space-float 3s ease-in-out infinite alternate;
+      animation: space-float 2s ease-in-out infinite alternate;
 
       @media screen and (max-width: $mobile-view) {
         width: 70%;
@@ -85,7 +86,7 @@
       top: 0.5vw;
       left: 6vw;
       z-index: 3;
-      
+
       @media screen and (max-width: $mobile-view) {
         width: 3vw;
         height: 3vw;
@@ -117,7 +118,7 @@
       top: 34vw;
       left: 4vw;
       z-index: 3;
-    
+
       @media screen and (max-width: $mobile-view) {
         width: 6vw;
         height: 6vw;
@@ -133,7 +134,7 @@
       top: 5vw;
       left: 19vw;
       z-index: 3;
-    
+
       @media screen and (max-width: $mobile-view) {
         width: 7vw;
         height: 7vw;
@@ -148,14 +149,18 @@
     display: flex;
     flex-flow: column;
 
+    @media screen and (max-width: $mobile-view) {
+      margin: 0%;
+    }
+
     &__header {
       margin: 0 auto 30px;
       width: 100%;
       text-align: center;
+      margin-bottom: 40px;
 
       @media screen and (max-width: $mobile-view) {
         align-items: center;
-        width: 17%;
         margin: 0 auto;
       }
     }
@@ -182,9 +187,8 @@
       }
     }
   }
-  
-  @media screen and(max-width:$mobile-view) {
 
+  @media screen and(max-width:$mobile-view) {
     flex-flow: column;
     margin-left: 0px;
   }

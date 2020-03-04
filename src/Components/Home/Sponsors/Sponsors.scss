@@ -2,26 +2,26 @@
 
 @keyframes glow {
   0% {
-    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #fff)
-      drop-shadow(0 0 5px rgba(32, 215, 228, 0.81))
-      drop-shadow(0 0 7px rgba(32, 215, 228, 0.81));
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
+      drop-shadow(0 0 3px rgba(32, 215, 228, 0.81))
+      drop-shadow(0 0 4px rgba(32, 215, 228, 0.81));
   }
   50% {
     filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #fff)
-      drop-shadow(0 0 10px rgba(32, 215, 228, 0.81))
-      drop-shadow(0 0 15px rgba(32, 215, 228, 0.81));
+      drop-shadow(0 0 6px rgba(32, 215, 228, 0.81))
+      drop-shadow(0 0 8px rgba(32, 215, 228, 0.81));
   }
   100% {
-    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #fff)
-      drop-shadow(0 0 5px rgba(32, 215, 228, 0.81))
-      drop-shadow(0 0 7px rgba(32, 215, 228, 0.81));
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
+      drop-shadow(0 0 3px rgba(32, 215, 228, 0.81))
+      drop-shadow(0 0 4px rgba(32, 215, 228, 0.81));
   }
 }
 
 .sponsor_container {
   padding: 100px 0px 120px;
   @media screen and (max-width: $mobile-view) {
-    padding: 100px 0px 0px;
+    padding: 85px 0px 50px;
   }
   overflow: hidden auto;
 }
@@ -75,27 +75,45 @@
   }
 }
 .sponsor_wrapper {
-  padding-top: 48px;
+  padding-top: 45px;
   display: grid;
-  grid-gap: 1rem;
+  grid-row-gap: 2rem;
   grid-template-columns: auto auto auto auto;
   @media screen and (max-width: $mobile-view) {
-    padding: 20px;
+    padding: 30px 5px;
     grid-template-columns: auto auto;
   }
 }
 .sponsor_img {
-  height: 128px;
+  height: 60px;
   align-self: center;
   justify-self: center;
   animation: glow 4s linear infinite;
   @media screen and (max-width: $QHD-screen){
-    height: 112px;
+    height: 45px;
   }
   @media screen and (max-width: $mobile-view) {
-    height: 80px;
+    height: 30px;
   }
-  @media screen and (max-width: $small-mobile){
-    height: 60px;
+  &__img2{
+    height: 90px;
+    align-self: center;
+    justify-self: center;
+    animation: glow 4s linear infinite;
+    @media screen and (max-width: $QHD-screen){
+      height: 70px;
+    }
+    @media screen and (max-width: $mobile-view) {
+      height: 50px;
+    }
+    @media screen and (max-width: $small-mobile){
+      height: 40px;
+    }
+  }
+}
+
+.sponsor_none{
+  @media screen and (max-width: $mobile-view){
+    display: none;
   }
 }

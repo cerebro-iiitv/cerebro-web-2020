@@ -42,6 +42,10 @@ const TeamMember = ({member}) => {
 
   const deg = parseInt((Math.random() * Math.random() * Math.random()) * 1000)
 
+  const links = Object.keys(member.links).map(link => {
+    return <a href={member.links[link]}><i className={`fa fa-${link}`}></i></a>
+  })
+
   return (
     <div className="team-member animation-fade-in">
       <div className="team-member__left">
@@ -65,9 +69,7 @@ const TeamMember = ({member}) => {
         <p className="team-member__left__role">{member.role}</p>
       </div>
       <div className="team-member__social">
-        <a className=""><i className="fa fa-github"></i></a>
-        <a className=""><i className="fa fa-linkedin"></i></a>
-        <a className=""><i className="fa fa-dribbble"></i></a>
+        {links}
       </div>
     </div>
   )

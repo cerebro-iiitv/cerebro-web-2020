@@ -1,0 +1,85 @@
+@import "../../../scss/imports";
+
+.sidebarmenu {
+  display: flex;
+  margin-right: -30px;
+  overflow: auto;
+
+  @media screen and (max-width: $mobile-view) {
+    width: 100vw;
+    min-width: 100vw;
+    position: fixed;
+    bottom: 0%;
+    left: 0px;
+    display: initial;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    overflow-x: scroll !important;
+    box-sizing: border-box;
+    height: fit-content;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 410px;
+    cursor: pointer;
+
+    @media screen and (max-width: $mobile-view) {
+      height: 45px;
+      width: max-content;
+      // min-width: 100vw;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    &__link {
+      font-family: "Gilroy-Light", Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.18;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      opacity: 0.7;
+      transition: 0.15s;
+      list-style-type: none;
+
+      @media screen and (max-width: $mobile-view) {
+        margin-left: 10px;
+        padding-top: 5px;
+        display: block;
+
+        &:last-of-type {
+          margin-right: 5px;
+        }
+      }
+
+      &.active {
+        opacity: 1;
+        color: $color-style;
+        padding-left: 10px;
+
+        @media screen and (max-width: $mobile-view) {
+          padding: 0;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: White;
+        opacity: 1;
+        font-weight: 800;
+      }
+
+      &:not(:last-of-type) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

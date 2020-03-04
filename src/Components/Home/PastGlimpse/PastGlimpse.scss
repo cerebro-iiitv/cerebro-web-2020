@@ -21,37 +21,49 @@
       gap: 10px;
       height: 100%;
       width: 100%;
-  
+
       div {
         display: block;
         height: 100%;
         width: 100%;
         background-position: center;
-        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         filter: grayscale(1) brightness(50%);
-        transition: filter 0.15s,  background-size 0.2s ease-out;
-  
+        transition: filter 0.15s, background-size 0.2s ease-out;
+
         &:hover {
           filter: grayscale(0) brightness(100%);
-          background-size: auto 115%;
-  
+          background-size: 115% 115%;
+
           &.wide {
-            background-size: 115%;
+            background-size: 120% 120%;
+          }
+          &.tall {
+            background-size: 110% 110%;
+          }
+          &.big {
+            background-size: 110% 110%;
           }
         }
-  
+
         &.wide {
           grid-area: auto / span 2;
-          background-size: 100%;
+          background-size: 100% 100%;
           background-position: top;
+          max-height: 600px;
         }
-  
+
         &.big {
           grid-area: span 2 / span 2;
+          background-size: 100% 100%;
+          max-height: 600px;
         }
-        
+
         &.tall {
           grid-area: span 2;
+          background-size: 100% 100%;
+          max-height: 600px;
         }
       }
     }
@@ -72,17 +84,17 @@
         width: max-content;
         height: 100%;
         box-sizing: border-box;
-
+        background-repeat: no-repeat;
         div {
           display: inline-block;
           height: 100%;
           width: 277px;
-          background-size: 100%;
+          background-size: 100% 100%;
           background-position: center;
           filter: grayscale(0);
 
           &:hover {
-            background-size: 115%;
+            background-size: 115% 115%;
           }
 
           &:not(:last-of-type) {

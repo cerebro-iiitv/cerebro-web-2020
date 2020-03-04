@@ -1,0 +1,88 @@
+@import "../../../scss/imports";
+
+.circle {
+  width: 250px;
+  height: max-content;
+  @media screen and (max-width: $QHD-screen) {
+    width: 180px;
+  }
+
+  &__dial2 {
+    width: 450px;
+    position: fixed;
+    left: -3%;
+
+    @media screen and (max-width: 1920px) {
+      left: -4%;
+    }
+    @media screen and (min-width: 1441px) {
+      left: -10%;
+      top: 180px;
+    }
+    @media screen and (max-width: $QHD-screen) {
+      left: -18%;
+    }
+    @media screen and (max-width: $mobile-view) {
+      display: none;
+    }
+
+    transition: all 0.25s linear;
+  }
+
+  &__dial3 {
+    width: 375px;
+    position: fixed;
+    left: -1%;
+    top: 220px;
+    transition: all 0.25s linear;
+
+    @media screen and (max-width: 1920px) {
+      left: -2%;
+    }
+
+    @media screen and (min-width: 1441px) {
+      left: -7.5%;
+      top: 218px;
+    }
+    @media screen and (max-width: $QHD-screen) {
+      left: -14.5%;
+      top: 222.5px;
+    }
+
+    @media screen and (max-width: $mobile-view) {
+      display: none;
+    }
+
+  }
+
+  &__dial4 {
+    width: 225px;
+    position: fixed;
+    left: 3%;
+    top: 300px;
+
+    @media screen and (max-width: 1920px) {
+      left: 1.75%;
+    }
+    @media screen and (min-width: 1441px) {
+        left: -2.5%;
+    }
+
+
+    @media screen and (max-width: $QHD-screen) {
+      left: -8%;
+    }
+
+    @media screen and (max-width: $mobile-view) {
+      display: none;
+    }
+  }
+}
+
+.rotate {
+  transform: rotate(30deg);
+}
+
+.rotate-rev {
+  transform: rotate(-30deg);
+}
