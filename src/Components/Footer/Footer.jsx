@@ -7,7 +7,7 @@ function Footer() {
 		<div className="footer">
 		<div className="footer_u">
 			<div className="footer_u__logo">
-				<div>
+				<div className="footer_u__logo__div">
 					<img src='/media/institute-logo.1fb6100a.svg' className="footer_u__logo_svg" alt="IIIT Vadodara Logo" />
 				</div>
 				<div className="footer_u__logo_span">Indian Institute of Information Technology Vadodara</div>
