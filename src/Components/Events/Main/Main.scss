@@ -181,9 +181,11 @@
         &__reg {
           padding-top: 10px;
           text-align: left;
-          color: #1d9fc9;
           margin: 0 auto;
           cursor: pointer;
+          a {
+            color: #1d9fc9;
+          }
           &__but {
             display: flex;
             justify-content: center;

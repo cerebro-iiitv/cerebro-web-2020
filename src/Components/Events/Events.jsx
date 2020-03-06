@@ -6,8 +6,8 @@ import Main from "./Main/Main";
 import "./Events.scss";
 import Circle from "./Circle/Circle";
 class Events extends Component {
-  componentWillMount() {
-    window.scroll(0, 0)
+  componentDidMount() {
+    window.scroll(0, 0);
   }
   constructor(props) {
     super(props);
@@ -15,14 +15,15 @@ class Events extends Component {
     this.state = {
       eventIndex: 0,
       selectedEvent: "Tech Hunt",
-      pdf:"https://yashshah2820.pythonanywhere.com/media/pdf/Tech_Hunt.pdf"
+      pdf:
+        "https://github.com/cerebro-iiitv/cerebro-web-2020/files/4276790/Tech.Hunt.pdf"
     };
   }
-  updateEvent = (index, event,pdf) => {
+  updateEvent = (index, event, pdf) => {
     this.setState({
       eventIndex: index,
       selectedEvent: event,
-      pdf:pdf
+      pdf: pdf
     });
   };
 
