@@ -24,11 +24,12 @@ class Timeline extends React.Component {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="27-28-29 March"
+            // date="27-28-29 March"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             position={side}
           >
-            <Link className="eventLink" to={`/events`}>
+            {event.start_time}
+            <Link className="eventLink" to={`/events/${event.index}`}>
               <h3 className="vertical-timeline-element-title">{event.event}</h3>
               <p>{event.description}</p>
             </Link>
