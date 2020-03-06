@@ -13,8 +13,11 @@ class Header extends Component {
         this.state = {
             drawerOut: false,
             open: false,
-            name: null,
-            email: null
+            firstName: null,
+            lastName: null,
+            email: null,
+            imageUrl: null,
+            access_token: null
         };
     }
 
@@ -30,24 +33,21 @@ class Header extends Component {
 
     responseGoogle = async (res) => {
         // Storing in local storage
-        if (res.Ca) {
-            const userObject = {
-                username: res.Ca,
-                password: res.uc.access_token
-            }
-            await localStorage.setItem("user", JSON.stringify(userObject));
-            await window.location.reload();
+        if (res.uc.access_token) {
+            await localStorage.setItem("access_token", res.uc.access_token);
+            // await window.location.reload();
         }
         else {
             console.error("Login Error");
         }
         // Updating values in state
         this.setState({
-            name: res.profileObj.name,
+            firstName: res.profileObj.givenName,
+            lastName: res.profileObj.familyName,
             email: res.profileObj.email,
+            imageUrl: res.profileObj.imageUrl,
+            access_token: res.uc.access_token
         })
-        console.log(res)
-        console.log(this.state);
     }
 
     render() {
