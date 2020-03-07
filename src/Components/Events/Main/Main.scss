@@ -44,7 +44,7 @@
 
       // Height Media Query
       @media screen and (max-height: 830px) and (max-width: $mobile-view) {
-        height: calc(100vh - 360px);
+        height: calc(100vh - 400px);
         overflow-y: scroll;
       }
 
