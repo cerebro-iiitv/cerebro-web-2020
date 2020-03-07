@@ -36,7 +36,7 @@ class Timeline extends React.Component {
             position={side}
           >
             {event.start_time}
-            <Link className="eventLink" to={`/events/${event.index}`}>
+            <Link className="eventLink" to={`/events`}>
               <h3 className="vertical-timeline-element-title">{event.event}</h3>
               <p className="vertical-timeline-element-description">{event.description}</p>
             </Link>
@@ -49,7 +49,7 @@ class Timeline extends React.Component {
         <Header></Header>
         <div>
           <a
-            href="https://github.com/cerebro-iiitv/cerebro-web-2019/files/2896857/timeline.pdf"
+            href="https://github.com/cerebro-iiitv/cerebro-backend-2020/files/4301776/timeline.pdf"
             className="timelinePdf"
           >
             <img
