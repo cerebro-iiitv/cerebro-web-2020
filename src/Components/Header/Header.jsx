@@ -49,23 +49,18 @@ class Header extends Component {
               <li>timeline</li>
             </NavLink>
             {/* <NavLink className="navbar__links__li" exact to="/brochure"><li>brochure</li></NavLink> */}
-            <span className="navbar__links__li" onClick={this.onOpenModal}>
+            <a
+              className="navbar__links__li"
+              href="https://yashshah2820.pythonanywhere.com/media/pdfs/cerebro-brochure.pdf"
+            >
               Brochure
-            </span>
+            </a>
           </ul>
 
           <a className="navbar__login">
             <img className="g_img" src="media/google.png" alt="" />
           </a>
         </nav>
-
-        <Modal open={open} onClose={this.onCloseModal} center>
-          <embed
-            src="http://www.africau.edu/images/default/sample.pdf"
-            width="700"
-            height="750"
-          />
-        </Modal>
       </div>
     );
   }
