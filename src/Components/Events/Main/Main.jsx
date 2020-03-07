@@ -64,16 +64,6 @@ class Main extends Component {
               <td className="events-info-table__value">{contact.member1} , {contact.member2}</td>
             </tr>
           </table>
-
-          //   <div className="main__container__content__right__main">
-          //     <p className="main__container__content__right__colorchange">
-          //       Member :
-          //     </p>
-          //     <p className="main__container__content__left__info__nochange">
-          //       {contact.member1} , {contact.member2}
-          //     </p>
-          //   </div>
-          // </>
         );
       } else {
         return <></>;
