@@ -15,24 +15,24 @@ class Navbar extends Component {
 	onOpenModal = () => {
 		this.setState({ open: true });
 	};
-	
+
 	onCloseModal = () => {
 		this.setState({
 			open: false,
 		});
 	};
-	
+
 	showDrawer = () => {
 		this.setState({
 			drawerOut: true
 		});
-		
+
 		try {
 			document.getElementById('user-profile-main').style.zIndex = -1;
 			document.getElementById('social-icons').style.zIndex = -1;
 		} catch { }
 	};
-	
+
 	hideDrawer = () => {
 		this.setState({
 			drawerOut: false
@@ -63,25 +63,25 @@ class Navbar extends Component {
 
 					<div id="drawer" className={this.state.drawerOut ? 'drawer-visible' : null}>
 						<NavLink className="list_element" onClick={this.hideDrawer} exact to="/">
-						<i className="fa fa-home"></i>
+							<i className="fa fa-home"></i>
 							<span className="elements">home</span>
-                        </NavLink>
+						</NavLink>
 						<NavLink className="list_element" onClick={this.hideDrawer} to="/events">
-						<i className="fa fa-calendar"></i>
+							<i className="fa fa-calendar"></i>
 							<span className="elements">EVENTS</span>
-                        </NavLink>
+						</NavLink>
 						<NavLink className="list_element" onClick={this.hideDrawer} to="/team">
-						<i className="fa fa-users"></i>
+							<i className="fa fa-users"></i>
 							<span className="elements">TEAM</span>
-                        </NavLink>
+						</NavLink>
 						<NavLink className="list_element" onClick={this.hideDrawer} to="/timeline">
 							<i className="fa fa-hourglass-half"></i>
 							<span className="elements">TIMELINE</span>
-                        </NavLink>
-						<NavLink className="list_element" onClick={this.hideDrawer} to="/timeline">
-						<i className="fa fa-info"></i>
-						<span className="elements">BROCHURE</span>
-                        </NavLink>
+						</NavLink>
+						<a className="list_element" onClick={this.hideDrawer} href="https://yashshah2820.pythonanywhere.com/media/pdfs/cerebro-brochure.pdf">
+							<i className="fa fa-info"></i>
+							<span className="elements">BROCHURE</span>
+						</a>
 					</div>
 				</nav>
 			</div>
