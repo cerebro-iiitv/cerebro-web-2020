@@ -151,9 +151,9 @@ class Main extends Component {
           <div className="main__container__content__right__reg">
             <a href={this.props.pdf}>Rules and Regulations</a>
           </div>
-          <div className="main__container__content__right__reg__but">
+          {/* <div className="main__container__content__right__reg__but">
             <span className="main__container__button">Register</span>
-          </div>
+          </div> */}
         </div>
       </div>
     );
