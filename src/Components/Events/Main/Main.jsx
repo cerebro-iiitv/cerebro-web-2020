@@ -10,43 +10,24 @@ class Main extends Component {
             <div className="main__container__content__left__description">
               <p>{event.description}</p>
             </div>
-            <div className="main__container__content__left__info">
-              <div className="main__container__content__left__details">
-                <p className="main__container__content__left__info__colorchange">
-                  Prize Worth:{" "}
-                </p>{" "}
-                <p className="main__container__content__left__info__nochange">
-                  {event.prize}
-                </p>
-              </div>
-
-              <div className="main__container__content__left__details">
-                <p className="main__container__content__left__info__colorchange">
-                  Team Size:{" "}
-                </p>{" "}
-                <p className="main__container__content__left__info__nochange">
-                  {event.team_size}
-                </p>
-              </div>
-              <div className="main__container__content__left__details">
-                <p className="main__container__content__left__info__colorchange">
-                  Venue:{" "}
-                </p>{" "}
-                <p className="main__container__content__left__info__nochange">
-                  {event.venue}
-                </p>
-              </div>
-              <div className="main__container__content__left__details">
-                <p className="main__container__content__left__info__colorchange">
-                  Time:{" "}
-                </p>{" "}
-                <p className="main__container__content__left__info__nochange">
-                  <p>
-                    {event.start_time} to {event.end_time}
-                  </p>
-                </p>
-              </div>
-            </div>
+            <table className="events-info-table">
+              <tr>
+                <td className="events-info-table__key">Prize worth</td>
+                <td className="events-info-table__value">{event.prize}</td>
+              </tr>
+              <tr>
+                <td className="events-info-table__key">Team Size</td>
+                <td className="events-info-table__value">{event.team_size}</td>
+              </tr>
+              <tr>
+                <td className="events-info-table__key">Venue</td>
+                <td className="events-info-table__value">{event.venue}</td>
+              </tr>
+              <tr>
+                <td className="events-info-table__key">Time</td>
+                <td className="events-info-table__value">{event.start_time} to {event.end_time}</td>
+              </tr>
+            </table>
           </>
         );
       } else {
@@ -56,82 +37,33 @@ class Main extends Component {
     const contact = this.props.contacts.map((contact, index) => {
       if (index === this.props.index) {
         return (
-          <>
-            <div className="main__container__content__right__main">
-              <p className="main__container__content__right__colorchange">
-                Convenor :
-              </p>
-              <p className="main__container__content__left__info__nochange">
+          <table className="events-info-table">
+            <tr>
+              <td className="events-info-table__key">Convenor</td>
+              <td className="events-info-table__value">
                 {contact.convenor}
-              </p>
-            </div>
-            {contact.phone_number1 !== "" ? (
-              <div className="main__container__content__right__main">
-                <p className="main__container__content__right__colorchange">
-                  Contact :
-                </p>
-                <p className="main__container__content__left__info__nochange">
-                  {contact.phone_number1}
-                </p>
-              </div>
-            ) : (
-              <></>
-            )}
-            <div className="main__container__content__right__main">
-              <p className="main__container__content__right__colorchange">
-                Co-Convenor :
-              </p>
-              <p className="main__container__content__left__info__nochange">
+                {contact.phone_number1 && <p className="events-info-table__value__call"><i className="fa fa-phone"></i> {contact.phone_number1}</p>}
+              </td>
+            </tr>
+            <tr>
+              <td className="events-info-table__key">Co-Convenor</td>
+              <td className="events-info-table__value">
                 {contact.co_convenor1}
-              </p>
-            </div>
-            {contact.phone_number2 !== "" ? (
-              <div className="main__container__content__right__main">
-                <p className="main__container__content__right__colorchange">
-                  Contact :
-                </p>
-                <p className="main__container__content__left__info__nochange">
-                  {contact.phone_number2}
-                </p>
-              </div>
-            ) : (
-              <></>
-            )}
-
-            {contact.co_convenor2 !== "" ? (
-              <div className="main__container__content__right__main">
-                <p className="main__container__content__right__colorchange">
-                  Co-Convenor :
-                </p>
-                <p className="main__container__content__left__info__nochange">
-                  {contact.co_convenor2}
-                </p>
-              </div>
-            ) : (
-              <></>
-            )}
-            {contact.phone_number3 !== "" ? (
-              <div className="main__container__content__right__main">
-                <p className="main__container__content__right__colorchange">
-                  Contact :
-                </p>
-                <p className="main__container__content__left__info__nochange">
-                  {contact.phone_number3}
-                </p>
-              </div>
-            ) : (
-              <></>
-            )}
-
-            <div className="main__container__content__right__main">
-              <p className="main__container__content__right__colorchange">
-                Member :
-              </p>
-              <p className="main__container__content__left__info__nochange">
-                {contact.member1} , {contact.member2}
-              </p>
-            </div>
-          </>
+                {contact.phone_number2 && <p className="events-info-table__value__call"><i className="fa fa-phone"></i> {contact.phone_number2}</p>}
+              </td>
+            </tr>
+            {contact.co_convenor2 && <tr>
+              <td className="events-info-table__key">Co-Convener</td>
+              <td className="events-info-table__value">
+                {contact.co_convenor2}
+                {contact.phone_number3 && <p className="events-info-table__value__call"><i className="fa fa-phone"></i> {contact.phone_number3}</p>}
+              </td>
+            </tr>}
+            <tr>
+              <td className="events-info-table__key">Members</td>
+              <td className="events-info-table__value">{contact.member1} , {contact.member2}</td>
+            </tr>
+          </table>
         );
       } else {
         return <></>;

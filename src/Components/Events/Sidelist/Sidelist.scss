@@ -4,6 +4,10 @@
   display: flex;
   margin-right: -30px;
   overflow: auto;
+  
+  @media screen and (min-width: $mobile-view) {
+    @include custom-scrollbar;
+  }
 
   @media screen and (max-width: $mobile-view) {
     width: 100vw;
