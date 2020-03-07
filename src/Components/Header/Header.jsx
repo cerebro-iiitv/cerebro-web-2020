@@ -5,6 +5,7 @@ import Navbar from "./BurgerMenu/Navbar";
 import "font-awesome/css/font-awesome.min.css";
 import Modal from "react-responsive-modal";
 import { GoogleLogin } from "react-google-login";
+import Cookies from 'js-cookie';
 
 class Header extends Component {
   constructor(props) {
@@ -16,7 +17,7 @@ class Header extends Component {
       lastName: null,
       email: null,
       imageUrl: null,
-      accessToken: null
+      accessToken: Cookies.get("accessToken")
     };
   }
 
@@ -30,22 +31,16 @@ class Header extends Component {
     });
   };
 
-  responseGoogle = async (res) => {
-    // Storing in local storage
-    if (res.uc.access_token) {
-      await localStorage.setItem("access_token", res.uc.access_token);
-      // await window.location.reload();
-    }
-    else {
-      console.error("Login Error");
-    }
+  responseGoogle = async (res) => {    
+    // Storing accessToken as a cookie
+    Cookies.set('accessToken', res.uc.access_token)
+    
     // Updating values in state
     this.setState({
       firstName: res.profileObj.givenName,
       lastName: res.profileObj.familyName,
       email: res.profileObj.email,
-      imageUrl: res.profileObj.imageUrl,
-      accessToken: res.uc.access_token
+      imageUrl: res.profileObj.imageUrl
     })
     console.log(this.state);
     console.log(res);
@@ -75,7 +70,7 @@ class Header extends Component {
             clientId="646722007534-bn7ekn1cnvl4am4umntss50eardh9bs5.apps.googleusercontent.com"
             render={renderProps => (
               <button onClick={renderProps.onClick} disabled={renderProps.disabled} className="navbar__login">
-                <img class="g_img" src="media/google.png" alt="" />
+                <img className="g_img" src="media/google.png" alt="" />
               </button>
             )}
             onSuccess={this.responseGoogle}
