@@ -10,9 +10,9 @@ function Cover() {
         <div className="cover">
              <div className="cover__social-links">
                 <div className="cover__social-links__container">
-                    <a className="cover__social-links__link"><i className="fa fa-instagram"></i></a>
-                    <a className="cover__social-links__link"><i className="fa fa-twitter"></i></a>
-                    <a className="cover__social-links__link"><i className="fa fa-facebook"></i></a>
+                    <a className="cover__social-links__link" href="https://www.twitter.com/cerebro_iiitv/" target="_blank"><i className="fa fa-twitter"></i></a>
+                    <a className="cover__social-links__link" href="https://www.instagram.com/cerebro.iiitv/" target="_blank"><i className="fa fa-instagram"></i></a>
+                    <a className="cover__social-links__link" href="https://www.facebook.com/cerebro.iiitv/" target="_blank"><i className="fa fa-facebook"></i></a>
                 </div>
 
                 <a className="cover__social-links__link down-arrow"><i className="fa fa-chevron-down"></i></a>
@@ -22,7 +22,7 @@ function Cover() {
                 <p className="cover__titles__date"><span>27<sup>th</sup> - 29<sup>th</sup> March 2020</span></p>
                 <div className="cover__titles__timer">
                     <p className="t">T - </p>
-                    <Countdown date={`${year}-03-06T00:00:00`} />
+                    <Countdown date={`2020-03-27T00:00:00`} />
                     <p className="t">For the launch</p>
                 </div>
             </div>

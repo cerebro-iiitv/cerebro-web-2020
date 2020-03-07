@@ -74,8 +74,8 @@
   }
 
   &__image {
-    width: 26vw;
-    height: 26vw;
+    width: 400px;
+    height: 400px;
     position: relative;
 
     img {
@@ -201,17 +201,17 @@
   }
 }
 .Recpurple1{
-  width: 3.3vw;
-  height: 3.3vw;
+  width: 50px;
+  height: 50px;
   position: relative;
-  top: -3.5vw;
-  left: 12vw;
+  top: -52px;
+  left: 185px;
   z-index: 3;
   @media screen and (max-width: $mobile-view){
-    width: 10vw;
-    height: 10vw;
-    top: -12.5vw;
-    left: 32vw;
+    width: 44px;
+    height: 44px;
+    top: -51px;
+    left: 130px;
   }
 }
 .Circpin1{
