@@ -229,7 +229,6 @@ export const teamdata = {
       img:
         "https://user-images.githubusercontent.com/42682370/75527941-0dd63800-5a39-11ea-8ade-5460116a88f9.jpg",
       links: {
-        dribbble: "",
         github: "https://github.com/kavyatripathi",
         linkedin: "https://www.linkedin.com/in/kavya-tripathi-70a505180",
         twitter: "https://twitter.com/Kavya__Tripathi"
