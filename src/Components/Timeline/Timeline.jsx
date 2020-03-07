@@ -14,7 +14,14 @@ class Timeline extends React.Component {
   }
 
   render() {
-    const timeline = this.props.events.map((event, index) => {
+    const timeline = this.props.events.sort((eventA, eventB) => {
+      let [eventADate, eventATime, eventAPeriod] = eventA.start_time.split(' ')
+      let [eventBDate, eventBTime, eventBPeriod] = eventB.start_time.split(' ')
+
+      if (eventATime.length === 4) eventATime = "0".concat(eventATime)
+      if (eventBTime.length === 4) eventBTime = "0".concat(eventBTime)
+      return eventADate.localeCompare(eventBDate) || eventAPeriod.localeCompare(eventBPeriod) || eventATime.localeCompare(eventBTime)
+    }).map((event, index) => {
       if (index % 2 === 0) {
         var side = "left";
       } else {
@@ -31,7 +38,7 @@ class Timeline extends React.Component {
             {event.start_time}
             <Link className="eventLink" to={`/events`}>
               <h3 className="vertical-timeline-element-title">{event.event}</h3>
-              <p>{event.description}</p>
+              <p className="vertical-timeline-element-description">{event.description}</p>
             </Link>
           </VerticalTimelineElement>
         </VerticalTimeline>

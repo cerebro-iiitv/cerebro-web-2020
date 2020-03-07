@@ -60,12 +60,11 @@ class Header extends Component {
             <NavLink className="navbar__links__li" exact to="/events"><li>Events</li></NavLink>
             <NavLink className="navbar__links__li" exact to="/team"><li>Team</li></NavLink>
             <NavLink className="navbar__links__li" exact to="/timeline"><li>timeline</li></NavLink>
-            {/* <NavLink className="navbar__links__li" exact to="/brochure"><li>brochure</li></NavLink> */}
             <a className="navbar__links__li"
               href="https://yashshah2820.pythonanywhere.com/media/pdfs/cerebro-brochure.pdf"
             > Brochure </a>
           </ul>
-
+        {/* 
           <GoogleLogin
             clientId="646722007534-bn7ekn1cnvl4am4umntss50eardh9bs5.apps.googleusercontent.com"
             render={renderProps => (
@@ -76,7 +75,7 @@ class Header extends Component {
             onSuccess={this.responseGoogle}
             onFailure={this.responseGoogle}
             cookiePolicy={'single_host_origin'}
-          />
+          /> */}
         </nav>
       </div>
     );
