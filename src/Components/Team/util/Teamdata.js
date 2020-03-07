@@ -264,7 +264,11 @@ export const teamdata = {
       role: "Member",
       img:
         "https://user-images.githubusercontent.com/42682370/75473123-9b267780-59ba-11ea-9146-44245d6e48ae.jpg",
-      links: { dribbble: "", linkedin: "", twitter: "" }
+      links: {
+        github: "https://github.com/kumawatamit587",
+        linkedin: "https://www.linkedin.com/in/amit-kumar-kumawat-851722199/",
+        twitter: "https://twitter.com/AmitKKUMARKumaw"
+      }
     },
     {
       id: 7,
