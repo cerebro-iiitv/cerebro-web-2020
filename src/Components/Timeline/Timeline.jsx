@@ -14,7 +14,7 @@ class Timeline extends React.Component {
   }
 
   render() {
-    const timeline = this.props.events.sort((eventA, eventB) => {
+    const timeline = [...this.props.events].sort((eventA, eventB) => {
       let [eventADate, eventATime, eventAPeriod] = eventA.start_time.split(' ')
       let [eventBDate, eventBTime, eventBPeriod] = eventB.start_time.split(' ')
 
