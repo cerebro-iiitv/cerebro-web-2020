@@ -5,6 +5,10 @@
   margin-right: -30px;
   overflow: auto;
 
+  @media screen and (min-width: $mobile-view) {
+    @include custom-scrollbar;
+  }
+
   @media screen and (max-width: $mobile-view) {
     width: 100vw;
     min-width: 100vw;
@@ -26,6 +30,7 @@
     width: 220px;
     height: 410px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 
     @media screen and (max-width: $mobile-view) {
       height: 45px;
@@ -64,6 +69,7 @@
         opacity: 1;
         color: $color-style !important;
         padding-left: 10px;
+        font-weight: 800;
 
         @media screen and (max-width: $mobile-view) {
           padding: 0;

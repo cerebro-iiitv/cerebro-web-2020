@@ -69,6 +69,41 @@ function Cover() {
           src="media/cover/helmet.png"
           alt="Cerebro helmet"
         />
+        <img
+          src="media/Asset 16@4x.png"
+          className="aboutcontainer__images__Recpurplebig animation-particles-rotate Recpurple1"
+          alt="rectanglepurple"
+        />
+        <img
+          src="media/Asset 16@4x.png"
+          className="aboutcontainer__images__Recpurplesmall animation-particles-rotate Recpurple2"
+          alt="rectanglepurple"
+        />
+        <img
+          src="media/Asset 13@4x.png"
+          className="aboutcontainer__images__Circpin animation-particles-rotate Circpin1"
+          alt="circpin"
+        />
+        <img
+          src="media/Asset 15@4x.png"
+          className="aboutcontainer__images__Circpurple animation-particles-rotate Circpurple1"
+          alt="circpurple"
+        />
+        <img
+          src="media/Asset 15@4x.png"
+          className="aboutcontainer__images__Circpurple animation-particles-rotate Circpurple2"
+          alt="circpurple"
+        />
+        <img
+          src="media/Asset 15@4x.png"
+          className="aboutcontainer__images__Circpurple animation-particles-rotate Circpurple3"
+          alt="circpurple"
+        />
+        <img
+          src="media/Asset 13@4x.png"
+          className="aboutcontainer__images__Circpin animation-particles-rotate Circpin2"
+          alt="circpin"
+        />
       </div>
     </div>
   );

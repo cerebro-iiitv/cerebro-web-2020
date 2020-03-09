@@ -1,3 +1,5 @@
+@import "../../scss/imports";
+
 .footer {
     display: flex;
     flex-flow: row;
@@ -18,10 +20,11 @@
 
     @media (max-width: 600px) {
         justify-content: center;
-        width: 90%;
+        width: 96%;
         flex-flow: column;
         padding: 21px 0px 50px;
         height: 450px;
+        margin: 2%;
     }
 }
 
@@ -42,7 +45,6 @@
         display: flex;
         flex-flow: row;
         justify-content: left;
-        width: 100%;
 
         @media (max-width: 823px) {
             justify-content: center;
@@ -50,12 +52,23 @@
 
         @media (max-width: 600px) {
             justify-content: center;
+            width: 100%;
+            height: 95%;
+        }
+
+        &__div {
+            @media (max-width: 600px) {
+                justify-content: center;
+                width: 33%;
+                height: 100%;
+                margin: 0%;
+            }
         }
     }
 
     &__logo_svg {
         padding-top: 36px;
-        padding-left: 5%;
+        padding-left: 8%;
         width: 120px;
 
         @media (min-width: 824px) and (max-width: 1280px) {
@@ -68,9 +81,10 @@
         }
 
         @media (max-width: 600px) {
-            width: 60px;
-            padding-top: 24px;
-            padding-left: 15%;
+            width: 64%;
+            height: 60%;
+            justify-content: right;
+            padding: 20% 0% 12% 30%;
         }
     }
 
@@ -102,11 +116,11 @@
         }
 
         @media (max-width: 600px) {
-            padding: 42px 24px 0px 10px;
+            padding: 10% 0 4% 0;
             align-content: flex-start;
-            width: 230px;
-            height: 96px;
-            font-size: 1rem;
+            width: 75%;
+            height: 51.7%;
+            font-size: 16px;
         }
     }
 }
@@ -114,6 +128,7 @@
 .footer_l {
     display: flex;
     flex-flow: row;
+    justify-content: center;
 
     @media (min-width: 812px) {
         justify-content: flex-end;
@@ -130,9 +145,10 @@
 
     @media (max-width: 600px) {
         flex-flow: column;
+        margin: auto;
         justify-content: center;
-        margin-left: 1.25vw;
-        margin-right: 1.25vw;
+        width: 100%;
+        height: 100%
     }
 
     &__links {
@@ -159,10 +175,10 @@
         }
 
         @media (max-width: 600px) {
-            width: 96%;
-            font-size: 87.06%;
+            width: 100%;
+            font-size: 87.04%;
             padding-left: 0px;
-            height: 156px;
+            height: 90%;
             justify-content: center;
             text-align: center;
             padding-bottom: 2rem;
@@ -175,6 +191,11 @@
             @media (max-width: 823px) {
                 width: 100%;
                 padding: 6px 2px;
+            }
+
+            @media (max-width: 600px) {
+                width: 100%;
+                padding: 6px 0px;
             }
         }
 
@@ -204,8 +225,8 @@
         }
 
         @media (max-width: 600px) {
-            width: 96%;
-            font-size: 87.06%;
+            width: 100%;
+            font-size: 87.04%;
             padding-left: 0px;
             text-align: center;
             justify-content: center;
@@ -220,6 +241,11 @@
                 width: 100%;
                 padding: 6px 2px;
             }
+
+            @media (max-width: 600px) {
+                width: 100%;
+                padding: 6px 0px;
+            }
         }
 
         &_cn {
@@ -230,7 +256,7 @@
             padding: 16px 0px;
 
             @media (max-width: 823px) {
-                padding: 12px 2px;
+                padding: 12px 0px;
             }
         }
     }
@@ -272,16 +298,47 @@
             padding-right: 9.6px;
             height: 0px;
 
-            @media (min-width: 415px) {
+            @media (min-width: 600px) {
                 display: none;
             }
         }
     }
 }
+
 a {
     color: #FFFFFF;
     text-decoration: none;
 }
+
 b {
     font-weight: 3500;
+}
+
+.footer-bottom {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, transparent, lighten($color-background, 5%), transparent);
+
+    span {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:first-of-type {
+            border-right: 2px solid $color-style;
+        }
+
+        img {
+            margin-left: 10px;
+            height: 20px;
+            display: inline-block;
+        }
+    }
+
+    @media screen and (max-width: $mobile-view) {
+        font-size: 12px;
+    }
 }

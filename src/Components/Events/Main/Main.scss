@@ -32,25 +32,7 @@
 
     &__content {
       display: flex;
-
-      &::-webkit-scrollbar {
-        width: 10px;
-        background-color: rgba(0, 0, 0, 0);
-      }
-
-      &::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        background-color: rgba($color-style, 0.8);
-      }
-
-      &::-webkit-scrollbar-track {
-        background-color: $color-background;
-      }
-
-      & {
-        scrollbar-face-color: $color-style;
-        scrollbar-track-color: $color-background;
-      }
+      @include custom-scrollbar;
 
       // Width Media Query
       @media screen and (max-width: $mobile-view) {
@@ -77,10 +59,12 @@
       }
 
       &__left {
-        width: 250px;
+        width: 50%;
         display: flex;
         flex-flow: column;
         margin: 20px auto 0px;
+        padding-right: 10px;
+        box-sizing: border-box;
 
         // Width Media Query
         @media screen and (max-width: $mobile-view) {
@@ -108,7 +92,7 @@
           line-height: 1.14;
           letter-spacing: normal;
           width: 90%;
-          padding-left: 5px;
+          margin-bottom: 20px;
 
           @media screen and (max-width: $mobile-view) {
             padding-bottom: 10px;
@@ -154,7 +138,8 @@
       }
 
       &__right {
-        width: max-content;
+        width: 50%;
+        box-sizing: border-box;
         margin: 20px auto;
         padding: 20px;
         padding-top: 0;
@@ -179,12 +164,32 @@
         }
 
         &__reg {
-          padding-top: 10px;
-          text-align: left;
+          text-align: center;
           margin: 0 auto;
+          padding-top: 30px;
           cursor: pointer;
+          font-size: 18px;
           a {
-            color: #1d9fc9;
+            color: $color-style;
+            transition: 0.15s;
+            padding: 8px 14px;
+            border: 1px solid $color-style;
+            font-weight: 800;
+            border-radius: 7px;
+
+            @media screen and (max-width: $mobile-view) {
+              position: fixed;
+              width: max-content;
+              bottom: 80px;
+              left: 50%;
+              right: 50%;
+              transform: translateX(-50%);
+            }
+
+            &:hover {
+              color: white;
+              background-color: $color-style;
+            }
           }
           &__but {
             display: flex;
@@ -219,6 +224,33 @@
         padding: 0px;
         padding-top: 10px;
       }
+    }
+  }
+}
+
+.events-info-table {
+  font-size: 18px;
+  border: 0px;
+
+  &__key, &__value {
+    box-sizing: border-box;
+    padding-bottom: 15px;
+  }
+
+  &__key {
+    width: 115px;
+    display: block;
+    color: $color-style;
+    text-align: right;
+    font-weight: 800;
+  }
+
+  &__value {
+    padding-left: 10px;
+    line-height: 1.4;
+
+    &__call {
+      margin-top: 5px;
     }
   }
 }
