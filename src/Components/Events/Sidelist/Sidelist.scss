@@ -4,7 +4,7 @@
   display: flex;
   margin-right: -30px;
   overflow: auto;
-  
+
   @media screen and (min-width: $mobile-view) {
     @include custom-scrollbar;
   }
@@ -67,7 +67,7 @@
 
       &.active {
         opacity: 1;
-        color: white;
+        color: $color-style !important;
         padding-left: 10px;
         font-weight: 800;
 

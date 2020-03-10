@@ -25,7 +25,9 @@ class Main extends Component {
               </tr>
               <tr>
                 <td className="events-info-table__key">Time</td>
-                <td className="events-info-table__value">{event.start_time} to {event.end_time}</td>
+                <td className="events-info-table__value">
+                  {event.start_time} to {event.end_time}
+                </td>
               </tr>
             </table>
           </>
@@ -42,26 +44,42 @@ class Main extends Component {
               <td className="events-info-table__key">Convenor</td>
               <td className="events-info-table__value">
                 {contact.convenor}
-                {contact.phone_number1 && <p className="events-info-table__value__call"><i className="fa fa-phone"></i> {contact.phone_number1}</p>}
+                {contact.phone_number1 && (
+                  <p className="events-info-table__value__call">
+                    <i className="fa fa-phone"></i> {contact.phone_number1}
+                  </p>
+                )}
               </td>
             </tr>
             <tr>
               <td className="events-info-table__key">Co-Convenor</td>
               <td className="events-info-table__value">
                 {contact.co_convenor1}
-                {contact.phone_number2 && <p className="events-info-table__value__call"><i className="fa fa-phone"></i> {contact.phone_number2}</p>}
+                {contact.phone_number2 && (
+                  <p className="events-info-table__value__call">
+                    <i className="fa fa-phone"></i> {contact.phone_number2}
+                  </p>
+                )}
               </td>
             </tr>
-            {contact.co_convenor2 && <tr>
-              <td className="events-info-table__key">Co-Convener</td>
-              <td className="events-info-table__value">
-                {contact.co_convenor2}
-                {contact.phone_number3 && <p className="events-info-table__value__call"><i className="fa fa-phone"></i> {contact.phone_number3}</p>}
-              </td>
-            </tr>}
+            {contact.co_convenor2 && (
+              <tr>
+                <td className="events-info-table__key">Co-Convener</td>
+                <td className="events-info-table__value">
+                  {contact.co_convenor2}
+                  {contact.phone_number3 && (
+                    <p className="events-info-table__value__call">
+                      <i className="fa fa-phone"></i> {contact.phone_number3}
+                    </p>
+                  )}
+                </td>
+              </tr>
+            )}
             <tr>
               <td className="events-info-table__key">Members</td>
-              <td className="events-info-table__value">{contact.member1} , {contact.member2}</td>
+              <td className="events-info-table__value">
+                {contact.member1} , {contact.member2}
+              </td>
             </tr>
           </table>
         );
