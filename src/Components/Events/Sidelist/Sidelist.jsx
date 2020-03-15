@@ -1,15 +1,15 @@
 import React from "react";
 import "./Sidelist.scss";
 const Sidelist = props => {
-  const eventList = props.events.map((event, index) => {
+  const eventList = props.events.map((event, curr_index) => {
     return (
       <li
-        key={index}
+        key={curr_index}
         className={`sidebarmenu__links__link ${
-          index === props.index ? "active" : ""
+          curr_index === props.index ? "active" : ""
         }`}
         onClick={() => {
-          return props.updateEvent(index, event.event, event.pdf);
+          return props.updateEvent(curr_index, event.event, event.pdf);
         }}
       >
         <span>{event.event}</span>
