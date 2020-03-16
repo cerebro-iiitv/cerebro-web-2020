@@ -42,16 +42,12 @@ function Cover() {
       </div>
       <div className="cover__titles">
         <h1 className="cover__titles__title">Cerebro</h1>
-        <p className="cover__titles__date">
-          <span>
-            27<sup>th</sup> - 29<sup>th</sup> March 2020
-          </span>
-        </p>
-        <div className="cover__titles__timer">
-          <p className="t">T - </p>
-          <Countdown date={`2020-03-27T00:00:00`} />
-          <p className="t">For the launch</p>
-        </div>
+        {/*           <p className="cover__titles__date"><span>27<sup>th</sup> - 29<sup>th</sup> March 2020</span></p>
+                <div className="cover__titles__timer">
+                    <p className="t">T - </p>
+                    <Countdown date={`2020-03-27T00:00:00`} />
+                    <p className="t">For the launch</p>
+                </div> */}
       </div>
       <div className="cover__image">
         <img
